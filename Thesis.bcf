@@ -2164,15 +2164,16 @@
     <bcf:citekey order="18">Greenwood2009</bcf:citekey>
     <bcf:citekey order="19">Piotroski2000</bcf:citekey>
     <bcf:citekey order="20">Fama2006</bcf:citekey>
-    <bcf:citekey order="21">Mohr2012</bcf:citekey>
-    <bcf:citekey order="22">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="21">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="22">Hyde2014</bcf:citekey>
     <bcf:citekey order="23">Mohr2012</bcf:citekey>
-    <bcf:citekey order="24">Hyde2014</bcf:citekey>
-    <bcf:citekey order="25">Choi2012</bcf:citekey>
-    <bcf:citekey order="26">Akhigbe2007</bcf:citekey>
-    <bcf:citekey order="27">Fama2006</bcf:citekey>
-    <bcf:citekey order="28">Brigida2012</bcf:citekey>
-    <bcf:citekey order="29">Brav2008</bcf:citekey>
-    <bcf:citekey order="30">Collin-Dufresne2015</bcf:citekey>
+    <bcf:citekey order="24">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="25">Mohr2012</bcf:citekey>
+    <bcf:citekey order="26">Choi2012</bcf:citekey>
+    <bcf:citekey order="27">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="28">Fama2006</bcf:citekey>
+    <bcf:citekey order="29">Brigida2012</bcf:citekey>
+    <bcf:citekey order="30">Brav2008</bcf:citekey>
+    <bcf:citekey order="31">Collin-Dufresne2015</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
