@@ -2141,39 +2141,50 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">BA Kopie.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">BA copy.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Giglia2018</bcf:citekey>
-    <bcf:citekey order="2">Akhigbe2007</bcf:citekey>
-    <bcf:citekey order="3">Greenwood2009</bcf:citekey>
-    <bcf:citekey order="4">Akhigbe2007</bcf:citekey>
-    <bcf:citekey order="5">Greenwood2009</bcf:citekey>
-    <bcf:citekey order="6">Collin-Dufresne2015</bcf:citekey>
-    <bcf:citekey order="7">Brav2008</bcf:citekey>
-    <bcf:citekey order="8">Klein2009</bcf:citekey>
+    <bcf:citekey order="1">Huang2017</bcf:citekey>
+    <bcf:citekey order="2">Ouimet2013</bcf:citekey>
+    <bcf:citekey order="3">Damodaran2005</bcf:citekey>
+    <bcf:citekey order="4">Povel2014</bcf:citekey>
+    <bcf:citekey order="5">Huang2017</bcf:citekey>
+    <bcf:citekey order="6">Allen2000</bcf:citekey>
+    <bcf:citekey order="7">Huang2017</bcf:citekey>
+    <bcf:citekey order="8">Goldman2005</bcf:citekey>
     <bcf:citekey order="9">Brigida2012</bcf:citekey>
-    <bcf:citekey order="10">Akhigbe2007</bcf:citekey>
-    <bcf:citekey order="11">Akhigbe2007</bcf:citekey>
-    <bcf:citekey order="12">Brigida2012</bcf:citekey>
-    <bcf:citekey order="13">Greenwood2009</bcf:citekey>
-    <bcf:citekey order="14">Brav2008</bcf:citekey>
-    <bcf:citekey order="15">Klein2009</bcf:citekey>
-    <bcf:citekey order="16">Brav2008</bcf:citekey>
-    <bcf:citekey order="17">CoffeeJr.2014</bcf:citekey>
-    <bcf:citekey order="18">Greenwood2009</bcf:citekey>
-    <bcf:citekey order="19">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="20">Fama2006</bcf:citekey>
-    <bcf:citekey order="21">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="22">Hyde2014</bcf:citekey>
-    <bcf:citekey order="23">Mohr2012</bcf:citekey>
-    <bcf:citekey order="24">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="25">Mohr2012</bcf:citekey>
-    <bcf:citekey order="26">Choi2012</bcf:citekey>
-    <bcf:citekey order="27">Akhigbe2007</bcf:citekey>
-    <bcf:citekey order="28">Fama2006</bcf:citekey>
-    <bcf:citekey order="29">Brigida2012</bcf:citekey>
-    <bcf:citekey order="30">Brav2008</bcf:citekey>
-    <bcf:citekey order="31">Collin-Dufresne2015</bcf:citekey>
+    <bcf:citekey order="10">Klein2009</bcf:citekey>
+    <bcf:citekey order="11">Goldman2005</bcf:citekey>
+    <bcf:citekey order="12">Giglia2018</bcf:citekey>
+    <bcf:citekey order="13">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="14">Greenwood2009</bcf:citekey>
+    <bcf:citekey order="15">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="16">Greenwood2009</bcf:citekey>
+    <bcf:citekey order="17">Collin-Dufresne2015</bcf:citekey>
+    <bcf:citekey order="18">Brav2008</bcf:citekey>
+    <bcf:citekey order="19">Klein2009</bcf:citekey>
+    <bcf:citekey order="20">Brigida2012</bcf:citekey>
+    <bcf:citekey order="21">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="22">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="23">Brigida2012</bcf:citekey>
+    <bcf:citekey order="24">Greenwood2009</bcf:citekey>
+    <bcf:citekey order="25">Brav2008</bcf:citekey>
+    <bcf:citekey order="26">Klein2009</bcf:citekey>
+    <bcf:citekey order="27">Brav2008</bcf:citekey>
+    <bcf:citekey order="28">CoffeeJr.2014</bcf:citekey>
+    <bcf:citekey order="29">Greenwood2009</bcf:citekey>
+    <bcf:citekey order="30">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="31">Fama2006</bcf:citekey>
+    <bcf:citekey order="32">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="33">Hyde2014</bcf:citekey>
+    <bcf:citekey order="34">Mohr2012</bcf:citekey>
+    <bcf:citekey order="35">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="36">Mohr2012</bcf:citekey>
+    <bcf:citekey order="37">Choi2012</bcf:citekey>
+    <bcf:citekey order="38">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="39">Fama2006</bcf:citekey>
+    <bcf:citekey order="40">Brigida2012</bcf:citekey>
+    <bcf:citekey order="41">Brav2008</bcf:citekey>
+    <bcf:citekey order="42">Collin-Dufresne2015</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
