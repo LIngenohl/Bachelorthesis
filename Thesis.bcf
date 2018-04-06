@@ -2204,14 +2204,15 @@
     <bcf:citekey order="58">Mitchell2011</bcf:citekey>
     <bcf:citekey order="59">Brav2008</bcf:citekey>
     <bcf:citekey order="60">Loughran2014</bcf:citekey>
-    <bcf:citekey order="61">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="62">Fama2006</bcf:citekey>
-    <bcf:citekey order="63">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="64">Hyde2014</bcf:citekey>
-    <bcf:citekey order="65">Mohr2012</bcf:citekey>
-    <bcf:citekey order="66">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="67">Mohr2012</bcf:citekey>
-    <bcf:citekey order="68">Choi2012</bcf:citekey>
-    <bcf:citekey order="69">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="61">MacKinlay1997</bcf:citekey>
+    <bcf:citekey order="62">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="63">Fama2006</bcf:citekey>
+    <bcf:citekey order="64">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="65">Hyde2014</bcf:citekey>
+    <bcf:citekey order="66">Mohr2012</bcf:citekey>
+    <bcf:citekey order="67">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="68">Mohr2012</bcf:citekey>
+    <bcf:citekey order="69">Choi2012</bcf:citekey>
+    <bcf:citekey order="70">Akhigbe2007</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

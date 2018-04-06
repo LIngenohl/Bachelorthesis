@@ -242,15 +242,45 @@ which reduced the sample to 748 filings.
 \subsection{Descriptive Data}
 \subsection{Examples out of the Sample}
 
-\subsection{Market Returns to Initial 13(D) Filings -- Stock Returns}
+\pagebreak
+
+\section{Market Returns to Initial 13(D) Filings -- Stock Returns}
 % Intention
 In this section we will measure the effect of a Schedule 13(D) filing on the stock subject to the filing. The aim is to test the first hypothesis,namely a significant market reaction to the filing. In order to identify the reaction, the abnormal share price reactions around the filing are computed. In other words, the effect of the event is isolated from other general market movements.\\
 % Nature of AR's
-In this sense, abnormal returns $AR_{i\tau}$ for security $i$ at event day $\tau$ are defined as the difference between the actual (realized) return $R_{i\tau}$ and the expected return $E(R_{i\tau}|X{\tau})$, given the absence of the event:
+In this sense, abnormal returns $AR_{i,\tau}$ for security $i$ at event day $\tau$ are defined as the difference between the actual (observed) return $R_{i,\tau}$ and the expected return $E(R_{i,\tau}|X{\tau})$, given the absence of the event:
 	\begin{equation}\label{eq:1}
-		AR_{i\tau}=R_{i\tau}-E(R_{i\tau}|X_{\tau})
+		AR_{i,\tau}=R_{i,\tau}-E(R_{i,\tau}|X_{\tau})
 	\end{equation}
-The the expected return in \eqref{eq:1} is calculated in the following ways: can be done in several ways. is unconditional on the event date, . Estimating the normal performance can be done with several models.
+For calculating the abnormal returns the following methods for determining the expected return in \eqref{eq:1} are used: 
+\begin{enumerate}
+	\item Market Model -- For the expected return it assumes a constant and linear relation between the observed returns $R_{i\tau}$ and the return of a market index $R_{m\tau}$. The parameters are estimated by ordinary least squares regressions based on estimation-window observations. The value-weighted NYSE/Amex/Nasdaq index from CRSP is used as the market return $R_{M\tau}$.
+
+		\begin{equation}\label{eq:2}
+			R_{i,\tau}=\alpha_{i}+\beta_{i}R_{M,\tau}+\epsilon_{i,\tau}
+		\end{equation}
+		with 
+		\begin{equation}\label{eq:3}
+			E[\epsilon_{i,\tau}]=0
+		\end{equation}
+		and 
+		\begin{equation}\label{eq:4}
+			Var[\epsilon_{i,\tau}]=\sigma^2_{i,\tau}
+		\end{equation}
+		This yields the abnormal return $AR_{i,\tau}$
+		\begin{equation}\label{eq:5}
+			AR_{i,\tau}=\alpha_{i}+\beta_{i}R_{M,\tau}+\epsilon_{i,\tau}
+		\end{equation}
+		
+	\item Market Return Model -- The model is classified as the restricted market model with $\alpha_{i}=0$ and $\beta_{i}=1$. This means that there is no estimation window required and the abnormal return $AR_{i,\tau}$ is simply the difference between the observed return $R_{i,\tau}$ and the value-weighted NYSE/Amex/Nasdaq index return $R_{M\tau}$.
+
+		\begin{equation}\label{eq:6}
+			AR_{i,\tau}=R_{i,\tau}-R_{M,\tau}
+		\end{equation}
+
+\end{enumerate}
+
+The abnormal returns $AR_{i,\tau}$ are then aggregated over time and across securities in order to draw overall inferences of the event \citep{MacKinlay1997}. The aggregation is necessary to accomodate a mutiple period event window. The aggregation over time in order to calculate the cumulative abnormal returns $AR_{i,\tau}$
 % Theory 
 The event date as reported in the Schedule 13(D) filing is defined as day 0.
 The aim of this section is to test the hypothesis of significant positive
