@@ -21,6 +21,7 @@
 	\usepackage{bigstrut}
 	\usepackage{enumitem}
 	\usepackage{verbatim}
+	\usepackage{mathtools}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
   
@@ -240,7 +241,18 @@ which reduced the sample to 748 filings.
 
 \subsection{Descriptive Data}
 \subsection{Examples out of the Sample}
-\subsection{Stock Returns and Corporate Investments}
+
+\subsection{Market Returns to Initial 13(D) Filings -- Stock Returns}
+% Intention
+In this section we will measure the effect of a Schedule 13(D) filing on the stock subject to the filing. The aim is to test the first hypothesis,namely a significant market reaction to the filing. In order to identify the reaction, the abnormal share price reactions around the filing are computed. In other words, the effect of the event is isolated from other general market movements.\\
+% Nature of AR's
+In this sense, abnormal returns $AR_{i\tau}$ for security $i$ at event day $\tau$ are defined as the difference between the actual (realized) return $R_{i\tau}$ and the expected return $E(R_{i\tau}|X{\tau})$, given the absence of the event:
+	\begin{equation}\label{eq:1}
+		AR_{i\tau}=R_{i\tau}-E(R_{i\tau}|X_{\tau})
+	\end{equation}
+The the expected return in \eqref{eq:1} is calculated in the following ways: can be done in several ways. is unconditional on the event date, . Estimating the normal performance can be done with several models.
+% Theory 
+The event date as reported in the Schedule 13(D) filing is defined as day 0.
 The aim of this section is to test the hypothesis of significant positive
 abnormal returns on the subject's stock around the filing of a Schedule 13(D). This analysis addresses the question of how the market perceives the effect of active behaving corporations. 
 
