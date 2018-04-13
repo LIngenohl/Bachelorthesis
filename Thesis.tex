@@ -11,6 +11,8 @@
 	\renewcommand{\baselinestretch}{1.5}
 	\usepackage{prettyref}
 	\usepackage{textcomp}
+	\usepackage{booktabs}
+	\usepackage{lscape}
 	\usepackage{setspace}
 	\usepackage{indentfirst}
 	\usepackage{fancyhdr}
@@ -22,6 +24,8 @@
 	\usepackage{enumitem}
 	\usepackage{verbatim}
 	\usepackage{mathtools}
+	\usepackage{graphicx}
+	\usepackage{longtable}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
   
@@ -128,10 +132,10 @@
 Much attention has been recently given to the current Securities and Exchange Commission (SEC) reporting requirements for Schedule 13(D), governing the disclosure of beneficial ownership interests in excess of five percent of outstanding common stock of a U.S. public company \citep{Giglia2018}. Amongst other causes, it is due to significant gains for the subject's stock when a partial acquisition through a Schedule 13(D) filing is announced \citep{Akhigbe2007}. 
 
 % types of filer - bridge corporations
-However, it is still largely unanswered where this upward drift comes from \citep{Greenwood2009}. An approach to this issue is objective of this thesis. Namely, analyzing the link between the financial condition of corporate investors and the abnormal returns on the subject's stock and determining whether the financial condition has explanatory power for the latter. The following findings motivate this approach. 
+However, it is still largely unanswered where this upward drift comes from \citep{Greenwood2009}. An approach to this issue is objective of this thesis. Namely, analyzing the link between the financial condition of corporate investors and the abnormal returns on the subject's stock and determining whether the financial condition has explanatory power for the latter. The following findings motivate this approach.  
 
 
-In recent studies of what happens to the target's stock after such a filing, \citet{Collin-Dufresne2015} observe a positive significant market reaction to the subject's stock upon a more general sample of Schedule 13D filings
+In recent studies of what happens to the target's stock after such a filing, \citet{Collin-Dufresne2015} observe a positive significant market reaction to the subject's stock upon a more general sample of Schedule 13D filings 
 	\footnote{The sample is only restricted on the subjects stock characteristics rather than on characteristics of the filers e.g. they exclude all filings which are not common stock (CRSP share code 10 or 11), whose prices are below \$1 and above \$1000 and which involve derivatives \citep{Collin-Dufresne2015}.}. 
 \citet{Brav2008} have shown a favorable market reaction, 7\% - 8\% average abnormal returns in the (-20|20) event window, particularly to Schedule 13D's filed by hedge funds. Similar results have been shown by \citet{Klein2009} who observe 10.2\% average abnormal stock returns specifically for hedge fund targets.\\
 In addition, \citet{Brigida2012} have shown an even higher runup if the acquirer is a private investor or a non-financial corporation. This is matching with \citet{Akhigbe2007} findings who observe greater gains for the target's stock if the partial position was initiated by a corporate bidder. Concluding, filings submitted by all investor types are followed by positive market reactions on the subject's stock but those submitted by corporations seem to have a stronger impact. This motivates the first hypothesis which assumes significant positive abnormal returns for Schedule 13(D)'s filed by corporations.
@@ -268,8 +272,52 @@ For the following analysis, the cumulative abnormal return $CAR_{i,(\tau_1,\tau_
 % Cross correlation
 
 \subsection{All Schedule 13(D) Filings}
-\subsection{Abnormal Stock Returns by Purpose of Initial 13(D) Filing}
 
+\begin{figure}
+	\includegraphics{Abnormal_Returns.eps} \label{AR both}
+\end{figure}
+
+\pagebreak
+\subsection{Abnormal Stock Returns by Purpose of Initial 13(D) Filing}
+\begin{table}[htbp]
+	\centering
+	\caption{Add caption}
+	  \begin{tabular}{rp{5em}p{5em}p{5em}rrp{5em}p{5em}p{5em}rrp{5em}p{5em}p{5em}rrp{5em}p{5em}p{5em}r}
+			& \multicolumn{4}{p{20em}}{Abnormal Returns [Days -30,+30]} &       & \multicolumn{4}{p{20em}}{Abnormal Returns [Days -30,+5]} &       & \multicolumn{4}{p{20em}}{Abnormal Returns [Days -10,-4]} &       & \multicolumn{4}{p{20em}}{Abnormal Returns [Days -10,10]} \\
+  \cmidrule{2-5}\cmidrule{7-10}\cmidrule{12-15}\cmidrule{17-20}          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &       &       & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &       &       & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &       &       & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &  \\
+			& Total Sample 
+  (1) & Strong Investors
+  (2) & Weak Investors
+  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
+  (4)} &       & Total Sample 
+  (1) & Strong Investors
+  (2) & Weak Investors
+  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
+  (4)} &       & Total Sample 
+  (1) & Strong Investors
+  (2) & Weak Investors
+  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
+  (4)} &       & Total Sample 
+  (1) & Strong Investors
+  (2) & Weak Investors
+  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
+  (4)} \\
+  \cmidrule{2-5}\cmidrule{7-10}\cmidrule{12-15}\cmidrule{17-20}          & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
+	  \multicolumn{1}{p{5em}}{CAR} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
+	  \multicolumn{1}{p{5em}}{Mean} & 17.1\%*** & 18.7\%*** & 8.7\%*** & \multicolumn{1}{p{5em}}{11.18 ***} &       & 18.5\%*** & 20.0\%*** & 8.8\% & \multicolumn{1}{p{5em}}{11.6***} &       & 12.5\%*** & 14.2\%*** & 13.4\%*** & 0,43  &       & 15.3\%*** & 17.3\%*** & 14.2\%*** & \multicolumn{1}{p{5em}}{2.44***} \\
+	  25\%  & -7.9\% & -0.3\% & \multicolumn{1}{r}{-25\%} &       &       & -5.2\% & -0.5\% & -15.7\% &       &       & -2.8\% & -0.6\% & -2.9\% &       &       & - 4.2\% & 0.6\% & - 6.9\% &  \\
+	  50\%  & 12.6\% & 17.9\% & 0.1\% &       &       & 12.1\% & 15.3\% & 2.9\% &       &       & 5.4\% & 6.6\% & 5.4\% &       &       & 8.8\% & 11.8\% & 4.6\% &  \\
+	  75\%  & \multicolumn{1}{r}{39,2} & 36.8\% & 27.3\% &       &       & 35.5\% & 36.7\% & 23.3\% &       &       & 20.3\% & 23.8\% & 15.3\% &       &       & 27.4\% & 32.9\% & 21.4\% &  \\
+	  \multicolumn{1}{p{5em}}{N} & \multicolumn{1}{r}{489} & \multicolumn{1}{r}{110} & \multicolumn{1}{r}{85} &       &       & \multicolumn{1}{r}{489} & \multicolumn{1}{r}{110} & \multicolumn{1}{r}{85} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
+	  \multicolumn{1}{p{5em}}{BHAR} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
+	  \multicolumn{1}{p{5em}}{Mean} & 19.0\%*** & 19.5\%*** & 8.8\%** & \multicolumn{1}{p{5em}}{1.45**} &       & 20.5\%*** & 19.5\%*** & 7.9\% & \multicolumn{1}{p{5em}}{1.67**} &       & 12.9\%*** & 14.2\%*** & 14.2\%*** & 0,01  &       & 16.0\%*** & 17.62\%*** & 13.8\%*** & 0,65 \\
+	  25\%  & -7.7\% & 1.5\% & -21.7\% &       &       & -5.1\% & -1.0\% & -16.5\% &       &       & - 2.2\% & - 0.3\% & -2.2\% &       &       & - 4.3\% & 1.0\% & -7.9\% &  \\
+	  50\%  & 14.0\% & 15.9\% & 0.5\% &       &       & 12.7\% & 13.2\% & 0.1\% &       &       & 5.0\% & 7.3\% & 3.7\% &       &       & 9.1\& & 11.7\% & 4.3\% &  \\
+	  75\%  & 34.6\% & 37.7\% & 19.4\% &       &       & 33.8\% & 35.7\% & 18.5\% &       &       & 19.9\% & 24.4\% & 14.3\% &       &       & 27.3\% & 30.6\% & 18.2\% &  \\
+	  \end{tabular}%
+	\label{tab:addlabel}%
+  \end{table}%
+  
 
 \section{Indentifying the Financial Condition of the Investor}
 % Objective -- What is the financial condition? 
