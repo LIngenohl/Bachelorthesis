@@ -271,33 +271,50 @@ For the following analysis, the cumulative abnormal return $CAR_{i,(\tau_1,\tau_
 \subsection{Abnormal Stock Returns by Purpose of Initial 13(D) Filing}
 
 
-\section{Identifying the Investors}
-The sample of the Schedule 13(D) filings consists only of filings submitted by corporations. But what characterizes them? Do they have common characteristics? Are there common characteristics the gener
+\section{Indentifying the Financial Condition of the Investor}
+% Objective -- What is the financial condition? 
+% Topics: Composition | Elements | Procedure
+In order to analyze the third hypothesis, which states that abnormal returns, triggered by activist minority acquisitions, can be explained by the financial condition of the investor, measurements of financial condition have to be established. The general financial condition is determined by the financial analysis of characteristics such as profitability, liquidity, solvency and operational performance. To characterize the investors in terms of their condition, Piotroskis F-Score is used as measurements of financial strength, the Whited-Wu Index identifies financially constraint firms and Altman's Z-Score measures the financial distress. In further characterizing the investors other general measurements of fundamental analysis are applied. 
 
-\subsection{Financial Strength Measure}
-In a study of 2010, \emph{BCG} noted many of that year's acquisitions would involve a financially strong acquirer. However, the attribute of being financially strong is not ambivalent. In order to analyse a companies condition, the following measure of fundamental analysis are conducted. profitability liquidity and operational performance  firm health performance
+\subsection{Piotroskis F-Score -- A Measurement of Financial Strength}
+%Objective -- How do we characterized strong firms? 
+%Topics: Descrription | Why | Outlook 
 
-\subsubsection{Piotroski's F-Score}
-With the aim to seperate strong from weak value firms, \citet{Piotroski2000} established the F-score. The score is the sum of nine binary signals that form a "... composite measure of firm strength" \citep[p. 496]{Fama2006} through a simple application of fundamental analysis. Furthermore the F-score considers in what directions the fundamentals of a company are trending and whether general health conditions are met \citep{Mohr2012}. 
-	\footnote{In order to legitimize the explanatory power of the F-score in separating strong from weak firms he formed portfolios.In doing so he showed that an investment strategy of shorting expected losers (weak firms) and buying expected winners (strong firms) would "generate a 23\% average annual return" \citep[p. 4]{Piotroski2000}. \citet{Hyde2014} have matching results and observe significant return premiums for stock with a high F-score over stocks with a low F-score.}.
-Although the F-score was established to distinguish among value firms, \citet{Mohr2012} shows that an application on growth stocks yields similar results without loosing the predictive ability 
-	\footnote{This is in line with \citet{Piotroski2000} and confirms earlier research conducted by him}. 
-This means that the F-Score can proxy as a financial strength measure in any case and seperates the sample of Schedule 13(D) filings into strong and weak investors. 
+In a study of 2010, \emph{BCG} noted many of that year's acquisitions would involve a financially strong acquirer. However, the attribute of being financially strong is not ambivalent. Piotroski's F-Score adresses this issue as it is a "... composite measure of firm strength" \citep[p. 496]{Fama2006}. It consists of nine binary signals which consider in what directions the fundamentals of a company are trending and whether general health conditions are met \citep{Mohr2012}. \citet{Piotroski2000} established it to seperate strong from weak value firms
+	\footnote{In order to legitimize the explanatory power of the F-score in separating strong from weak firms Piotroski formed portfolios consisting of value firms. In doing so, he showed that an investment strategy of shorting expected losers (weak firms) and buying expected winners (strong firms) would "generate a 23\% average annual return" \citep[p. 4]{Piotroski2000}. This is matching with \citet{Hyde2014} results, who observe significant return premiums for stocks with a high F-score over stocks with a low F-score.}
+. 
+Although the F-score was established to distinguish among value firms, \citet{Mohr2012} shows that its application on growth stocks yields similar results.
+	\footnote{This is in line with \citet{Piotroski2000} and confirms earlier research conducted by him.}. 
+With regards to the above, the F-Score is used to divide the complete sample of investors into strong and weak ones.
 
-\subsection{Financial Distress measures}
-Financial distress is a condition where a company cannot meet, or has difficulty paying off, its financial obligations to its creditors. HNA Group, for example, could be in a state of financial distress as they have problems refinancing the enormous debt burden. The following measures will be accounting based prediction models.
+\subsection{The Whited-Wu Index -- A Measurement of Financial Constraints}
+A firm is financially constrained if it faces an inelastic supply of external capital \citep{Farre-mensa2013} and those who are able to raise substential amounts of external capital without much of an increase in the cost of capital are unconstrained. Although \citet{Khatami2014} notes that more recent literature has questioned the reliability of constraint measures, the Whited-Wu Index as in \citet{Liao2010} is used as an indicator. 
 
-\subsubsection{Altman's Z-Score}
-Altman's Z-score is a widely accepted measure of financial distress. The fundamental indicator shows statistically significant results in predicting the bankruptcy of a company \citep{Campbell2008} and is still applied as a general practical tool for assessing the financial well-being of firms \citep{Kleinert2014}. The model consists of five financial ratios that are coefficients by discriminate analysis method where the financial ratios are independent variables of it 
-	\footnote{The five financial ratios of the Z-score are (1) working capital to total assets, (2) retained earning to total assets, (3) earnings before interest and taxes to total assets, (4) market value of equity to book value total debt and (5) sales to total assets. This yields
+
+\subsection{Altman's Z-Score -- A Measurement of Financial Distress}
+Financial distress describes a state in which a company cannot meet or has difficulty paying off, its financial obligatiosn to its creditors. In this sense, HNA Group could be in a state of financial distress as they have problems refinancing the debt burden, and recently planned to sell their stake in Hilton Worldwide Holdings Inc. to pay down a large pile of debt. Altman's Z-score is a widely accepted measure of financial distress. The fundamental indicator shows statistically significant results in predicting the bankruptcy of a company \citep{Campbell2008} and is still applied as a general practical tool for assessing the financial well-being of firms \citep{Kleinert2014}. 
+	\footnote{The model consists of five financial ratios that are coefficients by discriminate analysis method where the financial ratios are independent variables of it. The five financial ratios of the Z-score are (1) working capital to total assets, (2) retained earning to total assets, (3) earnings before interest and taxes to total assets, (4) market value of equity to book value total debt and (5) sales to total assets. This yields
 		\begin{equation}
 			Z=1.2(X_{1})+1.4(X_{2})+3.3(X_{3})+0.6(X_{4})+0.999(X_{5})
 		\end{equation}
 	The cut-off point is at Z=2.675 where a lower score implies bankruptcy of a firm and a higher score non-bankruptcy.}
-. 
+.
+
+\subsection{Other Measurements}
 
 \subsection{Tobin's Q}
-Tobin's Q is included because it proxies for investment opportunity 
+Tobin's Q is included because it proxies for a firm's investment opportunity which assesses the 
+\footnote{In accordance with \citet{Brigida2012}, Tobin's Q is defined as 
+\begin{equation}
+	Tobin's Q= \frac{MVE + PSE + Debt}{AT}
+\end{equation}, where $MVE$ is the market capitalization, $PSE$ is the lquidating value of preferred stock, $Debt$.. } 
+\citep{DUCHIN2010}. According to \citet{Khatami2014} constrained firms have higher tobin's Q compared to unconstrained firms, which may be due to their unexploted investment opportunities \citep{Khatami2014}.
+
+\subsection{Company Size}
+Company size 
+
+
+
 \pagebreak
 
 It was established by Altman in his 1968 paper 

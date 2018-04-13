@@ -2204,17 +2204,24 @@
     <bcf:citekey order="58">Brav2008</bcf:citekey>
     <bcf:citekey order="59">Loughran2014</bcf:citekey>
     <bcf:citekey order="60">MacKinlay1997</bcf:citekey>
-    <bcf:citekey order="61">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="62">Fama2006</bcf:citekey>
-    <bcf:citekey order="63">Mohr2012</bcf:citekey>
+    <bcf:citekey order="61">Fama2006</bcf:citekey>
+    <bcf:citekey order="62">Mohr2012</bcf:citekey>
+    <bcf:citekey order="63">Piotroski2000</bcf:citekey>
     <bcf:citekey order="64">Piotroski2000</bcf:citekey>
     <bcf:citekey order="65">Hyde2014</bcf:citekey>
     <bcf:citekey order="66">Mohr2012</bcf:citekey>
     <bcf:citekey order="67">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="68">Campbell2008</bcf:citekey>
-    <bcf:citekey order="69">Kleinert2014</bcf:citekey>
-    <bcf:citekey order="70">Mohr2012</bcf:citekey>
-    <bcf:citekey order="71">Choi2012</bcf:citekey>
-    <bcf:citekey order="72">Akhigbe2007</bcf:citekey>
+    <bcf:citekey order="68">Farre-mensa2013</bcf:citekey>
+    <bcf:citekey order="69">Khatami2014</bcf:citekey>
+    <bcf:citekey order="70">Liao2010</bcf:citekey>
+    <bcf:citekey order="71">Campbell2008</bcf:citekey>
+    <bcf:citekey order="72">Kleinert2014</bcf:citekey>
+    <bcf:citekey order="73">Brigida2012</bcf:citekey>
+    <bcf:citekey order="74">DUCHIN2010</bcf:citekey>
+    <bcf:citekey order="75">Khatami2014</bcf:citekey>
+    <bcf:citekey order="76">Khatami2014</bcf:citekey>
+    <bcf:citekey order="77">Mohr2012</bcf:citekey>
+    <bcf:citekey order="78">Choi2012</bcf:citekey>
+    <bcf:citekey order="79">Akhigbe2007</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
