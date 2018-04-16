@@ -26,6 +26,7 @@
 	\usepackage{mathtools}
 	\usepackage{graphicx}
 	\usepackage{longtable}
+	\usepackage{chngpage}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
   
@@ -232,21 +233,123 @@ within SEC's Edgar database and further from data provided by Wharton Research D
 	\footnote{10-K reports were used to identify corporations because "managers of publicly traded firms are required to produce public documents that provide a comprehensive review of the firm’s business operations and financial condition and an important financial disclosure document created by managers to communicate with investors and analysts is the annual report filed pursuant to the Securities Exchange Act of 1934 the Form 10-K." \citep[p. 1643]{Loughran2014}}. 
 In order to be part of the sample, the filer had to have a 10-K report submitted 12 months prior to the filing which reduced the sample to 3'325 filings. Because the daily stock returns and prices for the underlying securities come from the Center for Research in Security Prices (CRSP) the subject not only had to have SEC's CUSIP identifier but also an active link between its CUSIP and CRSP's unique PERMNO identifier. For the remaining 1'467 filings, there had to be sufficient data on CRSP in order to calculate the abnormal returns for the subjects which reduced the sample to 1'151 filings. 
 The accounting fundamentals, needed to compute the filers financial condition, come from the COMPUSTAT database which means that the filer has to have a link between its 10K-CIK and COMPUSTAT's unique GVKEY indentifier. After crossreferencing with the remaining 1'151 filings, the sample was reduced to 1'014 filings. In the next step, according to Fama \& French's industry classification code, all filers belonging to the trading industry (Code 47) were dropped which left a sample size of 898 filings. In a last step, size and purpose of the transaction were manually extracted from the Schedule 13(D) filings, while in the process Schedule 13(D/A) filings (e.g. amendments to previous filings) that were mistakenly classified as original Schedule 13(D) filings and filings not submitted by corporations were excluded 
-\footnote{The only exception were filings submitted by the Commerce Group Inc., which provides both insurance and, real estate, brokerage services. These filings were excluded because (1) the largest part of them were amendments, (2) the amount of filings submitted was disproportionately and (3) all purposes of the transaction were as general investments in a fund.}
+	\footnote{The only exception were filings submitted by the Commerce Group Inc., which provides both insurance and, real estate, brokerage services. These filings were excluded because (1) the largest part of them were amendments, (2) the amount of filings submitted was disproportionately and (3) all purposes of the transaction were as general investments in a fund.}.
 which reduced the sample to 748 filings. 
 
 \subsection{Descriptive Data}
+Table 1 describes the composition of Schedule 13(D) filings. In column (1) the complete sample of firms is being described, whereas column (2) and (3) describe the filings submitted by strong and weak investors 
+	\footnote{According to \citet{Mohr2012} weak firms are characterized by F-scores between (0-3) and strong firms between (7-9)}.
+Panel A gives general characteristics of the sample's Schedule 13(D) filings. In total 498 filings submitted by firms are part of the sample with 110 submitted by strong and 85 by weak firms which is a difference of around 5\% of the total sample size. The sample consists out of almost the same number of investing and target firms but has 64 more target firms. This means that occasionally some investing firms submitted more than one filing with the maximum being 6 filings from the same investor AT\&T.
+In the ten-year span from 2002--2011, over 60\% of the total number of filings were submitted, with the highest being in the 5-year span before the financial crisis.  Interestingly, the number of filings during in the period involving the financial crisis, is still higher than in the following five years. In addition, 30\% of the filings in this period were submitted by strong firms and only 12\% by weak firms.
+Panel B lists the "Purpose of Transaction" which represents item 4 in the Schedule 13(D) filings. They have been grouped into the following six categories. (1) Engaging in a potential takeover and, vice versa (2) becoming a target, (3) actively and (4) strategically investing into the issuer, (5) being compensated and lastly (6) other purposes. 
+The category takeover contains all filings implying the engagement of the reporting firm into a takeover process of the issuing firms. This involves merger agreements, tender offers and hostile bids with merger agreements being the most and hostile bids the least reported. Therefore, around 50\% of the filings were submitted with the purpose of any kind of a takeover process. In comparison to weak firms, more than double the Schedule 13(D)'s were filed by strong firms, representing 26\% of the takeovers. On the other hand, 37\% of the filings with the acquirer being the target were filed by weak firms compared to only 6\% by strong firms. They acquired the shares to compensate shareholders with stock of the issuing firm. This is one of the two purposes were weak firms had substantially more filings than strong firms. 
+The second most reported category was that of investing in an active manner with 86 filings. This implies the purchase of the stock for investments purposes, while actively monitoring the issuing company. This is the second only category in which weak firms have more filings than strong firms.
+The third most important purpose of filings were those with the purpose of strategically investing into the issuer. This involves cases of alliance agreements, strategic investments with further potential collaborations, license agreements and joint ventures. They represent only around 10\% of the filings.
+Panel C is a representation of the investing firms industries according to the (48) Fama \& French industry classification code. 42 out of the 48 industries are represented in the sample. As mentioned above, the industry of trading was excluded from the sample. Only industries with at least 15 firms are listed in the table. The two highest industry representations with more than 50 firms are computer software and pharmaceutical products. Interestingly, they have switched representations of strong and weak firms with 16 (7) and 5 (15) firms. The top two industries for strong firms were computer software and petroleum and natural gas and for weak firms pharmaceutical products and electronic equipment. 
+	\begin{adjustwidth}{-6in}{-1in}
+		\begin{table}[htbp]
+			\centering
+			\caption{Table I -- Descriptive Statistics}
+			\begin{tabular}{lcclccllccc}
+			\toprule
+					&       & \multicolumn{1}{p{6.835em}}{Complete
+				Sample} & \multicolumn{4}{p{8em}}{Strong
+				Filing Firm} & \multicolumn{4}{p{6.165em}}{Weak 
+				Filing Firm} \\
+			\midrule
+			\multicolumn{11}{p{37.33em}}{Panel A: Characteristics Schedule 13(D) Filings} \\
+			\midrule
+					&       &       &       &       &       &       &       &       &       &  \\
+			Filings &       & 498   &       & \multicolumn{1}{l}{110} & \multicolumn{1}{r}{22\%} &       &       & \multicolumn{1}{l}{85} & \multicolumn{1}{r}{17\%} &  \\
+			Filing Firms &       & 394   &       & \multicolumn{1}{l}{100} & \multicolumn{1}{r}{25\%} &       &       & \multicolumn{1}{l}{77} & \multicolumn{1}{r}{20\%} &  \\
+			Target Firms &       & 458   &       & \multicolumn{1}{l}{107} & \multicolumn{1}{r}{23\%} &       &       & \multicolumn{1}{l}{79} & \multicolumn{1}{r}{17\%} &  \\
+					&       &       &       &       &       &       &       &       &       &  \\
+			Events per Year &       &       &       &       &       &       &       &       &       &  \\
+			1996-2001 &       & 81    &       & \multicolumn{1}{l}{15} & \multicolumn{1}{r}{19\%} &       &       & \multicolumn{1}{l}{14} & \multicolumn{1}{r}{17\%} &  \\
+			2002-2006 &       & 182   &       & \multicolumn{1}{l}{38} & \multicolumn{1}{r}{21\%} &       &       & \multicolumn{1}{l}{31} & \multicolumn{1}{r}{17\%} &  \\
+			2007-2011 &       & 135   &       & \multicolumn{1}{l}{40} & \multicolumn{1}{r}{30\%} &       &       & \multicolumn{1}{l}{16} & \multicolumn{1}{r}{12\%} &  \\
+			2012-2016 &       & 100   &       & \multicolumn{1}{l}{17} & \multicolumn{1}{r}{17\%} &       &       & \multicolumn{1}{l}{24} & \multicolumn{1}{r}{24\%} &  \\
+					&       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			\multicolumn{11}{p{37.33em}}{Panel B: Purpose of the Transaction} \\
+			\midrule
+					&       &       &       &       &       &       &       &       &       &  \\
+			Takeover &       & 251   &       & \multicolumn{1}{l}{65} & \multicolumn{1}{r}{26\%} &       &       & \multicolumn{1}{l}{29} & \multicolumn{1}{r}{12\%} &  \\
+			Become an Activist Investor  &       & 86    &       & \multicolumn{1}{l}{15} & \multicolumn{1}{r}{17\%} &       &       & \multicolumn{1}{l}{21} & \multicolumn{1}{r}{24\%} &  \\
+			Strategic Investment &       & 42    &       & \multicolumn{1}{l}{8} & \multicolumn{1}{r}{19\%} &       &       & \multicolumn{1}{l}{6} & \multicolumn{1}{r}{14\%} &  \\
+			Compensation &       & 38    &       & \multicolumn{1}{l}{8} & \multicolumn{1}{r}{21\%} &       &       & \multicolumn{1}{l}{8} & \multicolumn{1}{r}{21\%} &  \\
+			Target=15 &       & 35    &       & \multicolumn{1}{l}{2} & \multicolumn{1}{r}{6\%} &       &       & \multicolumn{1}{l}{13} & \multicolumn{1}{r}{37\%} &  \\
+			Alliance Agreement &       & 13    &       & \multicolumn{1}{l}{5} & \multicolumn{1}{r}{38\%} &       &       & \multicolumn{1}{l}{0} & \multicolumn{1}{r}{0\%} &  \\
+					&       &       &       &       &       &       &       &       &       &  \\
+			\multicolumn{1}{p{15.415em}}{\% of Shares acquired} &       & 24.6\% &       & \multicolumn{2}{c}{25.1\%} &       &       & \multicolumn{2}{c}{24.07\%} &  \\
+					&       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			\multicolumn{11}{p{37.33em}}{Panel C: Industry of Filing Firm} \\
+			\midrule
+			Medical Equipment &       & 19    &       & \multicolumn{2}{c}{4} &       &       & \multicolumn{2}{c}{5} &  \\
+			Pharmaceutical Products &       & 51    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{15} &  \\
+			Machinery &       & 15    &       & \multicolumn{2}{c}{1} &       &       & \multicolumn{2}{c}{3} &  \\
+			Patroleum and Natural Gas &       & 47    &       & \multicolumn{2}{c}{12} &       &       & \multicolumn{2}{c}{7} &  \\
+			Communication &       & 40    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{6} &  \\
+			Business Services &       & 30    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{4} &  \\
+			Computer Hardware &       & 24    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{5} &  \\
+			Computer Software &       & 70    &       & \multicolumn{2}{c}{16} &       &       & \multicolumn{2}{c}{7} &  \\
+			Electronic Equipment &       & 43    &       & \multicolumn{2}{c}{11} &       &       & \multicolumn{2}{c}{9} &  \\
+			\end{tabular}%
+			\label{tab:addlabel}%
+		\end{table}%
+	\end{adjustwidth}
 
-\subsection{Examples out of the Sample}
+\pagebreak 
 
+\subsection{Examples of Corporate Activism}
+In this subsection, two cases of corporate investments into other firms are being described. The first example is takeover the second is strategic investment. 
+
+\subsubsection{Pfizer Inc. and Icagen Inc. }
+On June 24, 2011 Pfizer filed a Schedule 13(D) in which it declared an ownership of 14.2\% in Icagen Inc.. Pfizer was initially engaging with Icagen in accordance to a "collaboration agreement" dated August 13, 2007. In the purpose statement of June 24, 2011 Pfizer wrote: 
+\begin{center}
+	"Pfizer is evaluating the possibility of entering into a strategic transaction with Icagen, which could have the effect of influencing or changing the control of Icagen by means of stock or asset acquisition or merger"
+\end{center}
+Consequently, the filing can be considered as firms strategic investment and the purpose statement can be classified as indicating that Pfizer wants to further strategically invest in Icagen.
+The ownership of 14.2\% in Icagen was acquired between 2007 and 2008. The collaboration agreement on August 13, 2007 involved the "discovery, development, manufacture \& commercialization of pharmaceutical compounds and products that modulate three specific sodium ion channels as potential new treatments for pain and related disorders". The investment resulted in Pfizer appointing the treasurer and president of Icagen as their proxies. 
+In order to extend the collaboration agreement, on September 17 2009 Pfizer and Icagen entered into the first amendment to the agreement. 
+On September 21, 2010, one year later, they entered into a second amendment to the collaboration agreement which would extend it until December 31, 2011. In the course of a further collaboration between Pfizer and Icagen after the expiration of the collaboration agreement , Pfizer filed this Schedule as stated in the purpose statement above.
 \pagebreak
+
+\section{Identifying the Corporate Investor prior to the Schedule 13(D) Filing}
+In order to analyze the third hypothesis, which states that abnormal returns, triggered by activist minority acquisitions, can be explained by the financial condition of the investor, measurements of financial condition have to be established. The general financial condition is determined by the financial analysis of characteristics such as profitability, liquidity, solvency and operational performance. To characterize the investors to that, Piotroskis F-Score is used as a measurement of general firm strength, the Whited-Wu- and KZ-Index relate to solvency and identify financially constraint firms and Altman's Z-Score represents a measurement on how distressed firms are. To give further insight of the acquiring firm's financial condition, other general measurements of fundamental analysis are listed. 
+
+Table II represents the summary statistics of these measurements. In order to show how the sample firms compare to their respective control samples, their means (medians) are shown side-by-side. Columns (1) and (2) present the statistics for the investing firm and their control group, respectively. They also present significance levels for tests for difference between sample and control firm's means and medians. For all tests, the t-statistics are for difference in means, assuming unequal variances between sample. % What test for medians 
+
+Table II starts with Panel A presenting the principal measurements underlying this thesis with regards to a firm's financial condition 
+	\footnote{All measurements are winsorized at the 1\% and 99\% levels so that extreme values are replaced by the respective percenticles. This enables a presentation of more meaningful mean statistics \citep{Klein2009}.}. 
+For example, \emph{BCG} noted in a study of 2010, many of that year's acquisitions would involve a financially strong acquirer. However, the attribute of being financially strong can be hard to grasp. Piotroski's F-Score addresses this issue as it is a "... composite measure of firm strength" \citep[p. 496]{Fama2006}. It consists of nine binary signals which consider in what directions the fundamentals of a company are trending and whether general health conditions are met \citep{Mohr2012}. \citet{Piotroski2000} established it to separate strong from weak value firms
+	\footnote{In order to legitimize the explanatory power of the F-score in separating strong from weak firms Piotroski formed portfolios consisting of value firms. In doing so, he showed that an investment strategy of shorting expected losers (weak firms) and buying expected winners (strong firms) would "generate a 23\% average annual return" \citep[p. 4]{Piotroski2000}. This is matching with \citet{Hyde2014} results, who observe significant return premiums for stocks with a high F-score over stocks with a low F-score.}.
+
+Although the F-score was established to distinguish among value firms, \citet{Mohr2012} shows that its application on growth stocks yields similar results.
+	\footnote{This is in line with \citet{Piotroski2000} and confirms earlier research conducted by him.}. 
+With regards to the above, the F-Score will be used to divide the  sample of investors into strong and weak firms. This separation is done by giving strong firms a score between (7-9) and weak firms a score between (0-3) which is in accordance with the procedure of \citet{Mohr2012}.
+Table II shows a mean of 5.2 for the F-score across the sample. With a mean of 5 this suggests a trend towards more firms in the upper scores.
+
+The second measurement is Altman's Z-score which is a fundamental indicator that shows statistically significant results in predicting the bankruptcy of a company \citep{Campbell2008} and is still applied as a general practical tool for assessing the financial well-being of firms \citep{Kleinert2014}. This measure of bankruptcy/financial distress represents a state in which the firm cannot meet or has difficulty paying off its financial obligations to its creditors. The previously mentioned HNA Group could be listed exemplary, as they have problems in refinancing their debt burden. With a threshold of 2.675 to distinguish among the states of bankrupt and non-bankrupt firms, panel A shows a mean of 4.1 which is way above the threshold. Nevertheless, around 40\% of the firms included in the sample are below it and therefore in a state of bankruptcy.
+
+With the Whited-Wu- and KZ-Index two measurements to distinguish between financially constrained and unconstrained firms are listed. In this case, a firm is financially constrained if it faces an inelastic supply of external capital \citep{Farre-mensa2013}. \citet{Farre-mensa2013} also notes that those firms who are able to raise substantial amounts of external capital without much of an increase in the cost of capital are considered unconstrained. Although \citet{Khatami2014} notes that more recent literature has questioned the reliability of constraint measures, the Whited-Wu- and KZ-Index as defined in \citet{Farre-mensa2013} are used as indicators of financially constrained firms. For both indices firms are sorted into terciles based on their index values. Firms in the top tercile are coded as constrained those in the bottom tercile are coded as unconstrained. This results in 166 constrained and 166 unconstrained firms. 
+
+Panel B presents two measurements of profitability. Return on assets is defined as the ratio of EBITDA to total assets and cash flow from operations is the ratio of CFO to assets 
+	\footnote{Compustat data are used for these and the other measures presented in Table II } 
+. This is equal to \citet{Klein2009} who identify the financial condition of targets with regards to hedge fund activism. 
+Both of these measures are positive. 
+
+Panel C lists the cash balances and debt ratios of the investor. According to the 
+Debt is measured as short-term debt (due in one year), long-term debt and total debt. 
+
 
 \section{Market Returns to Initial 13(D) Filings -- Stock Returns}
 % Intention
-In this section we will measure the effect of a Schedule 13(D) filing on the price of the stock, subject to the filing. The aim is to test the first hypothesis, namely a significant market reaction in response to the filing. In order to identify the reaction, the abnormal share price reactions around the filing date are computed.\\
+In this section we will measure the effect of a Schedule 13(D) filing on the price of the stock which is subject to the filing. The aim is to test the first hypothesis, namely a significant market reaction in response to the filing. In order to identify the reaction, the abnormal share price reactions around the filing date are computed.\\
 % Nature of AR's
 The time line of the event study consists successively of (1) the estimation window, in which parameter estimates are obtained, (2) the event window, which includes the event day and for which the abnormal returns are computed and (3) the post event window. For the following analysis the event date, as reported in the Schedule 13(D) filing, is defined as day 0. Because abnormal returns were computed for various intervals surrounding the filing date, an estimation window of 120 days prior to the largest event window (beginning 30 days prior to the filing) was set.  
-With the aim to isolate the effect of the event from other general market movements, the abnormal return $AR_{i,t}$ for security $i$ at day $t$ is defined as the difference between the actual (observed) return $R_{i,t}$ and the expected return given the absence of the event $E(R_{i,t}|X{t})$ :
+With the aim to isolate the effect of the Schedule 13(D) filing from other general market movements, the abnormal return $AR_{i,t}$ for security $i$ at day $t$ is defined as the difference between the actual (observed) return $R_{i,t}$ and the expected return given the absence of the event $E(R_{i,t}|X{t})$ :
 	\begin{equation}\label{eq:1}
 		AR_{i,t}=R_{i,t}-E(R_{i,t}|X_{t})
 	\end{equation}
@@ -258,71 +361,40 @@ This yields the abnormal return $AR_{i,t}$
 	AR_{i,t}=R_{i,t}-(\hat{\alpha_{i}}+\hat{\beta_{i}}R_{M,t})
 \end{equation}
 In the next step, the abnormal returns $AR_{i,t}$ for the event window are aggregated over time and, secondly across securities. This is done to accommodate for a multiple period event window and to draw overall inferences of the Schedule 13(D) filings \citep{MacKinlay1997}.
-The two different aggregations applied in this thesis are the cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ and the abnormal buy-and-hold return $BHAR_{i,(\tau_1,\tau_2)}$, whereas the latter is independent from the results of \eqref{eq:2} and needs no estimation window.
+For robustness, two different aggregations are applied in this thesis. The cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ and the abnormal buy-and-hold return $BHAR_{i,(\tau_1,\tau_2)}$, whereas the latter is independent from the results of \eqref{eq:2} and needs no estimation window.
 
 The cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ for security $i$ in the event window $(\tau_1,\tau_2)$ is the sum of the abnormal returns $AR_{i,t}$ obtained from \eqref{eq:2}. The cross sectional average cumulative abnormal return $CAAR_{(\tau_1,\tau_2)}$ is the equally weighted average of the samples cumulative abnormal returns $CAR_{i,(\tau_1,\tau_2)}$.\\
-In contrast, the abnormal buy-and-hold returns $BHAR_{i,(\tau_1,\tau_2)}$ are the difference between the realized (observed) buy-and-hold returns and the normal buy-and-hold returns.
+In contrast, the abnormal buy-and-hold returns $BHAR_{i,(\tau_1,\tau_2)}$ are the difference between the realized (observed) buy-and-hold returns and the normal buy-and-hold returns. With respect to the former calculation of abnormal returns in \eqref{eq:2} the value-weighted NYSE/Amex/Nasdaq index from CRSP will be used as the normal buy-and-hold returns 
 \begin{equation}
 	BHAR_{i,(\tau_1,\tau_2)}=\prod_{t=1}^{T}(1+R_{i,t})-\prod_{t=1}^{T}(E(R_{i,t}|X_{t})
 \end{equation}
 The cross sectional average abnormal buy-and-hold return $\overline{BHAR}_{(\tau_1,\tau_2)}$ is the equally-weighted average of the abnormal buy-and-hold returns $BHAR_{i,(\tau_1,\tau_2)}$.
 
 %For this paper
-For the following analysis, the cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ is the return in excess of the value-weighted NYSE/Amex/Nasdaq index, based on the market model. The difference between its buy-and-hold return over a selected time period and the buy-and-hold return on the value-weighted NYSE/Amex/Nasdaq index from CRSP is the target's market-adjusted return. The difference between the target's buy-and-hold return and the return for all firms in the target's Fama-French (1997) industry code is the industry-adjusted return. 
+Concluding, the cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ is the return in excess of the value-weighted NYSE/Amex/Nasdaq index, based on the market model. The target's abnormal buy-and-hold return is the difference between its buy-and-hold return over a selected time period and the buy-and-hold return on the value-weighted NYSE/Amex/Nasdaq index from CRSP. 
 % Cross correlation
 
 \subsection{All Schedule 13(D) Filings}
-
+Graph 1 shows the aggregated abnormal returns in the event window [-30,30] both in the form of cumulative and buy-and-hold abnormal returns. Both measures generate almost similar results. However, around 5 days prior to the filing date the buy-and-hold returns increase in magnitude and proceed above the cumulative abnormal returns. This is matching with \citet{Brigida2012} fidings who find that most informed trading is during the event-window [-10,-6] and report the runup is the greatest during this period. \citet{Brigida2012} therefore suggest an event-window at least 10 days prior to the filing.  
 \begin{figure}
 	\includegraphics{Abnormal_Returns.eps} \label{AR both}
 \end{figure}
+With respect to \citet{Brigida2012}, \citet{Klein2009} and \citet{Brav2008} abnormal returns for four different event windows were computed. Table III shows these results. For further robustness both cumulative and buy-and-hold returns are presented. For each event window, column (1) shows the abnormal return for the complete sample. Columns (2) and (3) each present the abnormal returns for strong and weak firms repsectively. Strong and weak firms a separated according to their F-score. Column(4) shows the $t$-statistic and the Z-statistic tests for difference between the means and medians of these two samples of strong and weak firms. All returns presented in Table III are winsorized at the 1\% and 99\% level to equal out the effect of rare outliers. 
+
+
+
 
 \pagebreak
+
 \subsection{Abnormal Stock Returns by Purpose of Initial 13(D) Filing}
-\begin{table}[htbp]
-	\centering
-	\caption{Add caption}
-	  \begin{tabular}{rp{5em}p{5em}p{5em}rrp{5em}p{5em}p{5em}rrp{5em}p{5em}p{5em}rrp{5em}p{5em}p{5em}r}
-			& \multicolumn{4}{p{20em}}{Abnormal Returns [Days -30,+30]} &       & \multicolumn{4}{p{20em}}{Abnormal Returns [Days -30,+5]} &       & \multicolumn{4}{p{20em}}{Abnormal Returns [Days -10,-4]} &       & \multicolumn{4}{p{20em}}{Abnormal Returns [Days -10,10]} \\
-  \cmidrule{2-5}\cmidrule{7-10}\cmidrule{12-15}\cmidrule{17-20}          & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &       &       & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &       &       & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &       &       & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} &  \\
-			& Total Sample 
-  (1) & Strong Investors
-  (2) & Weak Investors
-  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
-  (4)} &       & Total Sample 
-  (1) & Strong Investors
-  (2) & Weak Investors
-  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
-  (4)} &       & Total Sample 
-  (1) & Strong Investors
-  (2) & Weak Investors
-  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
-  (4)} &       & Total Sample 
-  (1) & Strong Investors
-  (2) & Weak Investors
-  (3) & \multicolumn{1}{p{5em}}{t-Stat. [Z-stat] for Diff. Between column 2 and 3
-  (4)} \\
-  \cmidrule{2-5}\cmidrule{7-10}\cmidrule{12-15}\cmidrule{17-20}          & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
-	  \multicolumn{1}{p{5em}}{CAR} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
-	  \multicolumn{1}{p{5em}}{Mean} & 17.1\%*** & 18.7\%*** & 8.7\%*** & \multicolumn{1}{p{5em}}{11.18 ***} &       & 18.5\%*** & 20.0\%*** & 8.8\% & \multicolumn{1}{p{5em}}{11.6***} &       & 12.5\%*** & 14.2\%*** & 13.4\%*** & 0,43  &       & 15.3\%*** & 17.3\%*** & 14.2\%*** & \multicolumn{1}{p{5em}}{2.44***} \\
-	  25\%  & -7.9\% & -0.3\% & \multicolumn{1}{r}{-25\%} &       &       & -5.2\% & -0.5\% & -15.7\% &       &       & -2.8\% & -0.6\% & -2.9\% &       &       & - 4.2\% & 0.6\% & - 6.9\% &  \\
-	  50\%  & 12.6\% & 17.9\% & 0.1\% &       &       & 12.1\% & 15.3\% & 2.9\% &       &       & 5.4\% & 6.6\% & 5.4\% &       &       & 8.8\% & 11.8\% & 4.6\% &  \\
-	  75\%  & \multicolumn{1}{r}{39,2} & 36.8\% & 27.3\% &       &       & 35.5\% & 36.7\% & 23.3\% &       &       & 20.3\% & 23.8\% & 15.3\% &       &       & 27.4\% & 32.9\% & 21.4\% &  \\
-	  \multicolumn{1}{p{5em}}{N} & \multicolumn{1}{r}{489} & \multicolumn{1}{r}{110} & \multicolumn{1}{r}{85} &       &       & \multicolumn{1}{r}{489} & \multicolumn{1}{r}{110} & \multicolumn{1}{r}{85} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
-	  \multicolumn{1}{p{5em}}{BHAR} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       &       & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &  \\
-	  \multicolumn{1}{p{5em}}{Mean} & 19.0\%*** & 19.5\%*** & 8.8\%** & \multicolumn{1}{p{5em}}{1.45**} &       & 20.5\%*** & 19.5\%*** & 7.9\% & \multicolumn{1}{p{5em}}{1.67**} &       & 12.9\%*** & 14.2\%*** & 14.2\%*** & 0,01  &       & 16.0\%*** & 17.62\%*** & 13.8\%*** & 0,65 \\
-	  25\%  & -7.7\% & 1.5\% & -21.7\% &       &       & -5.1\% & -1.0\% & -16.5\% &       &       & - 2.2\% & - 0.3\% & -2.2\% &       &       & - 4.3\% & 1.0\% & -7.9\% &  \\
-	  50\%  & 14.0\% & 15.9\% & 0.5\% &       &       & 12.7\% & 13.2\% & 0.1\% &       &       & 5.0\% & 7.3\% & 3.7\% &       &       & 9.1\& & 11.7\% & 4.3\% &  \\
-	  75\%  & 34.6\% & 37.7\% & 19.4\% &       &       & 33.8\% & 35.7\% & 18.5\% &       &       & 19.9\% & 24.4\% & 14.3\% &       &       & 27.3\% & 30.6\% & 18.2\% &  \\
-	  \end{tabular}%
-	\label{tab:addlabel}%
-  \end{table}%
+
+
   
 
 \section{Indentifying the Financial Condition of the Investor}
 % Objective -- What is the financial condition? 
 % Topics: Composition | Elements | Procedure
-In order to analyze the third hypothesis, which states that abnormal returns, triggered by activist minority acquisitions, can be explained by the financial condition of the investor, measurements of financial condition have to be established. The general financial condition is determined by the financial analysis of characteristics such as profitability, liquidity, solvency and operational performance. To characterize the investors in terms of their condition, Piotroskis F-Score is used as measurements of financial strength, the Whited-Wu Index identifies financially constraint firms and Altman's Z-Score measures the financial distress. In further characterizing the investors other general measurements of fundamental analysis are applied. 
+ 
 
 \subsection{Piotroskis F-Score -- A Measurement of Financial Strength}
 %Objective -- How do we characterized strong firms? 
