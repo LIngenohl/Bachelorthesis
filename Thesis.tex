@@ -27,6 +27,7 @@
 	\usepackage{graphicx}
 	\usepackage{longtable}
 	\usepackage{chngpage}
+	\usepackage{pdfpages}
 	\usepackage[all]{nowidow}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
@@ -239,128 +240,64 @@ The accounting fundamentals, needed to compute the filers financial condition, c
 which reduced the sample to 748 filings. 
 
 \subsection{Descriptive Data}
-Table 1 describes the composition of Schedule 13(D) filings. In column (1) the complete sample of firms is being described, whereas column (2) and (3) describe the filings submitted by strong and weak investors 
-	\footnote{According to \citet{Mohr2012} weak firms are characterized by F-scores between (0-3) and strong firms between (7-9)}.
-Panel A gives general characteristics of the sample's Schedule 13(D) filings. In total 498 filings submitted by firms are part of the sample with 110 submitted by strong and 85 by weak firms which is a difference of around 5\% of the total sample size. The sample consists out of almost the same number of investing and target firms but has 64 more target firms. This means that occasionally some investing firms submitted more than one filing with the maximum being 6 filings from the same investor AT\&T.
-In the ten-year span from 2002--2011, over 60\% of the total number of filings were submitted, with the highest being in the 5-year span before the financial crisis.  Interestingly, the number of filings during in the period involving the financial crisis, is still higher than in the following five years. In addition, 30\% of the filings around the financial crisis were submitted by strong firms and only 12\% by weak firms.
-Panel B lists the "Purpose of Transaction" which represents item 4 in the Schedule 13(D) filings. They have been grouped into the following six categories. (1) Engaging in a potential takeover and, vice versa (2) becoming a target, (3) actively and (4) strategically investing into the issuer, (5) being compensated and lastly (6) other purposes. 
-The category takeover contains all filings implying the engagement of the reporting firm into a takeover process of the issuing firms. This involves merger agreements, tender offers and hostile bids with merger agreements being the most and hostile bids the least reported. Notably is the fact that around 50\% of the filings were filed with the intent of a takeover. This is especially interesting, as the the investor's financial condition should play an important role in the process of analyzing these filings. Correspondingly, more than double the amount of these filings were submitted by strong firms when compared to weak firms.
+Table 1 describes the general composition of the sample's Schedule 13(D) filings. In column (1) the complete sample of firms is being described, whereas column (2) and (3) present information on sub-samples of filings submitted by either strong or weak investors, respectively
+	\footnote{The separation of firms into strong and weak ones is based on Piotroski's F-Score. Strong firms are within a score of (7-9) whereas weak firms have scores between (0-3) which is in accordance with \citet[p.12]{Mohr2012}}.
+Panel A gives general characteristics of the sample's Schedule 13(D) filings. The total sample consists of 498 filings submitted by firms with 110 submitted by strong and 85 by weak. That is a difference of around 5\% with regards to the total sample but can be considered as unsubstantial with regards to the analysis. 
+Following, the filings were submitted by 394 different investors but reported only 394 different subjects. This means that occasionally either one firm was investing in multiple targets (e.g. 6 filings submitted by AT\&T) or a target was subject to more than one filing (e.g. four filings in which Clearwire Inc. is target). However, in comparison to the total sample size, these pattern do not occur frequently.\\
+In the ten-year span from 2002--2011, over 60\% of the total number of filings were submitted. The peak of filings was in the 5-year span before the financial crisis. It is noticeable that the number of filings in the period around the financial crisis is higher than the number of filings in the following five years. An explanation could be the merger wave of 2007 \citep[p.19]{Huang2017} increasing the need to file Schedule 13(D)'s. Strikingly, a total of 30\% of these filings were submitted by strong firms and only 12\% by weak firms, indicating that potentially a large part of the mergers were carried out by strong firms.
+	\includepdf[pages={1},pagecommand={}, width=\textwidth]{Descriptive_Statistics_copy.pdf}
+Panel B lists the "Purpose of Transaction" which represents item 4 of a Schedule 13(D) filing. For simplicity and larger sub-samples, these purposes have been grouped into the following six categories. The reporting person (1) is engaging in a takeover process and, vice versa (2) became the target of a takeover, (3) actively and (4) strategically invests into the target firm, (5) is being compensated and lastly (6) reports other purposes. Detailed information on how the filings were categorized can be found in Appendix A.
 
-On the other hand, this relation is switched for filings with the purpose of investments due to being the target. Now, 37\% of these filings were submitted by weak firms compared to only 6\% by strong firms. This can be understood in the way that the investor was compensated with the shares to then compensate its shareholders with the targets stock at the event of the takeover. Consequently, this is one of the two transaction purposes for which weak firms have substantially more filings than strong firms. 
-The second most reported category was that of investing in an active manner with 86 filings. This implies the purchase of the stock for investments purposes, while actively monitoring the issuing company. This is the second only category in which weak firms have more filings than strong firms.
-The third most important purpose of filings were those with the purpose of strategically investing into the issuer. This involves cases of alliance agreements, strategic investments with further potential collaborations, license agreements and joint ventures. They represent only around 10\% of the filings.
-Panel C is a representation of the investing firms industries according to the (48) Fama \& French industry classification code. 42 out of the 48 industries are represented in the sample. As mentioned above, the industry of trading was excluded from the sample. Only industries with at least 15 firms are listed in the table. The two highest industry representations with more than 50 firms are computer software and pharmaceutical products. Interestingly, they have switched representations of strong and weak firms with 16 (7) and 5 (15) firms. The top two industries for strong firms were computer software and petroleum and natural gas and for weak firms pharmaceutical products and electronic equipment. 
-	\begin{adjustwidth}{-6in}{-1in}
-		\begin{table}[htbp]
-			\centering
-			\caption{Table I -- Descriptive Statistics}
-			\begin{tabular}{lcclccllccc}
-			\toprule
-					&       & \multicolumn{1}{p{6.835em}}{Complete
-				Sample} & \multicolumn{4}{p{8em}}{Strong
-				Filing Firm} & \multicolumn{4}{p{6.165em}}{Weak 
-				Filing Firm} \\
-			\midrule
-			\multicolumn{11}{p{37.33em}}{Panel A: Characteristics Schedule 13(D) Filings} \\
-			\midrule
-					&       &       &       &       &       &       &       &       &       &  \\
-			Filings &       & 498   &       & \multicolumn{1}{l}{110} & \multicolumn{1}{r}{22\%} &       &       & \multicolumn{1}{l}{85} & \multicolumn{1}{r}{17\%} &  \\
-			Filing Firms &       & 394   &       & \multicolumn{1}{l}{100} & \multicolumn{1}{r}{25\%} &       &       & \multicolumn{1}{l}{77} & \multicolumn{1}{r}{20\%} &  \\
-			Target Firms &       & 458   &       & \multicolumn{1}{l}{107} & \multicolumn{1}{r}{23\%} &       &       & \multicolumn{1}{l}{79} & \multicolumn{1}{r}{17\%} &  \\
-					&       &       &       &       &       &       &       &       &       &  \\
-			Events per Year &       &       &       &       &       &       &       &       &       &  \\
-			1996-2001 &       & 81    &       & \multicolumn{1}{l}{15} & \multicolumn{1}{r}{19\%} &       &       & \multicolumn{1}{l}{14} & \multicolumn{1}{r}{17\%} &  \\
-			2002-2006 &       & 182   &       & \multicolumn{1}{l}{38} & \multicolumn{1}{r}{21\%} &       &       & \multicolumn{1}{l}{31} & \multicolumn{1}{r}{17\%} &  \\
-			2007-2011 &       & 135   &       & \multicolumn{1}{l}{40} & \multicolumn{1}{r}{30\%} &       &       & \multicolumn{1}{l}{16} & \multicolumn{1}{r}{12\%} &  \\
-			2012-2016 &       & 100   &       & \multicolumn{1}{l}{17} & \multicolumn{1}{r}{17\%} &       &       & \multicolumn{1}{l}{24} & \multicolumn{1}{r}{24\%} &  \\
-					&       &       &       &       &       &       &       &       &       &  \\
-			\midrule
-			\multicolumn{11}{p{37.33em}}{Panel B: Purpose of the Transaction} \\
-			\midrule
-					&       &       &       &       &       &       &       &       &       &  \\
-			Takeover &       & 251   &       & \multicolumn{1}{l}{65} & \multicolumn{1}{r}{26\%} &       &       & \multicolumn{1}{l}{29} & \multicolumn{1}{r}{12\%} &  \\
-			Become an Activist Investor  &       & 86    &       & \multicolumn{1}{l}{15} & \multicolumn{1}{r}{17\%} &       &       & \multicolumn{1}{l}{21} & \multicolumn{1}{r}{24\%} &  \\
-			Strategic Investment &       & 42    &       & \multicolumn{1}{l}{8} & \multicolumn{1}{r}{19\%} &       &       & \multicolumn{1}{l}{6} & \multicolumn{1}{r}{14\%} &  \\
-			Compensation &       & 38    &       & \multicolumn{1}{l}{8} & \multicolumn{1}{r}{21\%} &       &       & \multicolumn{1}{l}{8} & \multicolumn{1}{r}{21\%} &  \\
-			Target=15 &       & 35    &       & \multicolumn{1}{l}{2} & \multicolumn{1}{r}{6\%} &       &       & \multicolumn{1}{l}{13} & \multicolumn{1}{r}{37\%} &  \\
-			Alliance Agreement &       & 13    &       & \multicolumn{1}{l}{5} & \multicolumn{1}{r}{38\%} &       &       & \multicolumn{1}{l}{0} & \multicolumn{1}{r}{0\%} &  \\
-					&       &       &       &       &       &       &       &       &       &  \\
-			\multicolumn{1}{p{15.415em}}{\% of Shares acquired} &       & 24.6\% &       & \multicolumn{2}{c}{25.1\%} &       &       & \multicolumn{2}{c}{24.07\%} &  \\
-					&       &       &       &       &       &       &       &       &       &  \\
-			\midrule
-			\multicolumn{11}{p{37.33em}}{Panel C: Industry of Filing Firm} \\
-			\midrule
-			Medical Equipment &       & 19    &       & \multicolumn{2}{c}{4} &       &       & \multicolumn{2}{c}{5} &  \\
-			Pharmaceutical Products &       & 51    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{15} &  \\
-			Machinery &       & 15    &       & \multicolumn{2}{c}{1} &       &       & \multicolumn{2}{c}{3} &  \\
-			Patroleum and Natural Gas &       & 47    &       & \multicolumn{2}{c}{12} &       &       & \multicolumn{2}{c}{7} &  \\
-			Communication &       & 40    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{6} &  \\
-			Business Services &       & 30    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{4} &  \\
-			Computer Hardware &       & 24    &       & \multicolumn{2}{c}{5} &       &       & \multicolumn{2}{c}{5} &  \\
-			Computer Software &       & 70    &       & \multicolumn{2}{c}{16} &       &       & \multicolumn{2}{c}{7} &  \\
-			Electronic Equipment &       & 43    &       & \multicolumn{2}{c}{11} &       &       & \multicolumn{2}{c}{9} &  \\
-			\end{tabular}%
-			\label{tab:addlabel}%
-		\end{table}%
-	\end{adjustwidth}
+The category of engaging into a takeover process, controls for all filings stating either a merger agreement, a tender offer or a hostile bid with merger agreements being the most frequently reported purposes and hostile bids the least.
+Remarkable is the fact that around half of the stock acquisitions were made in the course of engaging into a takeover process. This information is important in two ways: It implies firstly that the timing component plays an important role in analyzing the market reaction around the filing date and secondly that for around half of the sample the financial condition already plays an important role. Correspondingly, more than double the amount of "takeover filings" were submitted by strong firms when compared to weak firms.\\
+On the other hand, the ratio is switched for filings in which the firm acquires the stock in the course of becoming the target. This can be understood in the way that the target's shares were acquired in order to compensate own shareholders at the event of acquisition. Now, 37\% of the filings were submitted by weak firms compared to only 6\% by strong firms.\\
+The second most reported purpose for firms to acquire the stock was to actively monitor the investment. Table II reports 86 of those filings. This kind of investment is based on several assumptions, which include the believe that the target's stock is undervalued (a simple investment opportunity) or the possibility to get a first glimpse at the firm. However, the bottom line is that these investments do not directly imply a value creating interaction between the two parties for the future.\\
+Following actively held investments, strategic investments were made in 55 of the filings. Different to the former, they are based on the premise of future collaboration between investor and target. A strategic investment represents amongst others the realization of an alliance agreement, a license agreements or that of a joint venture. Although potentially very interesting for the coming analysis, they represent only 10\% of the filings.\\
+Eventually the filings are also submitted because the "acquiring" firm is being compensated for pending payments in the form of the target's stock. This supports \citet{Ouimet2013} concept that minority acquisitions can be carried out in order to help financing the target.
 
-\pagebreak 
+Panel C is a representation of the investing firms industries according to the (48) Fama \& French industry classification code with the three-digit SIC code in brackets. In the total sample, 42 out of the maximum 48 industries are represented in the sample. Panel C only shows industries that represent at least 15 investing firms. As mentioned in Section X, the sample is restricted by excluding the trading industry due the irregular investment behavior of the corresponding firms. The two highest industry representations with more than 50 firms are computer software and pharmaceutical products. Interestingly, they have switched representations of strong and weak firms with 16 (7) and 5 (15) firms. The top two industries for strong firms were computer software and petroleum and natural gas and for weak firms pharmaceutical products and electronic equipment. 
+\begin{comment}
+	\subsection{Examples of Corporate Activism}
+	In this subsection, two cases of corporate investments into other firms are being described. The first example is takeover the second is strategic investment. 
 
-\subsection{Examples of Corporate Activism}
-In this subsection, two cases of corporate investments into other firms are being described. The first example is takeover the second is strategic investment. 
+	\subsubsection{Pfizer Inc. and Icagen Inc. }
+	On June 24, 2011 Pfizer filed a Schedule 13(D) in which it declared an ownership of 14.2\% in Icagen Inc.. Pfizer was initially engaging with Icagen in accordance to a "collaboration agreement" dated August 13, 2007. In the purpose statement of June 24, 2011 Pfizer wrote: 
+	\begin{center}
+		"Pfizer is evaluating the possibility of entering into a strategic transaction with Icagen, which could have the effect of influencing or changing the control of Icagen by means of stock or asset acquisition or merger"
+	\end{center}
+	Consequently, the filing can be considered as firms strategic investment and the purpose statement can be classified as indicating that Pfizer wants to further strategically invest in Icagen.
+	The ownership of 14.2\% in Icagen was acquired between 2007 and 2008. The collaboration agreement on August 13, 2007 involved the "discovery, development, manufacture \& commercialization of pharmaceutical compounds and products that modulate three specific sodium ion channels as potential new treatments for pain and related disorders". The investment resulted in Pfizer appointing the treasurer and president of Icagen as their proxies. 
+	In order to extend the collaboration agreement, on September 17 2009 Pfizer and Icagen entered into the first amendment to the agreement. 
+	On September 21, 2010, one year later, they entered into a second amendment to the collaboration agreement which would extend it until December 31, 2011. In the course of a further collaboration between Pfizer and Icagen after the expiration of the collaboration agreement , Pfizer filed this Schedule as stated in the purpose statement above.
+	\pagebreak	
+\end{comment}
 
-\subsubsection{Pfizer Inc. and Icagen Inc. }
-On June 24, 2011 Pfizer filed a Schedule 13(D) in which it declared an ownership of 14.2\% in Icagen Inc.. Pfizer was initially engaging with Icagen in accordance to a "collaboration agreement" dated August 13, 2007. In the purpose statement of June 24, 2011 Pfizer wrote: 
-\begin{center}
-	"Pfizer is evaluating the possibility of entering into a strategic transaction with Icagen, which could have the effect of influencing or changing the control of Icagen by means of stock or asset acquisition or merger"
-\end{center}
-Consequently, the filing can be considered as firms strategic investment and the purpose statement can be classified as indicating that Pfizer wants to further strategically invest in Icagen.
-The ownership of 14.2\% in Icagen was acquired between 2007 and 2008. The collaboration agreement on August 13, 2007 involved the "discovery, development, manufacture \& commercialization of pharmaceutical compounds and products that modulate three specific sodium ion channels as potential new treatments for pain and related disorders". The investment resulted in Pfizer appointing the treasurer and president of Icagen as their proxies. 
-In order to extend the collaboration agreement, on September 17 2009 Pfizer and Icagen entered into the first amendment to the agreement. 
-On September 21, 2010, one year later, they entered into a second amendment to the collaboration agreement which would extend it until December 31, 2011. In the course of a further collaboration between Pfizer and Icagen after the expiration of the collaboration agreement , Pfizer filed this Schedule as stated in the purpose statement above.
-\pagebreak
-
-\section{Identifying the Investors prior to their Schedule 13(D) Filing}
+\section{Identifying the Investors prior to the Schedule 13(D) Filing}
 
 % Objective: How can we identify the investor and what are the financial characteristics? 
 % Topics: Strength Measurements | Why these Measures - Hypotheses |  Information in Table II |  General Financials | Comparison Targets |
 
 % Introduction - why ? 
-After describing the characteristics of the sample and its underlying Schedule 13(D) filings in the prior section, the focus of this section lies now in identifying the investors. In the following, the general instruments used in identifying the investors are explained and in a second step their representation within the sample. The aim is to provide a general understanding of the tools used for testing the thirdd hypothesis which states that the financial condition of the investor plays an important role in understanding the abnormal market reaction around a Schedule 13(D) filing. In order to do that, the financial condition has to be broken down and quantified into several components. 
-In general, the financial condition of a firm is assessed by analyzing  characteristics such as profitability, liquidity, solvency and operational performance. In order to do so, Piotroskis F-Score is used as a measurement of general firm strength, the Whited-Wu- and KZ-Index relate to solvency and identify financially constraint firms and Altman's Z-Score represents a measurement on how distressed firms are. Beyond these rather universal measurements of a firms financial condition, further insight is given in the form of simple fundamental analysis.
+After being familiar with general characteristics of the sample's filings, this section focuses on identifying the investors with regards to their financial condition. The section proceeds as follows. It starts by introducing the two indicators and scores used to separate the investors into sub-samples given their indicator and score value. The section proceeds by identifying the financial characteristics for both, the total and the four sub-samples. This is done to contextualize the tools for testing the main hypothesis, namely that the investing firm's financial condition is important to the market reaction. The measurements are also established in order to enrich the explanatory power of ratio analysis.
+In order to do that, the financial condition has to be broken down into quantifiable components that represent the general characteristics of profitability, liquidity, solvency and operational performance. Piotroski's F-Score is used as a measurement of general firm strength, Altman's Z-Score represents a measurement of bankruptcy and both the Whited-Wu- and KZ-Index identify financially constrained firms. A detailed explanation on the composition and calculation of the measurements can be found in Appendix B
+\includepdf[angle={90},pages={1},pagecommand={}, width=\textwidth]{Summary_by_Measurement_copy.pdf}
+
 % Information contained in Table II | Why Control Sample?
-Table II presents a summary of these indicators. Column (1) and (2) show the figures of the firms from the sample and the control sample, respectively. In order to show how the sample firms compare to their respective control samples, their means (medians) are shown side-by-side. The control sample is based on industry and size and is established to put the sample of investors into perspective and further characterize them through a direct comparison.  Column (3) presents the significance levels for tests for difference between sample and control firm's means and medians. For all tests, the $t$-statistics are for difference in means, assuming unequal variances between the samples. The $Z$-statistic is a Mann-Whitney rank-sum test of unmatched pairs. 
+% Table II presents a summary of these indicators. Column (1) and (2) show the figures of the firms from the sample and the control sample, respectively. In order to show how the sample firms compare to their respective control samples, their means (medians) are shown side-by-side. The control sample is based on industry and size and is established to put the sample of investors into perspective and further characterize them through a direct comparison.  Column (3) presents the significance levels for tests for difference between sample and control firm's means and medians. For all tests, the $t$-statistics are for difference in means, assuming unequal variances between the samples. The $Z$-statistic is a Mann-Whitney rank-sum test of unmatched pairs. \footnote{All measurements are winsorized at the 1\% and 99\% levels so that extreme values are replaced by the respective percentiles. This enables a presentation of more meaningful mean statistics \citep{Klein2009}.}. 
 
 % Strength Measurements
-Table II starts with Panel A presenting the main components to quantify the general expression of the investor's financial condition.
-	\footnote{All measurements are winsorized at the 1\% and 99\% levels so that extreme values are replaced by the respective percentiles. This enables a presentation of more meaningful mean statistics \citep{Klein2009}.}. 
-Because the attribute of being financially strong can be hard to isolate and in a study of 2010 \emph{BCG} notes many of that year's acquisitions would involve a financially strong acquirer, Piotroski's F-score proxies for this attribute. For the reason that it addresses the issue as it is a "... composite measure of firm strength" \citep[p. 496]{Fama2006}. The score consists of nine binary signals which consider in what directions the fundamentals of a company are trending and whether general health conditions are met \citep{Mohr2012}. Although \citet{Piotroski2000} established it to separate strong from weak value firms
-	\footnote{In order to legitimize the explanatory power of the F-score in separating strong from weak firms Piotroski formed portfolios consisting of value firms. In doing so, he showed that an investment strategy of shorting expected losers (weak firms) and buying expected winners (strong firms) would "generate a 23\% average annual return" \citep[p. 4]{Piotroski2000}. This is matching with \citet{Hyde2014} results, who observe significant return premiums for stocks with a high F-score over stocks with a low F-score.}.
-\citet{Mohr2012} shows that its application on growth stocks yields similar results.
-	\footnote{This is in line with \citet{Piotroski2000} and confirms earlier research conducted by him.}. 
-With regards to the above, the F-Score is used as an indicator to divide the  sample of filings into those submitted by strong investors and those by weak investors. Strong firms are characterized by a score between (7-9) and weak firms by a score between (0-3). This is somehow different to Piotroski's application but it yields a larger sub-sample which is more independent from rare outliers \citep[p.12]{Mohr2012}, the boundaries are more expanded than in the original paper of \citet{Piotroski2000} but yields a  larger sub-sample and is independent from rare outliers. 
-Table II shows a mean of 5.2 for the F-score across the sample. With a mean of 5 this suggests a trend towards more firms in the upper scores.
+% Topics per Measure: What is it | Special Characteristics | Why is it used 
+For example, in a study of 2010 \emph{BCG} notes many of that year's acquisitions would involve a financially strong acquirer. But because the attribute of being financially strong can be difficult to isolate, Piotroski's F-score is used as proxy in this sense. This is done for the two reason that it generally addresses the issue as a "... composite measure of firm strength" \citep[p. 496]{Fama2006} and considers in what directions the fundamentals of a company are trending and whether general health conditions are met \citep[p.5]{Mohr2012}. Although \citet{Piotroski2000} established it to separate strong from weak value firms
+	\footnote{In order to legitimize the explanatory power of the F-score in separating strong from weak firms Piotroski formed portfolios consisting of value firms. In doing so, he showed that an investment strategy of shorting expected losers (weak firms) and buying expected winners (strong firms) would "generate a 23\% average annual return" \citep[p. 4]{Piotroski2000}. This is matching with \citet{Hyde2014} results, who observe significant return premiums for stocks with a high F-score over stocks with a low F-score.}
+\citet{Mohr2012} shows that its application on growth stocks yields similar results
+	\footnote{This is in line with \citet{Piotroski2000} and confirms earlier research conducted by him.}.
+And even though the score was developed to distinguish among firms based on their stock performance, its application on the sample of investors will yield results that support a general understanding of financially weak and strong firms. The score consists of nine binary signals that form a final score between zero and nine, with a score of zero signaling a firm is in bad condition and a score of nine the firm is in a state of financial strength. 
+Although a firm might be in the lower region of the score, it does not imply that it can be automatically called weak. For simplicity and consistency however,investors within the range of (0-3) points are labeled as weak investors and firms with a score between (7-9) are labeled as strong investors. These limits are different to Piotroski's original application but they yield larger sub-samples which are more independent from rare outliers \citep[p.12]{Mohr2012}.
 
-The second measurement is Altman's Z-score which is a fundamental indicator that shows statistically significant results in predicting the bankruptcy of a company \citep{Campbell2008} and is still applied as a general practical tool for assessing the financial well-being of firms \citep{Kleinert2014}. This measure of bankruptcy/financial distress represents a state in which the firm cannot meet or has difficulty paying off its financial obligations to its creditors. The previously mentioned HNA Group could be listed exemplary, as they have problems in refinancing their debt burden. With a threshold of 2.675 to distinguish among the states of bankrupt and non-bankrupt firms, panel A shows a mean of 4.1 which is way above the threshold. Nevertheless, around 40\% of the firms included in the sample are below it and therefore in a state of bankruptcy.
+To make the financial condition even more tangible, Altman's Z-score is included. The Z-score is a fundamental indicator that according to \citet[p.5]{Mohr2012} shows statistically significant results in predicting the bankruptcy of a company and has become a popular and widely accepted measure of financial distress \citep[p.2903]{Campbell2008}. Because financial distress possibly resulting in bankruptcy represents a state in which the firm cannot meet or has difficulty paying off its financial obligations to its creditors the reference to HNA Group made above is exemplary here as the group has problems in refinancing the enormously high debt burden. With regards to the above the Z-score is a prediction of corporate bankruptcy \citep[p.594]{Altman} and is computed with a predefined model that considers five variables ratios of financial analysis. With respect to a threshold of 2.675 the final score is put into perspective, according to which firms below can be classified as firms in bankruptcy and those above as in non-bankruptcy.
 
-With the Whited-Wu- and KZ-Index two measurements to distinguish between financially constrained and unconstrained firms are represented. According to \citet[1]{Farre-mensa2013} a firm is financially constrained if it faces an inelastic supply of external capital. On the other hand firms who are able to raise substantial amounts of external capital without much of an increase in the cost of capital are considered as unconstrained \citep[p.1]{Farre-mensa2013}. 
-The additional dimension in the form of financial constraints to the overall picture of the investor's financial condition is motivated by the following two arguments. Firstly, any motivation of the investing firm to acquire further partial bids in the target is in need of cash and the ability to raise even more cash. Secondly, with around 50\% of the filings signaling a potential takeover that somehow has to be paid, a firm can be very dependent on its ability to raise external capital.  
-
-The KZ-Index is based on a logit model relating the degree of financial constraints to five accounting variables: cash flow, market value, debt, dividends and cash holdings, each scaled by assets \citep[p.5]{Farre-mensa2013}.  This means, not only the actual cash reserves and the firms ability to generate cash matter but also the investor's ability to raise external capital. 
-
-
-
-
-
-Although \citet{Khatami2014} notes that more recent literature has questioned the reliability of constraint measures, the Whited-Wu- and KZ-Index as defined in \citet{Farre-mensa2013} are used as indicators for the latter. For both indices firms are sorted into terciles based on their index values. Firms in the top tercile are coded as constrained those in the bottom tercile are coded as unconstrained. This results in 166 constrained and 166 unconstrained firms. 
-
-Panel B presents two measurements of profitability. Return on assets is defined as the ratio of EBITDA to total assets and cash flow from operations is the ratio of CFO to assets 
-	\footnote{Compustat data are used for these and the other measures presented in Table II } 
-. This is equal to \citet{Klein2009} who identify the financial condition of targets with regards to hedge fund activism. 
-Both of these measures are positive. 
-
-Panel C lists the cash balances and debt ratios of the investor. According to the 
-Debt is measured as short-term debt (due in one year), long-term debt and total debt. 
+The two final measures in determining the investors financial condition are the Whited-Wu- and the KZ-Index. Their purpose is to separate the sample in financially constrained and unconstrained investors. Adding the dimension of financial constraints to the overall picture is important because under perfect capital markets, the financial structure of the investor should be irrelevant to investment because "external funds provide a perfect substitute for internal capital" \citep[p. 141]{Fazzari2016}. This however, is not the case as financially constrained firms face an inelastic supply of external capital \citep[p.1]{Farre-mensa2013} and firms who are able to raise substantial amounts of external capital without much of an increase in the cost of capital are considered as unconstrained \citep[p.1]{Farre-mensa2013}. This means that corporate investment is dependent on financing constraints. If a firm is constrained, likewise faces a significant cost disadvantage of external finance, then the investment is driven by fluctuations in the cash flow \citep[p. 142]{Fazzari1988} implying an unknown future for further investments. Amongst others, this is why both indices include the dividend payouts in their formulas, as firms paying out dividends are more independent on cash-flow fluctuations hence can be classified as financially unconstrained.
+The KZ-Index is based on a logit model relating the degree of financial constraints to five accounting variables: cash flow, market value, debt, dividends and cash holdings, each scaled by assets \citep[p.5]{Farre-mensa2013}. Although \citet{Khatami2014} notes that more recent literature has questioned the reliability of constraint measures, the Whited-Wu- and KZ-Index as defined in \citet{Farre-mensa2013} are used as indicators for the latter. For both indices firms are sorted into terciles based on their index values. Firms in the top tercile are coded as constrained those in the bottom tercile are coded as unconstrained. This results in 166 constrained and 166 unconstrained firms. 
 
 
 \section{Market Returns to Initial 13(D) Filings -- Stock Returns}
