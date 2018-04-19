@@ -316,35 +316,55 @@ Taken together, the findings suggest that, when compared to each other, the four
 
 \section{Market Returns to Initial 13(D) Filings -- Abnormal Stock Returns}
 % Intention
-In order to identify the effect Schedule 13(D) filings have on the subject's stock, the abnormal share price reactions around the filing date are computed. This is done by conducting an event study for which the time line consists successively of the estimation window, in which parameter estimates are obtained, the event window including the event day and for which the abnormal returns are computed and (3) the post event window.  
-With the aim to isolate the effect of the Schedule 13(D) filing from other general market movements, the abnormal return $AR_{i,t}$ for the target's security $i$ at day $t$ is defined as the difference between the actual (observed) return $R_{i,t}$ and the expected return given the absence of the event $E(R_{i,t}|X{t})$ :
+In order to identify the effect Schedule 13(D) filings have on the subject's stock, the abnormal share price reactions around the filing date are computed. The abnormal returns represent the effect of the filing on the target's stock, after accounting for general market movements.
+The set up is as follows: The time line of the event study consists successively of the estimation window, in which parameter estimates are obtained, the event window for which the abnormal returns are computed and the post event window. 
+The filing date, as reported by the SEC and reported on EDGAR is set as the event day. For simplicity, the event window [x,y] is determined relative to the event day 0 with x days before and y days after the filing date. Abnormal returns are computed for various event windows. For that reason, the estimation window for all coming calculations includes the 120 days prior to the largest event window. With the largest event window being [-30,30] the estimation window begins 150 days before the actual event day and ends 30 days in advance.\\
+The abnormal return $AR_{i,t}$ for the target's security $i$ at day $t$ is defined as the difference between the actual (observed) return $R_{i,t}$ and the expected return $E(R_{i,t}|X{t})$ given the absence of the event:
 	\begin{equation}\label{eq:1}
 		AR_{i,t}=R_{i,t}-E(R_{i,t}|X_{t})
 	\end{equation}
-The expected return $E(R_{i,t}|X{t})$ is estimated based the market model 
-	\footnote{For the expected return the market model assumes a constant and linear relation between the observed returns $R_{i,t}$ and the return of a market index $R_{m,t}$. The parameters are estimated by ordinary least squares regressions based on estimation-window observations of stock returns.}, 
-and the value-weighted NYSE/Amex/Nasdaq index from CRSP is used as the market return $R_{M,t}$.
+The expected return $E(R_{i,t}|X{t})$ is the result of an estimation based the market model, in which the value-weighted NYSE/Amex/Nasdaq index from CRSP proxies for the market return $R_{M,t}$ and likewise is the independent variable 
+	\footnote{For the expected return the market model assumes a constant and linear relation between the observed returns $R_{i,t}$ and the return of a market index $R_{m,t}$. The parameters are estimated by ordinary least squares regressions based on estimation-window observations of stock returns.}.
 This yields the abnormal return $AR_{i,t}$
-\begin{equation}\label{eq:2}
-	AR_{i,t}=R_{i,t}-(\hat{\alpha_{i}}+\hat{\beta_{i}}R_{M,t})
-\end{equation}
-To accommodate for a multiple period event window and to draw overall inferences of the Schedule 13(D) filings \citep{MacKinlay1997} the abnormal returns $AR_{i,t}$ are aggregated over the corresponding event window. For robustness, two different aggregations over time are used. The cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ and the abnormal buy-and-hold return $BHAR_{i,(\tau_1,\tau_2)}$. Because for the latter no estimation window is required, the $BHAR_{i,(\tau_1,\tau_2)}$ are independent from the results of \eqref{eq:2}.\\
-The cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ for security $i$ in event window $(\tau_1,\tau_2)$, is the sum of the abnormal returns $AR_{i,t}$ from \eqref{eq:2}. In contrast, the buy-and-hold return mimics the investment strategy of investors that buy the stock and hold it for a longer period. Therefore, abnormal buy-and-hold returns $BHAR_{i,(\tau_1,\tau_2)}$ are the difference between the realized (observed) buy-and-hold returns and the normal buy-and-hold returns $R(R_{i,t}|X_{t})$. For the targets security $i$ in the event window $(\tau_1,\tau_2)$ this yields the abnormal buy-and-hold return $BHAR_{i,(\tau_1,\tau_2)}$
+	\begin{equation}\label{eq:2}
+		AR_{i,t}=R_{i,t}-(\hat{\alpha_{i}}+\hat{\beta_{i}}R_{M,t})
+	\end{equation}
+To accommodate for a multiple period event window and to draw overall inferences of the Schedule 13(D) filings \citep[p.21]{MacKinlay1997}, the abnormal returns $AR_{i,t}$ for target $i$ are aggregated over the event window $(\tau_1,\tau_2)$. 
+
+For robustness, two different methods in aggregating over time are used. The first method being the cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$. The cumulative abnormal return $CAR_{i,(\tau_1,\tau_2)}$ for security $i$ in event window $(\tau_1,\tau_2)$, is the sum of the abnormal returns $AR_{i,t}$ from equation \eqref{eq:2}.
+	\begin{equation}
+		CAR_{i,(\tau_1,\tau_2)}=\sum_{t=1}^{T}AR_{i,t}
+	\end{equation}
+\pagebreak
+
+The second method of aggregation over time is the abnormal buy-and-hold return $BHAR_{i,(\tau_1,\tau_2)}$. It is independent from the results of equation \eqref{eq:2} and no estimation window is required. 
+The abnormal buy-and-hold returns $BHAR_{i,(\tau_1,\tau_2)}$ are the difference between the realized (observed) buy-and-hold returns and the normal buy-and-hold returns $R(R_{i,t}|X_{t})$.
+But in contrast to the cumulative abnormal return, the buy-and-hold return mimics the investment strategy of investors that buy the stock and hold it for a longer period of time. In this sense, the actual (normal) buy-and-hold return on day $t$ is the return on day $t$ times its lagged return on day $t_{-1}$. This means that for the target's security $i$ in the event window $(\tau_1,\tau_2)$ the abnormal buy-and-hold return $BHAR_{i,(\tau_1,\tau_2)}$ is
 \begin{equation}
 	BHAR_{i,(\tau_1,\tau_2)}=\prod_{t=1}^{T}(1+R_{i,t})-\prod_{t=1}^{T}(E(R_{i,t}|X_{t})
 \end{equation}
-Analogous to \eqref{eq:2}, the value-weighted NYSE/Amex/Nasdaq index from CRSP is used as the the normal buy-and-hold return.
-
-For this thesis, the cumulative abnormal return is the sum of abnormal returns from the market model based on the value-weighted NYSE/Amex/Nasdaq index. The target's abnormal buy-and-hold return is the difference between its buy-and-hold return and the buy-and-hold return on the value-weighted NYSE/Amex/Nasdaq index from CRSP. 
+Analogous to the estimation of normal returns for equation \eqref{eq:2}, the value-weighted NYSE/Amex/Nasdaq index from CRSP is used to calculate the normal buy-and-hold return for the event window $(\tau_1,\tau_2)$.
 
 \subsection{All Schedule 13(D) Filings}
-For the following analysis the filing date, as reported in the Schedule 13(D) filing, is defined as the event day 0. Abnormal returns are computed for various intervals surrounding the event date so the estimation window was set 120 days prior to the largest event window (beginning 30 days prior to the filing). 
-Graph 1 shows the aggregated abnormal returns in the event window [-30,30] both in the form of cumulative and buy-and-hold abnormal returns. Both measures generate almost similar results. However, around 5 days prior to the filing date the buy-and-hold returns increase in magnitude and proceed above the cumulative abnormal returns. This is matching with \citet{Brigida2012} fidings who find that most informed trading is during the event-window [-10,-6] and report the runup is the greatest during this period. \citet{Brigida2012} therefore suggest an event-window at least 10 days prior to the filing.  
-The aim is to test the first hypothesis, namely a significant market reaction in response to the filing.
+
+Graph 1 plots the mean CAR and BHAR over the event window [-30,30]. A first glance reveals that both methods generate almost similar results. However, in the range of 5 days prior to the filing date, the buy-and-hold returns increase in magnitude and continues to proceed above the average cumulative abnormal return. Alarming is the fact, that for both methods almost all information has been processed by the market before the actual filing. On average the stocks experience the first large abnormal return around sevens days before the announcement. This is surprising, as it indicates that information on the investments is available, before the filing is public. According to Section 13(d), the filing company has a maximum of ten days after reaching the threshold of 5\% to file the statement. For example in the case of a takeover, if the takeover announcement could have been made public in the window [-10,0] prior to the 13(D) filing, the filing date of the Schedule 13(D) might not be the real reason for the abnormal returns. In this case, the abnormal returns do not occur for the reason of the filing but for the takeover announcement. 
+
 \begin{figure}
 	\includegraphics{Abnormal_Returns.eps} \label{AR both}
-\end{figure}
-With respect to \citet{Brigida2012}, \citet{Klein2009} and \citet{Brav2008} abnormal returns for four different event windows were computed. 
+\end{figure} 
+
+This means that for a robust analysis of the effect of Schedule 13(D) filings, two extreme scenarios have to be set up. 
+In the first scenario, not the Schedule 13(D) filing is responsible for the market reaction prior to the filing, but other public announcements. In other words, the abnormal returns  in the event-window [-10,0] should be neglected. 
+This results in scenario two, where only the abnormal returns after the filing, including those on the day of the filing, should be analysed to truly assess the effect of Schedule 13(D) filings in the sample.
+
+But to put these findings into perspective, \citet[p.32]{Brigida2012} observed that most informed trading is conducted during the event-window [-10,-6] and that the runup is the greatest during this period. This is matching with the abnormal returns presented in Graph I. In addition, some filings are processed overnight and then uploaded on the next day so enlarging the event window to at least [-1,x] seems to be a comprehensible measure. 
+In an attempt to isolate what exactly affects the abnormal returns in the [-10,0] event window, the abnormal returns of all filings, excluding those with a purpose of a takeover, were plotted. This showed that the abnormal returns primarily decreased in magnitude, but the lagged increase in returns at around day -7 remained. \citet[207]{Klein2009} even begin their event window at day -30 to allow for the 10-day 13(D) filing window and possible prior leakage of information. 
+For the above mentioned reason, table III shows cumulative abnormal returns for the following five windows: Event window 1 is [-10,3] to allow for the 10-day filing window and accommodate subsequent press coverage. The second event window is [-10,-6] to isolate the possible effect of earlier announcements on the target's stock. Analogous the third event windows is [-5,3] to allow for information leakages but control for other announcements. The fourth event window is [-1,3] to accommodate the above scenario but relax the assumption of no inclusion of abnormal returns that occur before the filing day. 
+
+
+
+The aim is to test the first hypothesis, namely a significant market reaction in response to the filing.
+
 % window with regards to takeover and with timeline of the schedule 13d filing
 
 Table III shows these results and presents the means [medians] for each event window and additionally separates between stocks subject to filings submitted by strong investors and those submitted by weak investors. For robustness both, cumulative and buy-and-hold returns are presented. For each event window, column (1) shows the abnormal returns for the complete sample. Columns (2) and (3) present the abnormal returns for stocks subject to filings by strong and weak firms, respectively. The separation of filings into those submitted by strong and weak firms is based on the investor's F-score presented in Table II. Column(4) shows the $t$-statistic and the $Z$-statistic tests for difference between the means and medians of these two samples of strong and weak firms. All returns presented in Table III are winsorized at the 1\% and 99\% level to equal out the effect of rare outliers. 
