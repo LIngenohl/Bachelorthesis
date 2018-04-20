@@ -2233,7 +2233,9 @@
     <bcf:citekey order="87">MacKay2005</bcf:citekey>
     <bcf:citekey order="88">DUCHIN2010</bcf:citekey>
     <bcf:citekey order="89">MacKinlay1997</bcf:citekey>
-    <bcf:citekey order="90">Brigida2012</bcf:citekey>
-    <bcf:citekey order="91">Klein2009</bcf:citekey>
+    <bcf:citekey order="90">MacKinlay1997</bcf:citekey>
+    <bcf:citekey order="91">MacKinlay1997</bcf:citekey>
+    <bcf:citekey order="92">Brigida2012</bcf:citekey>
+    <bcf:citekey order="93">Klein2009</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
