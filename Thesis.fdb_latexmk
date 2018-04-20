@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber Thesis"] 1524159966 "Thesis.bcf" "Thesis.bbl" "Thesis" 1524213967
+["biber Thesis"] 1524159966 "Thesis.bcf" "Thesis.bbl" "Thesis" 1524214192
   "BA copy.bib" 1523273653 90665 c3a69e1ff1927c3836cb63683b034c71 ""
-  "Thesis.bcf" 1524213967 99552 16ca38fac7e5a48064aa3ff579f38478 ""
+  "Thesis.bcf" 1524214192 99552 16ca38fac7e5a48064aa3ff579f38478 ""
   (generated)
-  "Thesis.bbl"
   "Thesis.blg"
-["pdflatex"] 1524213960 "/Users/leopoldingenohl/Documents/GitHub/Bachelorthesis/Thesis.tex" "Thesis.pdf" "Thesis" 1524213967
-  "/Users/leopoldingenohl/Documents/GitHub/Bachelorthesis/Thesis.tex" 1524213959 68077 e39fcc557815b77a759ac0118a151f14 ""
+  "Thesis.bbl"
+["pdflatex"] 1524214185 "/Users/leopoldingenohl/Documents/GitHub/Bachelorthesis/Thesis.tex" "Thesis.pdf" "Thesis" 1524214192
+  "/Users/leopoldingenohl/Documents/GitHub/Bachelorthesis/Thesis.tex" 1524214185 68106 7ebaa867848cad6595b8c2d18700fb7d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1480098666 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1480098696 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -161,15 +161,15 @@
   "Abnormal_Returns.eps" 1523625277 3377172 ee0e3b06375bdaf3bae7be03a50ef2f0 ""
   "Descriptive_Statistics_copy.pdf" 1524037973 26190 1e959254d345a9e93ec235edf46ed60b ""
   "Summary_by_Measurement_copy.pdf" 1524048122 34297 106c81dc9236b6e5a380bc2d79e2b70b ""
-  "Thesis.aux" 1524213967 9734 6ae1b6b2123bf35d014fa7ff0a581060 ""
+  "Thesis.aux" 1524214192 9734 6ae1b6b2123bf35d014fa7ff0a581060 ""
   "Thesis.bbl" 1524159970 62820 334390e9b11c8490987f97376ee58c80 "biber Thesis"
-  "Thesis.out" 1524213967 1036 9bdca04a15400b80d4af0ebf974545f0 ""
-  "Thesis.run.xml" 1524213967 2387 b881c24a4a7ab27aa289363678316461 ""
-  "Thesis.tex" 1524213959 68077 e39fcc557815b77a759ac0118a151f14 ""
+  "Thesis.out" 1524214192 1036 9bdca04a15400b80d4af0ebf974545f0 ""
+  "Thesis.run.xml" 1524214192 2387 b881c24a4a7ab27aa289363678316461 ""
+  "Thesis.tex" 1524214185 68106 7ebaa867848cad6595b8c2d18700fb7d ""
   (generated)
+  "Thesis.log"
+  "Thesis.aux"
   "Thesis.pdf"
   "Thesis.run.xml"
-  "Thesis.log"
   "Thesis.out"
   "Thesis.bcf"
-  "Thesis.aux"
