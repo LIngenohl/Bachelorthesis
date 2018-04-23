@@ -28,6 +28,7 @@
 	\usepackage{longtable}
 	\usepackage{chngpage}
 	\usepackage{pdfpages}
+	\usepackage{adjustbox}
 	\usepackage[all]{nowidow}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
@@ -363,14 +364,17 @@ Analogous to the estimation of normal returns for equation \eqref{eq:2}, the val
 Graph 1 plots the mean CAR and BHAR over the event window [-30,30]. A first glance reveals that both methods generate almost similar results. Around 5 days prior to the filing date, the mean buy-and-hold return increases in magnitude and continues to proceed above the average cumulative abnormal return.\\
 Alarming is the fact that in either case, the market processes almost all information before the filing is actually announced. The first impact on the securities prices occurs at around day -7 so information -- in any form -- is available, before the filing is public. 
 Section 13(d) specifies that after passing the 5\% threshold, a firm has a maximum of 10 days to file the Schedule 13(D). So in the window [-10,0] other public announcements corresponding with the investment can be made. If for example a takeover announcement is made public during the ten days in which the firm is not obligated to file, the abnormal returns might be due to the takeover announcement. This means, the filing itself has little impact and is just a necessary accompaniment.  With regards to the remaining purposes of transaction, there is no reason to believe they follow a similar pattern. 
+\begin{table}
+	\centering
+	\begin{adjustbox}{max width=\textwidth}
+		\includegraphics{Abnormal_Returns.eps} \label{AR}
+	\end{adjustbox}
+\end{table}
 
-\begin{figure}
-	\includegraphics{Abnormal_Returns.eps} \label{AR both}
-\end{figure} 
 
 A scenario in which a different announcement triggers the abnormal share price reaction is conceivable. So when assessing the true impact of the filing, all abnormal returns in the event-window [-10,0] should be neglected and only those occurring after the announcement, including the event day, should be utilized. This however is a limited approach, as the announcement still affects the abnormal returns in the event window of the filing and a strict separation over time would not mitigate all the announcement effects.\\
-To put this scenario into perspective, \citet[p.32]{Brigida2012} observe that most informed trading on 13(D) filings is conducted during the event-window [-10,-6] and that the runup is the greatest during this period. This is perfectly matching with the abnormal returns presented in Graph I. Additionally, filings can be processed overnight and are published only the next day so enlarging the event window to at least [-1,x] seems to be a sensitive measure. An even larger event window is applied by \citet[207]{Klein2009} beginning at day -30 to allow for the 10-day 13(D) filing window and possible prior leakage of information. They however, analyse the investment behavior of hedge funds and other private investors. \\
-In an attempt to isolate possible effects of takeover announcements on abnormal returns around day -7, a second graph excluding takeover filings was plotted. The graph showed that abnormal returns primarily decrease in magnitude and that the early impact on the target's stock remained at around day -7. This means that even when controlling for the largest sub-sample which simultaneously is the only one for which an earlier announcement is plausible, the early impact is still existing. The reduction in abnormal returns however implies, that large chunks are driven by filings with the purpose of a takeover.
+To put this scenario into perspective, \citet[p.32]{Brigida2012} observe that most informed trading on 13(D) filings is conducted during the event-window [-10,-6] and that the runup is the greatest during this period. This is perfectly matching with the abnormal returns presented in Graph I. Additionally, filings can be processed overnight and are published only the next day so enlarging the event window to at least [-1,x] seems to be a sensitive measure. An even larger event window is applied by \citet[207]{Klein2009} beginning at day -30 to allow for the 10-day 13(D) filing window and possible prior leakage of information. They however, analyse the investment behavior of hedge funds and other private investors . \\
+In an attempt to isolate possible effects of takeover announcements on abnormal returns around day -7, a second graph excluding takeover filings was plotted. The graph showed that abnormal returns primarily decrease in magnitude and that the early impact on the target's stock remained at around day -7. This means that even when controlling for the largest sub-sample which simultaneously is the only one for which an earlier announcement is plausible, the early impact is still existing. The reduction in abnormal returns however implies, that large chunks are driven by filings with the purpose of a takeover. 
 
 For the above mentioned reason, table III shows aggregated abnormal returns for the following five event windows: Event window 1 is [-10,3] to allow for the 10-day filing window and accommodate subsequent press coverage. The second event window is [-10,-6] to isolate the possible effect of earlier announcements on the target's stock around day -7. Analogous the third event window is [-5,3] to allow for information leakages but control for other announcements. This seems to be appropriate, as the aggregation of abnormal returns in Graph 1 slows down around day -5, implying that a possible announcement effect has been processed. The fourth event window is [-1,3] to accommodate the above scenario but relax the assumption of no inclusion of abnormal returns that occur before the filing day. 
 
@@ -394,6 +398,8 @@ For further analysis with Panel A and C showing statistically significant differ
 \subsection{Abnormal Returns and Financial Condition}
 
 As this thesis seeks to explore the relation between the filing of a Schedule 13(D) and the investor's financial condition, the event window (-1,3) is used for all following analysis. This is done for two reasons. During the window [-10,3] the targets' abnormal returns experience two jumps, one at day minus 7 and the second at the filing day. This proves that the filing has an impact on the market and precisely this effect is subject of analysis. The second reason for choosing the event window (-1,3) is that regardless from Graph 1, the actual filing happens on day 0 and not on day -7 and therefore the abnormal returns close to day 0 should be importance. One disadvantage of this approach is, that leakage of information prior to the filing is left outside and aggregated returns have a downward bias.
+
+
 
 Table 4 
   
@@ -467,7 +473,9 @@ On the other hand, \citet{Akhigbe2007} examine the characteristics of final acqu
 
 \section{Appendix}
 
-\subsection{Appendix A -- Financial Condition Measures}
+\subsection{Appendix A -- Categroization of Filings}
+
+\subsection{Appendix B -- Financial Condition Measures}
 
 \subsubsection{F-Score}
 Used from \citet{Piotroski2000} and calculated according to \citet{Fama2006} and \citet{Choi2012}. Each component contributes one point if the condition holds, zero otherwise. 
@@ -522,32 +530,232 @@ Following convention, firms are sorted into terciles based on their index value 
 \subsection{Appendix A}
 
 In order to compute the abnormal returns $AR_{i,t}$ for security $i$ at time $t$ in \eqref{eq:1} the following models are used: 
-\begin{enumerate}
-	\item Market Model -- For the expected return it assumes a constant and linear relation between the observed returns $R_{i\tau}$ and the return of a market index $R_{m\tau}$. The parameters are estimated by ordinary least squares regressions based on estimation-window observations. The value-weighted NYSE/Amex/Nasdaq index from CRSP is used as the market return $R_{M\tau}$.
+	\begin{enumerate}
+		\item Market Model -- For the expected return it assumes a constant and linear relation between the observed returns $R_{i\tau}$ and the return of a market index $R_{m\tau}$. The parameters are estimated by ordinary least squares regressions based on estimation-window observations. The value-weighted NYSE/Amex/Nasdaq index from CRSP is used as the market return $R_{M\tau}$.
 
-		\begin{equation}
-			R_{i,\tau}=\alpha_{i}+\beta_{i}R_{M,\tau}+\epsilon_{i,\tau}
-		\end{equation}
-		with 
-		\begin{equation}
-			E[\epsilon_{i,\tau}]=0
-		\end{equation}
-		and 
-		\begin{equation}
-			Var[\epsilon_{i,\tau}]=\sigma^2_{i,\tau}
-		\end{equation}
-		This yields the abnormal return $AR_{i,\tau}$
-		\begin{equation}
-			AR_{i,\tau}=R_{i,\tau}-(\hat{\alpha_{i}}+\hat{\beta_{i}}R_{M,\tau})
-		\end{equation}
-		
-	\item Market Return Model -- The model is classified as the restricted market model with $\alpha_{i}=0$ and $\beta_{i}=1$. This means that there is no estimation window required and the abnormal return $AR_{i,\tau}$ is simply the difference between the observed return $R_{i,\tau}$ and the value-weighted NYSE/Amex/Nasdaq index return $R_{M\tau}$.
+			\begin{equation}
+				R_{i,\tau}=\alpha_{i}+\beta_{i}R_{M,\tau}+\epsilon_{i,\tau}
+			\end{equation}
+			with 
+			\begin{equation}
+				E[\epsilon_{i,\tau}]=0
+			\end{equation}
+			and 
+			\begin{equation}
+				Var[\epsilon_{i,\tau}]=\sigma^2_{i,\tau}
+			\end{equation}
+			This yields the abnormal return $AR_{i,\tau}$
+			\begin{equation}
+				AR_{i,\tau}=R_{i,\tau}-(\hat{\alpha_{i}}+\hat{\beta_{i}}R_{M,\tau})
+			\end{equation}
+			
+		\item Market Return Model -- The model is classified as the restricted market model with $\alpha_{i}=0$ and $\beta_{i}=1$. This means that there is no estimation window required and the abnormal return $AR_{i,\tau}$ is  simply the difference between the observed return $R_{i,\tau}$ and the value-weighted NYSE/Amex/Nasdaq index return $R_{M\tau}$.
 
-		\begin{equation}\label{eq:6}
-			AR_{i,\tau}=R_{i,\tau}-R_{M,\tau}
-		\end{equation}
-
+			\begin{equation}\label{eq:6}
+				AR_{i,\tau}=R_{i,\tau}-R_{M,\tau}
+			\end{equation}	
+	\end{enumerate}
 	
-\end{enumerate}
+	\begin{table}[ht]
+	\centering
+	\caption{F-Score}
 
+	\begin{adjustbox}{height=10cm, max width=\textwidth}
+	\begin{tabular}{lcccccc} \hline
+		& (1) & (2) & (3) & (4) & (5) & (6) \\
+	   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
+		&  &  &  &  &  &  \\
+	   F-Indicator & 0.0003 & 0.0021 & -0.0182 & 0.0151 & -0.0299 & -0.0159 \\
+		& (0.9946) & (0.0160) & (0.0450) & (0.0510) & (0.0521) & (0.0478) \\
+	   Return on Assets &  &  & -0.00839 &  & 0.00387 & -0.0345 \\
+		&  &  & (0.163) &  & (0.304) & (0.287) \\
+	   Cash flow from Operations to Assets &  &  & 0.0192 &  & 0.0763 & 0.0499 \\
+		&  &  & (0.101) &  & (0.154) & (0.177) \\
+	   Cash and short-term Investments to Assets &  &  & 0.0202 &  & 0.0401 & -0.00563 \\
+		&  &  & (0.0891) &  & (0.143) & (0.211) \\
+	   Leverage &  &  & -0.00546 &  & -0.159 & -0.151 \\
+		&  &  & (0.0533) &  & (0.180) & (0.175) \\
+	   Ln(At) &  &  & 0.0123 &  & 0.0179 & 0.0179 \\
+		&  &  & (0.00994) &  & (0.0154) & (0.0164) \\
+	   Tobin's Q &  &  & -0.00888 &  & -0.0189 & -0.0168 \\
+		&  &  & (0.0130) &  & (0.0250) & (0.0231) \\
+	   Strategic Purpose &  & 0.0347 &  &  &  & 0.150 \\
+		&  & (0.0250) &  &  &  & (0.142) \\
+	   Takeover Purpose &  & 0.0017 &  &  &  & 0.00692 \\
+		&  & (0.0162) &  &  &  & (0.0832) \\
+	   Return on Assets Targets &  &  &  & -0.0119 & -0.00905 & 0.0249 \\
+		&  &  &  & (0.151) & (0.245) & (0.243) \\
+	   Cash flow from Operations to Assets Targets &  &  &  & -0.186 & -0.246 & -0.238 \\
+		&  &  &  & (0.230) & (0.298) & (0.315) \\
+	   Cash and short-term Investments to Assets Targets &  &  &  & -0.0673 & -0.147 & -0.180 \\
+		&  &  &  & (0.125) & (0.138) & (0.154) \\
+	   Leverage Targets &  &  &  & 0.0198 & -0.0155 & -0.0199 \\
+		&  &  &  & (0.113) & (0.125) & (0.127) \\
+	   Ln(At) Targets &  &  &  & 0.0242 & 0.0254 & 0.0253 \\
+		&  &  &  & (0.0187) & (0.0215) & (0.0197) \\
+	   Tobin's Q Targets &  &  &  & 0.0239 & 0.0236 & 0.0256 \\
+		&  &  &  & (0.0233) & (0.0243) & (0.0216) \\
+	   Standard Industry Classification Code = 5600, omitted &  &  &  & - & - & - \\
+		&  &  &  &  &  &  \\
+	   Constant & 0.1865 & 0.0118 & 0.0902 & -0.421 & -0.657 & -0.772* \\
+		& (0.1718) & (0.0100) & (0.145) & (0.410) & (0.421) & (0.408) \\
+		&  &  &  &  &  &  \\
+	   Observations & 194 & 194 & 194 & 139 & 139 & 139 \\
+		R-squared & 0.4878 & 0.0125 & 0.513 & 0.640 & 0.695 & 0.723 \\ \hline
+	   \multicolumn{7}{c}{ Robust pval in parentheses} \\
+	   \multicolumn{7}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+	   \end{tabular}
+	\end{adjustbox}
+	\end{table}
+
+	\begin{table}[ht]
+	\centering
+	\caption{Z-Score}
+
+	\begin{adjustbox}{height=10cm, max width=\textwidth}
+		
+		\begin{tabular}{lcccccc} \hline
+			& (1) & (2) & (3) & (4) & (5) & (6) \\
+		   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
+			&  &  &  &  &  &  \\
+		   Z-Indicator & 0.0184 & 0.0207* & 0.0180 & 0.00998 & 0.000491 & 0.00750 \\
+			& (0.4152) & (0.0121) & (0.0267) & (0.0303) & (0.0321) & (0.0355) \\
+		   Return on Assets &  &  & -0.0890 &  & -0.142 & -0.163 \\
+			&  &  & (0.0907) &  & (0.132) & (0.135) \\
+		   Cash flow from Operations to Assets &  &  & 0.0547 &  & 0.0809 & 0.0831 \\
+			&  &  & (0.0795) &  & (0.102) & (0.0998) \\
+		   Cash and short-term Investments to Assets &  &  & 0.0538 &  & 0.0758 & 0.0681 \\
+			&  &  & (0.0452) &  & (0.0565) & (0.0556) \\
+		   Leverage &  &  & 0.00960 &  & 0.0225 & 0.0304 \\
+			&  &  & (0.0445) &  & (0.0489) & (0.0485) \\
+		   Ln(At) &  &  & 0.0110 &  & 0.0214 & 0.0198 \\
+			&  &  & (0.00903) &  & (0.0159) & (0.0146) \\
+		   Tobin's Q &  &  & -0.0185* &  & -0.0206 & -0.0218 \\
+			&  &  & (0.00994) &  & (0.0147) & (0.0149) \\
+		   Strategic Purpose &  & 0.0349 &  &  &  & 0.0687 \\
+			&  & (0.0293) &  &  &  & (0.0528) \\
+		   Takeover Purpose &  & -0.0011 &  &  &  & -0.0122 \\
+			&  & (0.0115) &  &  &  & (0.0254) \\
+		   Return on Assets Targets &  &  &  & 0.0995 & 0.0896 & 0.112 \\
+			&  &  &  & (0.110) & (0.113) & (0.120) \\
+		   Cash flow from Operations to Assets Targets &  &  &  & -0.143 & -0.114 & -0.116 \\
+			&  &  &  & (0.0990) & (0.0989) & (0.0991) \\
+		   Cash and short-term Investments to Assets Targets &  &  &  & 0.0409 & 0.0328 & 0.0286 \\
+			&  &  &  & (0.0573) & (0.0588) & (0.0566) \\
+		   Leverage Targets &  &  &  & 0.0166 & 0.00683 & 0.0121 \\
+			&  &  &  & (0.0459) & (0.0457) & (0.0460) \\
+		   Ln(At) Targets &  &  &  & -0.00635 & -0.0144 & -0.0159 \\
+			&  &  &  & (0.0123) & (0.0163) & (0.0169) \\
+		   Tobin's Q Targets &  &  &  & 0.00401 & 0.00200 & 0.00274 \\
+			&  &  &  & (0.00909) & (0.00946) & (0.00879) \\
+		   Constant & -0.0586 & -0.0001 & -0.0719 & -0.0124 & -0.0690 & -0.0503 \\
+			& (0.1528) & (0.0118) & (0.0526) & (0.107) & (0.0907) & (0.0952) \\
+			&  &  &  &  &  &  \\
+		   Observations & 457 & 457 & 457 & 348 & 348 & 348 \\
+			R-squared & 0.2690 & 0.0141 & 0.300 & 0.310 & 0.364 & 0.382 \\ \hline
+		   \multicolumn{7}{c}{ Robust pval in parentheses} \\
+		   \multicolumn{7}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+		   \end{tabular}
+		   
+	\end{adjustbox}
+	\end{table}
+
+	\begin{table}[ht]
+	\centering
+	\caption{Whited-Wu Indicator}
+
+	\begin{adjustbox}{height=10cm, max width=\textwidth}
+		\begin{tabular}{lcccccc} \hline
+			& (1) & (2) & (3) & (4) & (5) & (6) \\
+		   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
+			&  &  &  &  &  &  \\
+		   WW-Indicator & 0.0283 & -0.0016 & -0.0534 & 0.0476 & -0.0793 & -0.0589 \\
+			& (0.3954) & (0.0136) & (0.0455) & (0.0573) & (0.0621) & (0.0627) \\
+		   Return on Assets &  &  & -0.109 &  & -0.145 & -0.164 \\
+			&  &  & (0.121) &  & (0.169) & (0.167) \\
+		   Cash flow from Operations to Assets &  &  & 0.138 &  & 0.140 & 0.140 \\
+			&  &  & (0.0841) &  & (0.116) & (0.113) \\
+		   Cash and short-term Investments to Assets &  &  & 0.103* &  & 0.118* & 0.106 \\
+			&  &  & (0.0611) &  & (0.0659) & (0.0677) \\
+		   Leverage &  &  & -0.0498 &  & -0.0369 & -0.0427 \\
+			&  &  & (0.0602) &  & (0.0730) & (0.0773) \\
+		   Ln(At) &  &  & 0.0211 &  & 0.0354 & 0.0283 \\
+			&  &  & (0.0153) &  & (0.0261) & (0.0235) \\
+		   Tobin's Q &  &  & -0.0214* &  & -0.0231 & -0.0275 \\
+			&  &  & (0.0126) &  & (0.0175) & (0.0185) \\
+		   Strategic Purpose &  & 0.0385 &  &  &  & 0.0884 \\
+			&  & (0.0358) &  &  &  & (0.0650) \\
+		   Takeover Purpose &  & 0.0058 &  &  &  & -0.00981 \\
+			&  & (0.0139) &  &  &  & (0.0435) \\
+		   Return on Assets Targets &  &  &  & 0.117 & 0.123 & 0.169 \\
+			&  &  &  & (0.146) & (0.156) & (0.172) \\
+		   Cash flow from Operations to Assets Targets &  &  &  & -0.182 & -0.178 & -0.212 \\
+			&  &  &  & (0.147) & (0.157) & (0.167) \\
+		   Cash and short-term Investments to Assets Targets &  &  &  & 0.0301 & -0.00437 & 0.00501 \\
+			&  &  &  & (0.109) & (0.0988) & (0.103) \\
+		   Leverage Targets &  &  &  & 0.0195 & 0.0166 & 0.0272 \\
+			&  &  &  & (0.0620) & (0.0600) & (0.0703) \\
+		   Ln(At) Targets &  &  &  & -0.00545 & -0.0132 & -0.0115 \\
+			&  &  &  & (0.0166) & (0.0218) & (0.0224) \\
+		   Tobin's Q Targets &  &  &  & 0.00143 & -0.00189 & 0.000298 \\
+			&  &  &  & (0.0158) & (0.0163) & (0.0144) \\
+		   Constant & 0.2459*** & 0.0115 & 0.186* & 0.00573 & -0.0945 & -0.0934 \\
+			& (0.0000) & (0.0128) & (0.104) & (0.0934) & (0.0875) & (0.0910) \\
+			&  &  &  &  &  &  \\
+		   Observations & 331 & 331 & 331 & 259 & 259 & 259 \\
+			R-squared & 0.2504 & 0.0081 & 0.298 & 0.286 & 0.347 & 0.368 \\ \hline
+		   \multicolumn{7}{c}{ Robust pval in parentheses} \\
+		   \multicolumn{7}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+		   \end{tabular}		   
+	\end{adjustbox}
+	\end{table}
+
+	\begin{table}[ht]
+		\centering
+		\caption{Ratio Analysis}
+
+		\begin{adjustbox}{height=10cm, max width=\textwidth}
+			\begin{tabular}{lcccc} \hline
+				& (1) & (2) & (3) & (4) \\
+			   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
+				&  &  &  &  \\
+			   Return on Assets & -0.0818 & -0.126 & -0.0992 & -0.124 \\
+				& (0.0876) & (0.0942) & (0.128) & (0.128) \\
+			   Cash flow from Operations to Assets & 0.0857 & 0.114 & 0.0794 & 0.0859 \\
+				& (0.0736) & (0.0764) & (0.0958) & (0.0942) \\
+			   Cash and short-term Investments to Assets & 0.0483 & 0.0348 & 0.0631 & 0.0533 \\
+				& (0.0455) & (0.0446) & (0.0547) & (0.0537) \\
+			   Leverage & -0.0113 & -0.0112 & -0.000794 & 0.00219 \\
+				& (0.0399) & (0.0395) & (0.0454) & (0.0443) \\
+			   Ln(At) & 0.00808 & 0.00707 & 0.0155 & 0.0141 \\
+				& (0.00829) & (0.00779) & (0.0145) & (0.0135) \\
+			   Tobin's Q & -0.0151 & -0.0161* & -0.0172 & -0.0181 \\
+				& (0.00927) & (0.00935) & (0.0129) & (0.0131) \\
+			   Return on Assets Targets &  &  & 0.0899 & 0.105 \\
+				&  &  & (0.0947) & (0.0993) \\
+			   Cash flow from Operations to Assets Targets &  &  & -0.131 & -0.129 \\
+				&  &  & (0.0835) & (0.0822) \\
+			   Cash and short-term Investments to Assets Targets &  &  & 0.00663 & 0.00638 \\
+				&  &  & (0.0605) & (0.0591) \\
+			   Leverage Targets &  &  & -0.00212 & 0.00466 \\
+				&  &  & (0.0424) & (0.0431) \\
+			   Ln(At) Targets &  &  & -0.0114 & -0.0120 \\
+				&  &  & (0.0148) & (0.0152) \\
+			   Tobin's Q Targets &  &  & 0.00311 & 0.00369 \\
+				&  &  & (0.00947) & (0.00893) \\
+			   Takeover Purpose &  & 0.00642 &  & 0.000586 \\
+				&  & (0.0171) &  & (0.0209) \\
+			   Strategic Purpose &  & 0.0784* &  & 0.0705 \\
+				&  & (0.0415) &  & (0.0513) \\
+			   Constant & 0.0143 & 0.00582 & 0.0242 & 0.0151 \\
+				& (0.0619) & (0.0643) & (0.0754) & (0.0729) \\
+				&  &  &  &  \\
+			   Observations & 497 & 497 & 379 & 379 \\
+				R-squared & 0.256 & 0.277 & 0.309 & 0.324 \\ \hline
+			   \multicolumn{5}{c}{ Robust standard errors in parentheses} \\
+			   \multicolumn{5}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+			 \end{tabular}
+			   
+		\end{adjustbox}
+	\end{table}
 \end{document}
