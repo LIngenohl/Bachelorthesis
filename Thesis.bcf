@@ -2240,19 +2240,23 @@
     <bcf:citekey order="94">Collin-Dufresne2015</bcf:citekey>
     <bcf:citekey order="95">Collin-Dufresne2015</bcf:citekey>
     <bcf:citekey order="96">Brigida2012</bcf:citekey>
-    <bcf:citekey order="97">Klein2009</bcf:citekey>
-    <bcf:citekey order="98">Piotroski2000</bcf:citekey>
-    <bcf:citekey order="99">Fama2006</bcf:citekey>
-    <bcf:citekey order="100">Choi2012</bcf:citekey>
-    <bcf:citekey order="101">Altman1968</bcf:citekey>
-    <bcf:citekey order="102">Altman2002</bcf:citekey>
-    <bcf:citekey order="103">Altman2002</bcf:citekey>
-    <bcf:citekey order="104">Altman2002</bcf:citekey>
-    <bcf:citekey order="105">Sulub2014</bcf:citekey>
-    <bcf:citekey order="106">Whited2006</bcf:citekey>
-    <bcf:citekey order="107">Farre-mensa2013</bcf:citekey>
-    <bcf:citekey order="108">Farre-mensa2013</bcf:citekey>
-    <bcf:citekey order="109">MacKay2005</bcf:citekey>
-    <bcf:citekey order="110">Khatami2014</bcf:citekey>
+    <bcf:citekey order="97">Allen2000</bcf:citekey>
+    <bcf:citekey order="98">Klein2009</bcf:citekey>
+    <bcf:citekey order="99">Klein2009</bcf:citekey>
+    <bcf:citekey order="100">Brigida2012</bcf:citekey>
+    <bcf:citekey order="101">Brigida2012</bcf:citekey>
+    <bcf:citekey order="102">Piotroski2000</bcf:citekey>
+    <bcf:citekey order="103">Fama2006</bcf:citekey>
+    <bcf:citekey order="104">Choi2012</bcf:citekey>
+    <bcf:citekey order="105">Altman1968</bcf:citekey>
+    <bcf:citekey order="106">Altman2002</bcf:citekey>
+    <bcf:citekey order="107">Altman2002</bcf:citekey>
+    <bcf:citekey order="108">Altman2002</bcf:citekey>
+    <bcf:citekey order="109">Sulub2014</bcf:citekey>
+    <bcf:citekey order="110">Whited2006</bcf:citekey>
+    <bcf:citekey order="111">Farre-mensa2013</bcf:citekey>
+    <bcf:citekey order="112">Farre-mensa2013</bcf:citekey>
+    <bcf:citekey order="113">MacKay2005</bcf:citekey>
+    <bcf:citekey order="114">Khatami2014</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
