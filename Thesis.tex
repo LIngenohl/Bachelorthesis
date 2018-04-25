@@ -578,50 +578,49 @@ In order to compute the abnormal returns $AR_{i,t}$ for security $i$ at time $t$
 	\caption{F-Score}
 
 	\begin{adjustbox}{height=10cm, max width=\textwidth}
-	\begin{tabular}{lcccccc} \hline
-		& (1) & (2) & (3) & (4) & (5) & (6) \\
-	   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
-		&  &  &  &  &  &  \\
-	   F-Indicator & 0.0003 & 0.0021 & -0.0182 & 0.0151 & -0.0299 & -0.0159 \\
-		& (0.9946) & (0.0160) & (0.0450) & (0.0510) & (0.0521) & (0.0478) \\
-	   Return on Assets &  &  & -0.00839 &  & 0.00387 & -0.0345 \\
-		&  &  & (0.163) &  & (0.304) & (0.287) \\
-	   Cash flow from Operations to Assets &  &  & 0.0192 &  & 0.0763 & 0.0499 \\
-		&  &  & (0.101) &  & (0.154) & (0.177) \\
-	   Cash and short-term Investments to Assets &  &  & 0.0202 &  & 0.0401 & -0.00563 \\
-		&  &  & (0.0891) &  & (0.143) & (0.211) \\
-	   Leverage &  &  & -0.00546 &  & -0.159 & -0.151 \\
-		&  &  & (0.0533) &  & (0.180) & (0.175) \\
-	   Ln(At) &  &  & 0.0123 &  & 0.0179 & 0.0179 \\
-		&  &  & (0.00994) &  & (0.0154) & (0.0164) \\
-	   Tobin's Q &  &  & -0.00888 &  & -0.0189 & -0.0168 \\
-		&  &  & (0.0130) &  & (0.0250) & (0.0231) \\
-	   Strategic Purpose &  & 0.0347 &  &  &  & 0.150 \\
-		&  & (0.0250) &  &  &  & (0.142) \\
-	   Takeover Purpose &  & 0.0017 &  &  &  & 0.00692 \\
-		&  & (0.0162) &  &  &  & (0.0832) \\
-	   Return on Assets Targets &  &  &  & -0.0119 & -0.00905 & 0.0249 \\
-		&  &  &  & (0.151) & (0.245) & (0.243) \\
-	   Cash flow from Operations to Assets Targets &  &  &  & -0.186 & -0.246 & -0.238 \\
-		&  &  &  & (0.230) & (0.298) & (0.315) \\
-	   Cash and short-term Investments to Assets Targets &  &  &  & -0.0673 & -0.147 & -0.180 \\
-		&  &  &  & (0.125) & (0.138) & (0.154) \\
-	   Leverage Targets &  &  &  & 0.0198 & -0.0155 & -0.0199 \\
-		&  &  &  & (0.113) & (0.125) & (0.127) \\
-	   Ln(At) Targets &  &  &  & 0.0242 & 0.0254 & 0.0253 \\
-		&  &  &  & (0.0187) & (0.0215) & (0.0197) \\
-	   Tobin's Q Targets &  &  &  & 0.0239 & 0.0236 & 0.0256 \\
-		&  &  &  & (0.0233) & (0.0243) & (0.0216) \\
-	   Standard Industry Classification Code = 5600, omitted &  &  &  & - & - & - \\
-		&  &  &  &  &  &  \\
-	   Constant & 0.1865 & 0.0118 & 0.0902 & -0.421 & -0.657 & -0.772* \\
-		& (0.1718) & (0.0100) & (0.145) & (0.410) & (0.421) & (0.408) \\
-		&  &  &  &  &  &  \\
-	   Observations & 194 & 194 & 194 & 139 & 139 & 139 \\
-		R-squared & 0.4878 & 0.0125 & 0.513 & 0.640 & 0.695 & 0.723 \\ \hline
-	   \multicolumn{7}{c}{ Robust pval in parentheses} \\
-	   \multicolumn{7}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
-	   \end{tabular}
+		\begin{tabular}{lccccc}
+			\multicolumn{6}{c}{Regression F-Score} \\ \hline
+			\\
+			VARIABLES & (1) & (2) & (3) & (4) & (5) \\ \\ \hline
+			 &  &  &  &  &  \\
+			F-Indicator & 0.0885* & 0.0583 & 0.0600 & 0.0636 & 0.0056 \\
+			 & (1.8171) & (1.2234) & (0.0634) & (0.0607) & (0.0898) \\
+			Return on Assets &  &  & -0.1732 &  & -0.3401 \\
+			 &  &  & (0.2084) &  & (0.3384) \\
+			Cash flow from Operations to Assets &  &  & -0.0311 &  & -0.0021 \\
+			 &  &  & (0.1149) &  & (0.2613) \\
+			Cash and short-term Investments to Assets &  &  & -0.1337 &  & -0.2147 \\
+			 &  &  & (0.1326) &  & (0.1911) \\
+			Leverage &  &  & -0.1187 &  & -0.2236 \\
+			 &  &  & (0.1170) &  & (0.1470) \\
+			Ln(At) &  &  & 0.0395** &  & 0.0402** \\
+			 &  &  & (0.0161) &  & (0.0184) \\
+			Tobin's Q &  &  & 0.0397** &  & 0.0326 \\
+			 &  &  & (0.0155) &  & (0.0251) \\
+			Takeover Purpose &  & 0.1077** &  &  & 0.0872 \\
+			 &  & (2.3818) &  &  & (0.0715) \\
+			Strategic Purpose &  & 0.1764** &  &  & 0.2157* \\
+			 &  & (2.0002) &  &  & (0.1200) \\
+			Return on Assets Targets &  &  &  & 0.1493 & 0.2380 \\
+			 &  &  &  & (0.1923) & (0.2053) \\
+			Cash flow from Operations to Assets Targets &  &  &  & -0.2191 & -0.2409 \\
+			 &  &  &  & (0.2066) & (0.2256) \\
+			Cash and short-term Investments to Assets Targets &  &  &  & -0.0374 & -0.1205 \\
+			 &  &  &  & (0.1727) & (0.2046) \\
+			Leverage Targets &  &  &  & -0.0642 & 0.0291 \\
+			 &  &  &  & (0.1429) & (0.1463) \\
+			Ln(At) Targets &  &  &  & 0.0004 & -0.0120 \\
+			 &  &  &  & (0.0237) & (0.0280) \\
+			Tobin's Q Targets &  &  &  & 0.0021 & -0.0190 \\
+			 &  &  &  & (0.0154) & (0.0215) \\
+			Constant & 0.0376 & -0.0888 & -0.3225* & 0.2873 & -0.1172 \\
+			 & (0.2684) & (-0.6475) & (0.1908) & (0.1855) & (0.2203) \\
+			 &  &  &  &  &  \\
+			Observations & 192 & 192 & 192 & 137 & 137 \\
+			 R-squared & 0.3593 & 0.3975 & 0.4375 & 0.4875 & 0.5870 \\ \hline
+			\multicolumn{6}{c}{ Robust t-statistics in parentheses} \\
+			\multicolumn{6}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+			\end{tabular}
 	\end{adjustbox}
 	\end{table}
 
@@ -631,48 +630,51 @@ In order to compute the abnormal returns $AR_{i,t}$ for security $i$ at time $t$
 
 	\begin{adjustbox}{height=10cm, max width=\textwidth}
 		
-		\begin{tabular}{lcccccc} \hline
-			& (1) & (2) & (3) & (4) & (5) & (6) \\
-		   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
-			&  &  &  &  &  &  \\
-		   Z-Indicator & 0.0184 & 0.0207* & 0.0180 & 0.00998 & 0.000491 & 0.00750 \\
-			& (0.4152) & (0.0121) & (0.0267) & (0.0303) & (0.0321) & (0.0355) \\
-		   Return on Assets &  &  & -0.0890 &  & -0.142 & -0.163 \\
-			&  &  & (0.0907) &  & (0.132) & (0.135) \\
-		   Cash flow from Operations to Assets &  &  & 0.0547 &  & 0.0809 & 0.0831 \\
-			&  &  & (0.0795) &  & (0.102) & (0.0998) \\
-		   Cash and short-term Investments to Assets &  &  & 0.0538 &  & 0.0758 & 0.0681 \\
-			&  &  & (0.0452) &  & (0.0565) & (0.0556) \\
-		   Leverage &  &  & 0.00960 &  & 0.0225 & 0.0304 \\
-			&  &  & (0.0445) &  & (0.0489) & (0.0485) \\
-		   Ln(At) &  &  & 0.0110 &  & 0.0214 & 0.0198 \\
-			&  &  & (0.00903) &  & (0.0159) & (0.0146) \\
-		   Tobin's Q &  &  & -0.0185* &  & -0.0206 & -0.0218 \\
-			&  &  & (0.00994) &  & (0.0147) & (0.0149) \\
-		   Strategic Purpose &  & 0.0349 &  &  &  & 0.0687 \\
-			&  & (0.0293) &  &  &  & (0.0528) \\
-		   Takeover Purpose &  & -0.0011 &  &  &  & -0.0122 \\
-			&  & (0.0115) &  &  &  & (0.0254) \\
-		   Return on Assets Targets &  &  &  & 0.0995 & 0.0896 & 0.112 \\
-			&  &  &  & (0.110) & (0.113) & (0.120) \\
-		   Cash flow from Operations to Assets Targets &  &  &  & -0.143 & -0.114 & -0.116 \\
-			&  &  &  & (0.0990) & (0.0989) & (0.0991) \\
-		   Cash and short-term Investments to Assets Targets &  &  &  & 0.0409 & 0.0328 & 0.0286 \\
-			&  &  &  & (0.0573) & (0.0588) & (0.0566) \\
-		   Leverage Targets &  &  &  & 0.0166 & 0.00683 & 0.0121 \\
-			&  &  &  & (0.0459) & (0.0457) & (0.0460) \\
-		   Ln(At) Targets &  &  &  & -0.00635 & -0.0144 & -0.0159 \\
-			&  &  &  & (0.0123) & (0.0163) & (0.0169) \\
-		   Tobin's Q Targets &  &  &  & 0.00401 & 0.00200 & 0.00274 \\
-			&  &  &  & (0.00909) & (0.00946) & (0.00879) \\
-		   Constant & -0.0586 & -0.0001 & -0.0719 & -0.0124 & -0.0690 & -0.0503 \\
-			& (0.1528) & (0.0118) & (0.0526) & (0.107) & (0.0907) & (0.0952) \\
-			&  &  &  &  &  &  \\
-		   Observations & 457 & 457 & 457 & 348 & 348 & 348 \\
-			R-squared & 0.2690 & 0.0141 & 0.300 & 0.310 & 0.364 & 0.382 \\ \hline
-		   \multicolumn{7}{c}{ Robust pval in parentheses} \\
-		   \multicolumn{7}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
-		   \end{tabular}
+		\begin{tabular}{lccccc}
+			\\
+			\multicolumn{6}{c}{Regression Z-Score asdjhaskjdhkajshdkjashdkjashdkjahsdkjhaskjdhkasjhdkjhas askjhdkasjhdkjashdd} \\ \\ \hline
+			 \\
+			VARIABLES  & (1) & (2) & (3) & (4) & (5) \\ \\ \hline
+			 &  &  &  &  &  \\
+			Z-Indicator & -0.0099 & -0.0344 & -0.0572 & 0.0013 & -0.0930* \\
+			 & (-0.2604) & (-0.9528) & (0.0447) & (0.0485) & (0.0558) \\
+			Return on Assets &  &  & -0.0933 &  & -0.2435 \\
+			 &  &  & (0.1364) &  & (0.1991) \\
+			Cash flow from Operations to Assets &  &  & 0.1154 &  & 0.2382 \\
+			 &  &  & (0.1098) &  & (0.1611) \\
+			Cash and short-term Investments to Assets &  &  & 0.0849 &  & 0.1079 \\
+			 &  &  & (0.0841) &  & (0.0893) \\
+			Leverage &  &  & -0.0366 &  & 0.0021 \\
+			 &  &  & (0.0840) &  & (0.0913) \\
+			Ln(At) &  &  & 0.0315*** &  & 0.0488*** \\
+			 &  &  & (0.0092) &  & (0.0109) \\
+			Tobin's Q &  &  & -0.0062 &  & -0.0179 \\
+			 &  &  & (0.0122) &  & (0.0149) \\
+			Takeover Purpose &  & 0.1595*** &  &  & 0.1546*** \\
+			 &  & (5.6436) &  &  & (0.0327) \\
+			Strategic Purpose &  & 0.1278** &  &  & 0.0938 \\
+			 &  & (2.4042) &  &  & (0.0659) \\
+			Return on Assets Targets &  &  &  & -0.0856 & -0.1876 \\
+			 &  &  &  & (0.2183) & (0.2141) \\
+			Cash flow from Operations to Assets Targets &  &  &  & 0.0144 & 0.1025 \\
+			 &  &  &  & (0.2089) & (0.2008) \\
+			Cash and short-term Investments to Assets Targets &  &  &  & 0.0256 & -0.0125 \\
+			 &  &  &  & (0.0953) & (0.0933) \\
+			Leverage Targets &  &  &  & 0.0359 & -0.0212 \\
+			 &  &  &  & (0.0765) & (0.0701) \\
+			Ln(At) Targets &  &  &  & -0.0162 & -0.0372*** \\
+			 &  &  &  & (0.0122) & (0.0130) \\
+			Tobin's Q Targets &  &  &  & -0.0034 & -0.0090 \\
+			 &  &  &  & (0.0109) & (0.0108) \\
+			Constant & -0.2050** & -0.3064*** & -0.3668*** & -0.0719 & -0.2840 \\
+			 & (-2.0256) & (-3.1507) & (0.1167) & (0.1851) & (0.1861) \\
+			 &  &  &  &  &  \\
+			Observations & 454 & 454 & 454 & 345 & 345 \\
+			 R-squared & 0.1655 & 0.2200 & 0.2040 & 0.2028 & 0.3317 \\ \hline
+			\multicolumn{6}{c}{ Robust t-statistics in parentheses} \\
+			\multicolumn{6}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+			\end{tabular}
+			
 		   
 	\end{adjustbox}
 	\end{table}
@@ -682,97 +684,161 @@ In order to compute the abnormal returns $AR_{i,t}$ for security $i$ at time $t$
 	\caption{Whited-Wu Indicator}
 
 	\begin{adjustbox}{height=10cm, max width=\textwidth}
-		\begin{tabular}{lcccccc} \hline
-			& (1) & (2) & (3) & (4) & (5) & (6) \\
-		   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
-			&  &  &  &  &  &  \\
-		   WW-Indicator & 0.0283 & -0.0016 & -0.0534 & 0.0476 & -0.0793 & -0.0589 \\
-			& (0.3954) & (0.0136) & (0.0455) & (0.0573) & (0.0621) & (0.0627) \\
-		   Return on Assets &  &  & -0.109 &  & -0.145 & -0.164 \\
-			&  &  & (0.121) &  & (0.169) & (0.167) \\
-		   Cash flow from Operations to Assets &  &  & 0.138 &  & 0.140 & 0.140 \\
-			&  &  & (0.0841) &  & (0.116) & (0.113) \\
-		   Cash and short-term Investments to Assets &  &  & 0.103* &  & 0.118* & 0.106 \\
-			&  &  & (0.0611) &  & (0.0659) & (0.0677) \\
-		   Leverage &  &  & -0.0498 &  & -0.0369 & -0.0427 \\
-			&  &  & (0.0602) &  & (0.0730) & (0.0773) \\
-		   Ln(At) &  &  & 0.0211 &  & 0.0354 & 0.0283 \\
-			&  &  & (0.0153) &  & (0.0261) & (0.0235) \\
-		   Tobin's Q &  &  & -0.0214* &  & -0.0231 & -0.0275 \\
-			&  &  & (0.0126) &  & (0.0175) & (0.0185) \\
-		   Strategic Purpose &  & 0.0385 &  &  &  & 0.0884 \\
-			&  & (0.0358) &  &  &  & (0.0650) \\
-		   Takeover Purpose &  & 0.0058 &  &  &  & -0.00981 \\
-			&  & (0.0139) &  &  &  & (0.0435) \\
-		   Return on Assets Targets &  &  &  & 0.117 & 0.123 & 0.169 \\
-			&  &  &  & (0.146) & (0.156) & (0.172) \\
-		   Cash flow from Operations to Assets Targets &  &  &  & -0.182 & -0.178 & -0.212 \\
-			&  &  &  & (0.147) & (0.157) & (0.167) \\
-		   Cash and short-term Investments to Assets Targets &  &  &  & 0.0301 & -0.00437 & 0.00501 \\
-			&  &  &  & (0.109) & (0.0988) & (0.103) \\
-		   Leverage Targets &  &  &  & 0.0195 & 0.0166 & 0.0272 \\
-			&  &  &  & (0.0620) & (0.0600) & (0.0703) \\
-		   Ln(At) Targets &  &  &  & -0.00545 & -0.0132 & -0.0115 \\
-			&  &  &  & (0.0166) & (0.0218) & (0.0224) \\
-		   Tobin's Q Targets &  &  &  & 0.00143 & -0.00189 & 0.000298 \\
-			&  &  &  & (0.0158) & (0.0163) & (0.0144) \\
-		   Constant & 0.2459*** & 0.0115 & 0.186* & 0.00573 & -0.0945 & -0.0934 \\
-			& (0.0000) & (0.0128) & (0.104) & (0.0934) & (0.0875) & (0.0910) \\
-			&  &  &  &  &  &  \\
-		   Observations & 331 & 331 & 331 & 259 & 259 & 259 \\
-			R-squared & 0.2504 & 0.0081 & 0.298 & 0.286 & 0.347 & 0.368 \\ \hline
-		   \multicolumn{7}{c}{ Robust pval in parentheses} \\
-		   \multicolumn{7}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
-		   \end{tabular}		   
+		
+		\begin{tabular}{lccccc}
+			\\
+			\multicolumn{6}{c}{Regression WW-Index} \\ \\ \hline
+			 \\
+			VARIABLES  & (1) & (2) & (3) & (4) & (5) \\ \\ \hline
+			 &  &  &  &  &  \\
+			WW-Indicator & 0.0975** & 0.0860** & -0.0516 & 0.1552*** & 0.0077 \\
+			 & (2.4224) & (2.1823) & (0.0764) & (0.0545) & (0.0858) \\
+			Return on Assets &  &  & -0.1487 &  & -0.2366 \\
+			 &  &  & (0.1877) &  & (0.2158) \\
+			Cash flow from Operations to Assets &  &  & 0.0811 &  & 0.1388 \\
+			 &  &  & (0.1384) &  & (0.1631) \\
+			Cash and short-term Investments to Assets &  &  & 0.0932 &  & 0.1191 \\
+			 &  &  & (0.1148) &  & (0.1097) \\
+			Leverage &  &  & 0.0106 &  & 0.0509 \\
+			 &  &  & (0.1150) &  & (0.1100) \\
+			Ln(At) &  &  & 0.0393** &  & 0.0391* \\
+			 &  &  & (0.0183) &  & (0.0206) \\
+			Tobin's Q &  &  & -0.0116 &  & -0.0268 \\
+			 &  &  & (0.0161) &  & (0.0187) \\
+			Takeover Purpose &  & 0.1801*** &  &  & 0.1551*** \\
+			 &  & (4.7829) &  &  & (0.0404) \\
+			Strategic Purpose &  & 0.1191* &  &  & 0.1150 \\
+			 &  & (1.8678) &  &  & (0.0735) \\
+			Return on Assets Targets &  &  &  & -0.2153 & -0.3091 \\
+			 &  &  &  & (0.3749) & (0.3747) \\
+			Cash flow from Operations to Assets Targets &  &  &  & 0.1157 & 0.2155 \\
+			 &  &  &  & (0.3707) & (0.3570) \\
+			Cash and short-term Investments to Assets Targets &  &  &  & 0.0669 & 0.0109 \\
+			 &  &  &  & (0.1051) & (0.1042) \\
+			Leverage Targets &  &  &  & 0.1661 & 0.1034 \\
+			 &  &  &  & (0.1362) & (0.1362) \\
+			Ln(At) Targets &  &  &  & -0.0299* & -0.0311* \\
+			 &  &  &  & (0.0157) & (0.0176) \\
+			Tobin's Q Targets &  &  &  & -0.0044 & -0.0073 \\
+			 &  &  &  & (0.0119) & (0.0115) \\
+			Constant & -0.1420 & -0.2625* & -0.2791* & -0.0110 & -0.2054 \\
+			 & (-1.1435) & (-1.9005) & (0.1579) & (0.1569) & (0.2000) \\
+			 &  &  &  &  &  \\
+			Observations & 329 & 329 & 329 & 257 & 257 \\
+			 R-squared & 0.2182 & 0.2783 & 0.2374 & 0.2872 & 0.3563 \\ \hline
+			\multicolumn{6}{c}{ Robust t-statistics in parentheses} \\
+			\multicolumn{6}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+			\end{tabular}
+					   
 	\end{adjustbox}
 	\end{table}
 
 	\begin{table}[ht]
 		\centering
-		\caption{Ratio Analysis}
+		\caption{Rating Regression}
 
 		\begin{adjustbox}{height=10cm, max width=\textwidth}
-			\begin{tabular}{lcccc} \hline
-				& (1) & (2) & (3) & (4) \\
-			   VARIABLES & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm & car\_ten\_mm \\ \hline
-				&  &  &  &  \\
-			   Return on Assets & -0.0818 & -0.126 & -0.0992 & -0.124 \\
-				& (0.0876) & (0.0942) & (0.128) & (0.128) \\
-			   Cash flow from Operations to Assets & 0.0857 & 0.114 & 0.0794 & 0.0859 \\
-				& (0.0736) & (0.0764) & (0.0958) & (0.0942) \\
-			   Cash and short-term Investments to Assets & 0.0483 & 0.0348 & 0.0631 & 0.0533 \\
-				& (0.0455) & (0.0446) & (0.0547) & (0.0537) \\
-			   Leverage & -0.0113 & -0.0112 & -0.000794 & 0.00219 \\
-				& (0.0399) & (0.0395) & (0.0454) & (0.0443) \\
-			   Ln(At) & 0.00808 & 0.00707 & 0.0155 & 0.0141 \\
-				& (0.00829) & (0.00779) & (0.0145) & (0.0135) \\
-			   Tobin's Q & -0.0151 & -0.0161* & -0.0172 & -0.0181 \\
-				& (0.00927) & (0.00935) & (0.0129) & (0.0131) \\
-			   Return on Assets Targets &  &  & 0.0899 & 0.105 \\
-				&  &  & (0.0947) & (0.0993) \\
-			   Cash flow from Operations to Assets Targets &  &  & -0.131 & -0.129 \\
-				&  &  & (0.0835) & (0.0822) \\
-			   Cash and short-term Investments to Assets Targets &  &  & 0.00663 & 0.00638 \\
-				&  &  & (0.0605) & (0.0591) \\
-			   Leverage Targets &  &  & -0.00212 & 0.00466 \\
-				&  &  & (0.0424) & (0.0431) \\
-			   Ln(At) Targets &  &  & -0.0114 & -0.0120 \\
-				&  &  & (0.0148) & (0.0152) \\
-			   Tobin's Q Targets &  &  & 0.00311 & 0.00369 \\
-				&  &  & (0.00947) & (0.00893) \\
-			   Takeover Purpose &  & 0.00642 &  & 0.000586 \\
-				&  & (0.0171) &  & (0.0209) \\
-			   Strategic Purpose &  & 0.0784* &  & 0.0705 \\
-				&  & (0.0415) &  & (0.0513) \\
-			   Constant & 0.0143 & 0.00582 & 0.0242 & 0.0151 \\
-				& (0.0619) & (0.0643) & (0.0754) & (0.0729) \\
-				&  &  &  &  \\
-			   Observations & 497 & 497 & 379 & 379 \\
-				R-squared & 0.256 & 0.277 & 0.309 & 0.324 \\ \hline
-			   \multicolumn{5}{c}{ Robust standard errors in parentheses} \\
-			   \multicolumn{5}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
-			 \end{tabular}
+			\begin{tabular}{lccccc}
+				\multicolumn{6}{c}{Regression Ratings} \\ \\ \hline
+				  \\
+				VARIABLES & (1) & (2) & (3) & (4) & (5) \\ \\ \hline
+				 &  &  &  &  &  \\
+				rating\_indicator & 0.0668** & 0.0644** & -0.0071 & 0.0981** & -0.0047 \\
+				 & (2.2413) & (2.2096) & (0.0377) & (0.0392) & (0.0443) \\
+				Return on Assets &  &  & -0.1766 &  & -0.3255* \\
+				 &  &  & (0.1408) &  & (0.1934) \\
+				Cash flow from Operations to Assets &  &  & 0.1044 &  & 0.1859 \\
+				 &  &  & (0.1110) &  & (0.1612) \\
+				Cash and short-term Investments to Assets &  &  & 0.0299 &  & 0.0554 \\
+				 &  &  & (0.0884) &  & (0.0904) \\
+				Leverage &  &  & -0.0063 &  & 0.0449 \\
+				 &  &  & (0.0785) &  & (0.0863) \\
+				Ln(At) &  &  & 0.0318*** &  & 0.0463*** \\
+				 &  &  & (0.0104) &  & (0.0124) \\
+				Tobin's Q &  &  & -0.0060 &  & -0.0148 \\
+				 &  &  & (0.0119) &  & (0.0142) \\
+				Takeover Purpose &  & 0.1621*** &  &  & 0.1523*** \\
+				 &  & (5.5861) &  &  & (0.0332) \\
+				Strategic Purpose &  & 0.0948* &  &  & 0.0771 \\
+				 &  & (1.9100) &  &  & (0.0624) \\
+				Return on Assets Targets &  &  &  & -0.0484 & -0.1267 \\
+				 &  &  &  & (0.2108) & (0.2054) \\
+				Cash flow from Operations to Assets Targets &  &  &  & 0.0100 & 0.0668 \\
+				 &  &  &  & (0.2007) & (0.1919) \\
+				Cash and short-term Investments to Assets Targets &  &  &  & 0.0488 & -0.0029 \\
+				 &  &  &  & (0.0946) & (0.0918) \\
+				Leverage Targets &  &  &  & 0.0752 & 0.0636 \\
+				 &  &  &  & (0.1006) & (0.0961) \\
+				Ln(At) Targets &  &  &  & -0.0260** & -0.0393*** \\
+				 &  &  &  & (0.0120) & (0.0134) \\
+				Tobin's Q Targets &  &  &  & -0.0053 & -0.0094 \\
+				 &  &  &  & (0.0107) & (0.0106) \\
+				Constant & -0.1740 & -0.2361 & -0.3333*** & 0.1071 & -0.0795 \\
+				 & (-1.4256) & (-1.5782) & (0.1213) & (0.1230) & (0.1442) \\
+				 &  &  &  &  &  \\
+				Observations & 494 & 494 & 494 & 376 & 376 \\
+				 R-squared & 0.1621 & 0.2145 & 0.1857 & 0.2049 & 0.2955 \\ \hline
+				\multicolumn{6}{c}{ Robust t-statistics in parentheses} \\
+				\multicolumn{6}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+				\end{tabular}				
 			   
 		\end{adjustbox}
 	\end{table}
+
+	\begin{table}[ht]
+		\centering
+		\caption{Size Regression}
+
+		\begin{adjustbox}{height=10cm, max width=\textwidth}
+			\begin{tabular}{lccccc}
+				\multicolumn{6}{c}{Regression Size} \\ \\ \hline
+					 \\
+				VARIABLES & (1) & (2) & (3) & (4) & (5) \\ \\ \hline
+					&  &  &  &  &  \\
+				size\_indicator & 0.0724** & 0.0673** & -0.0561 & 0.1208*** & -0.0383 \\
+					& (2.4793) & (2.3634) & (0.0466) & (0.0368) & (0.0548) \\
+				Return on Assets &  &  & -0.1939 &  & -0.3334* \\
+					&  &  & (0.1438) &  & (0.1948) \\
+				Cash flow from Operations to Assets &  &  & 0.1044 &  & 0.1845 \\
+					&  &  & (0.1119) &  & (0.1621) \\
+				Cash and short-term Investments to Assets &  &  & 0.0263 &  & 0.0562 \\
+					&  &  & (0.0871) &  & (0.0893) \\
+				Leverage &  &  & -0.0105 &  & 0.0421 \\
+					&  &  & (0.0755) &  & (0.0867) \\
+				Ln(At) &  &  & 0.0419*** &  & 0.0533*** \\
+					&  &  & (0.0139) &  & (0.0166) \\
+				Tobin's Q &  &  & -0.0048 &  & -0.0138 \\
+					&  &  & (0.0121) &  & (0.0142) \\
+				Takeover Purpose &  & 0.1607*** &  &  & 0.1512*** \\
+					&  & (5.5508) &  &  & (0.0331) \\
+				Strategic Purpose &  & 0.0941* &  &  & 0.0743 \\
+					&  & (1.8843) &  &  & (0.0616) \\
+				Return on Assets Targets &  &  &  & -0.0201 & -0.1364 \\
+					&  &  &  & (0.2099) & (0.2035) \\
+				Cash flow from Operations to Assets Targets &  &  &  & -0.0312 & 0.0786 \\
+					&  &  &  & (0.1981) & (0.1892) \\
+				Cash and short-term Investments to Assets Targets &  &  &  & 0.0248 & -0.0037 \\
+					&  &  &  & (0.0903) & (0.0920) \\
+				Leverage Targets &  &  &  & 0.0950 & 0.0651 \\
+					&  &  &  & (0.0999) & (0.0949) \\
+				Ln(At) Targets &  &  &  & -0.0316** & -0.0395*** \\
+					&  &  &  & (0.0124) & (0.0133) \\
+				Tobin's Q Targets &  &  &  & -0.0055 & -0.0096 \\
+					&  &  &  & (0.0105) & (0.0106) \\
+				Constant & -0.1429 & -0.2049 & -0.4051*** & 0.1133 & -0.1275 \\
+					& (-1.3996) & (-1.6170) & (0.1409) & (0.1237) & (0.1622) \\
+					&  &  &  &  &  \\
+				Observations & 494 & 494 & 494 & 376 & 376 \\
+					R-squared & 0.1641 & 0.2156 & 0.1882 & 0.2145 & 0.2965 \\ \hline
+				\multicolumn{6}{c}{ Robust t-statistics in parentheses} \\
+				\multicolumn{6}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+			\end{tabular}
+							
+		\end{adjustbox}
+	\end{table}
+
+
+
+
+
 \end{document}
