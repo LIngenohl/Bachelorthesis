@@ -35,7 +35,8 @@
   
 
 	% biblatex
-	\usepackage[style=authoryear,natbib=true,maxcitenames=2, maxbibnames=11,backend=biber,pagetracker=page,hyperref=true]{biblatex} \usepackage{csquotes}
+	\usepackage[style=authoryear,natbib=true,maxcitenames=2, maxbibnames=11,backend=biber,pagetracker=page,hyperref=true]{biblatex} 
+	\usepackage{csquotes}
 	\renewcommand*{\bibsetup}{%
 		\interlinepenalty=10000\relax % default is 5000
 		\widowpenalty=10000\relax
@@ -122,9 +123,40 @@
 
 
 \begin{document}
-\maketitle
+\begin{titlepage}
+    \begin{center}
+       
+        \includegraphics[width=0.5\textwidth]{Logo.jpg}
+       
+        \vspace*{1.5cm}
+		\huge
+        \textbf{Do Financial Constraints of Corporate Activist Investors Matter?}
 
-\pagebreak
+        \vspace{1.5cm}
+		\normalsize
+        Leopold Ingenohl\\
+        Richard-Wagner Str. 7\\
+        76185, Karlsruhe\\
+        leopold.ingenohl@student.unisg.ch\\
+        15-613-631
+
+        \vspace{1.5cm}
+        Supervised by:\\
+        Prof. Dr. Markus Schmid\\
+        Swiss Institute of Banking and Finance (s/bf)\\
+        \vfill
+
+        A thesis presented for the degree of\\
+        Bachelor of Arts HSG
+
+        \vspace{0.8cm}
+
+        Submitted May xx, 2018
+
+	\end{center}
+	
+\end{titlepage}
+
 \tableofcontents
 
 \section{Introduction}
@@ -241,7 +273,7 @@ The investor's credit rating is the second identifier. Investors having a S\&P 5
 
 The first index-based measure of financial constraints to be included is the Whited-Wu index. The index is based on the findings of \citet[p.543]{Whited2006} who augment an intertemporal investment model, in which constraints affect the investment policy through the shadow price of the cost of external finance. The Whited-Wu Index is determined by the variables cash flow to total assets (negative loading), an indicator that takes the value one if the firm pays cash dividends (negative loading), the ratio of long-term debt to total debt (positive loading), the natural logarithm of assets (negative loading), the firms three digit industry sales growth (positive loading) and the firms sales growth (negative loading). Following \citet[p.38]{Farre-mensa2013} firms in from the entire Compustat database are then sorted into terciles based on their index value. Firms in the top tercile are coded as constrained whereas firms in the bottom tercile are coded as unconstrained. A pairing with the initial sample of investors yields 126 and 307 constrained investors.\\
 The Kaplanz-Zingales in also identifies financially constrained firms, but \citet[p.29]{Farre-mensa2013} note that it appears to be more of an outlier and \citet{Whited2006} criticise, that it lacks parameter stability both across firms and over time. In addition, \citet[p.111]{Khatami2014} and \citet[p.1779]{Almeida2004} note that it yields groups of constrained and unconstrained firms that have different characteristics compared to those of other measures. Similar to \citet[p.546]{Whited2006}, \citet[p.1909]{hadlock2010} cast serious doubt on the validity of the KZ-index as a measure of financial constraints in a more recent study suggest that researchers consider alternative measures of financial constraints \citep[p.1938]{hadlock2010}.\\
-Based on these suggestion, investors are further grouped according to their HP-Index (SA-Index) as in \citet{hadlock2010}. It consists of the two quantities size and age and is therefore equally called the size-age (SA) index. The intuition is that small firms are typically young, less well known, and thus more vulnerable to capital market imperfection \citep[p.1790]{Almeida2004}. As with the previous indices, the HP-Index is computed for all companies on Compustat and dependent on the firm's index value, firms are grouped into terciles with the top (bottom) tercile representing constrained (unconstrained) firms \citep[p.29]{Farre-mensa2013}. A matching with the initial sample results in 58 constrained and 372 unconstrained corporate activist investors. 
+Based on these suggestion, investors are further grouped according to their HP-Index (SA-Index) as in \citet[p.1929]{hadlock2010}. It consists of the two quantities size and age and is therefore equally called the size-age (SA) index. The intuition is that small firms are typically young, less well known, and thus more vulnerable to capital market imperfection \citep[p.1790]{Almeida2004}. As with the previous indices, the HP-Index is computed for all companies on Compustat and dependent on the firm's index value, firms are grouped into terciles with the top (bottom) tercile representing constrained (unconstrained) firms \citep[p.29]{Farre-mensa2013}. A matching with the initial sample results in 58 constrained and 372 unconstrained corporate activist investors. 
 
 % To further enrich the analysis, \citeauthor{Altman1968}'s (\citeyear{Altman1968}) Z-score identifies corporations in financial distress. Although distressed firms "behave differently from financially constrained firms" \citep[p.461]{Bhagat2005}, the mentioned KZ-Index can allegedly also be used to identify distressed rather than constrained firms \citep[p.47]{Kim2015}. In addition the revised Z-score of \citet[p.19]{Altman2002} is in accordance with conventional credit ratings and therefore shows similarities with potential constraint measures. Furthermore, the Z-score allows to nearly use the full sample size and compared to the Whited-Wu index is not dependent on the scores of all firms on Compustat. In this case and under given limitations, the Z-score's can be appplicable. This thesis uses the original score \citep[p.607]{Altman1968}, which is applied to investors in the manufacturing industries (SIC industries 2000-3999) and the revised Z-score \citep[p.17]{Altman2002} for the reamaining investors (non-manufacutrers). The four variables included in both models all have a positive loading and the the score consists of working capital to total assets, retained earnings to total assets, earnings before interest and taxes (EBITA) to total assets and market value of equity to book value of total liabilites. the original model includes a fifth variable which is sales to total assets. Firms in the manufacturing industry below the threshold 1.81 are considered as distressed and those above 2.99 as not-distressed \citep[p.14]{Altman2002}. For the remaining firms, a Z-score below 1.1 implies a state of distress and above 2.6 as not distressed \citep[p.175]{Sulub2014}\\
 
@@ -265,7 +297,7 @@ Close to half of the investments were made while engaging into a takeover proces
 On the other hand, more than 50\% of the filings in which the investor was subject to a merger were disclosed by constrained investors -- the securities underlying the Schedule 13(D) were acquired to distribute them to own shareholders at the execution of the merger. In this scenario, the relationship between investor and target is switched.\\
 With 99 filings, the second most reported purpose was essentially to invest in the target. The target is considered to be a good investment opportunity, frequently undervalued and the investing corporation aims actively monitor and interact with it. The main idea is these filings do not directly imply future collaboration but give room for speculations.\\
 Following actively held investments, strategic investments are the third most common purposes due to which filings were disclosed. Different to the former, they are based on the premise of future collaboration between investor and target and thus denote a likely value improvement for the target. Potentially of high interest, they represent around one quarter of filings. Interestingly, 54 of all filings were disclosed due to investments for financing the issuer -- for instance direct financing or asset purchase agreements. This is in line with the findings of \citet[p.2792]{Allen2000} and \citet[p.78]{Liao2014} who suggest a driver of minority acquisitions is the target's financing. There are only 7 filings in which the investor announced a proxy fight with the target's management. In general, these findings are in line with the research findings on why corporation would actively hold equity ownership, namely in the process of takeover discussions, while building strategic alliances, for direct issuer financing or overcoming informational barriers.
-Turning to Panel C, the major industries in which the investors operate according to their Fama \& French's 48 industry classification code are presented. Shown are only industries, which are represented by at least 15 corporate investors. For the complete sample, 42 out of the maximum 48 industries are existent. As mentioned previously, the sample is reduced by excluding the trading industry due the irregular investment behavior. The highest industry representation is in business services with 98 filings, followed by the industries of pharmaceutical products, petroleum and natural gas and electronic equipment. For the business industry, equally 28 are investors constrained and unconstrained. Looking at pharmaceutical products, there are more constrained than unconstrained investors and their representation in the computer industry is almost the same. This could mean that especially in industries in which property rights become blurry and contracting is complicated hence information asymmetry is large, financially constrained firms have a higher representation \citep[p.4]{Liao2014}.
+Turning to Panel C, the major industries in which the investors operate according to their Fama \& French's 48 industry classification code are presented.\footnote{For simplicity, the SIC-Industry codes are not shown next to the Fama \& French industry classifications as these industries are compiled by several 3-digit SIC industries.} Shown are only industries, which are represented by at least 15 corporate investors. For the complete sample, 42 out of the maximum 48 industries are existent. As mentioned previously, the sample is reduced by excluding the trading industry due the irregular investment behavior. The highest industry representation is in business services with 98 filings, followed by the industries of pharmaceutical products, petroleum and natural gas and electronic equipment. For the business industry, equally 28 are investors constrained and unconstrained. Looking at pharmaceutical products, there are more constrained than unconstrained investors and their representation in the computer industry is almost the same. This could mean that especially in industries in which property rights become blurry and contracting is complicated hence information asymmetry is large, financially constrained firms have a higher representation \citep[p.4]{Liao2014}.
 \begin{comment}
 	\subsection{Examples of Corporate Activism}
 	In this subsection, two cases of corporate investments into other firms are being described. The first example is takeover the second is strategic investment. 
@@ -286,7 +318,8 @@ Turning to Panel C, the major industries in which the investors operate accordin
 
 After being familiar with general characteristics of the sample's filings, this section focuses on identifying the corporations prior to their Schedule 13(D) filing. What type of corporation makes activist investments and what are the characteristics of firms identified to be financially constrained? Do all these measures overall identify similar investors?\\
 Following, Table 2 introduces financial characteristics of each measure's sub-samples.\footnote{Note that investors are classified into three groups based on the tertile values of the financial constraint indices but only the top and bottom groups are presented. There exists a "gray zone" in which investors are not directly classified.} By the virtue of each measure, the two samples do not necessarily have to add up to the total number of filings. Hence for the WW-Index, the two sub-samples consist out of 307 and 107 investors. By grouping the investors according to their dividend pay out ratio, 184 investors are identified to be financially constrained and 310 as not. The HP-Index identifies only 58 constrained investors in the initial sample and only for the rating measure do the two groups include all investors with 296 having a credit rating and 265 missing one.\\
-For each sample, Table 2 reports the mean [median] of several key financials. For the complete sample, standard deviation and both, lowest and highest value are shown additionally. All reported data corresponds to the investor's fiscal year which is closest to the filing date and the reported values are winsorized at the 1\% and 99\% levels so that extreme values are replaced by the respective percentiles. This enables a presentation of more meaningful mean statistics \citep[p.203]{Klein2009}. Moreover, characteristics for the WW-, HP- and Dividend Payout indices have explanatory power beyond the sample, as these investors are identified according to their comparative values across the entire Compustat database. 
+For each sample, Table 2 reports the mean [median] of several key financials. For the complete sample, standard deviation and both, lowest and highest value are shown additionally. Column (1) and (2) present financials of the two sub-samples identified by each measure, where constrained investors are in Column (1) and unconstrained in Column (2). Column (3) shows the $t$-statistic and $Z$-statistic for differences between financially constrained and unconstrained investor's means and medians. For all tests, the $t$-statistics are for differences in means, assuming unequal variances between the two samples. The null hypothesis to be tested is that the population means from the sample of constrained and unconstrained investors are equal $H_{0}: \mu_{1}=\mu_{2}$. The two-sided alternative hypothesis reads $H_{a}: \mu_{1}\neq\mu_{2}$, thus both means are unequal and there exists a difference.\footnote{assumptions?} In addition to the parametric $t$-statistic, the non-parametric Wilcoxon Mann-Whitney $Z$-statistics tests similar to \citet[p.201]{Klein2009} whether the samples of constrained and unconstrained investors are from populations with the same distributions. It can also be called a test of differences in the medians, if the two sample distributions have the same shape. The data analysis is conducted by using the statistical program Stata (Version 13.2, StataCorp, College Station, Texas). Specifically, the Mann-Whitney test is conducted by using the command -ranksum- based on \citet[p.59]{Mann1947}. All reported data corresponds to the investor's fiscal year which is closest to the filing date and the reported values are winsorized at the 1\% and 99\% levels so that extreme values are replaced by the respective percentiles. This enables a presentation of more meaningful mean statistics \citep[p.203]{Klein2009}. Moreover, characteristics for the WW-, HP- and Dividend Payout indices have explanatory power beyond the sample, as these investors are identified according to their comparative values across the entire Compustat database. 
+
 \includepdf[angle={90},pages={1},pagecommand={}]{Summary_copy.pdf}
 
 Hence, a loose comparison to samples of other studies is possible. For further simplicity, the notion of "financially constrained" is used independently of the measure initially used to identify them. \\
@@ -347,7 +380,7 @@ Also shown in Graph 1 is that for all three cases, abnormal returns start to sub
 \subsection{Event Windows \& Financial Constraints}
 
 For the aforementioned reason, table III present the mean [median] cumulative and buy-and-hold abnormal returns for the following four event windows: Event window 1 is [-10,3], to allow for the 10-day filing window, information leakage and accommodate subsequent press coverage. The second event window is [-10,-6] to detach the possible effect of information leakages and event-date trading. Analogous the third event window [-5,3] aims to control for these two. This seems to be reasonable, as the aggregation of abnormal returns in Graph 1 decreases at around day -5, implying that information has been processed. The fourth event window is [-1,3] to accommodate for just the filing date and press coverage. \\ 
-Column (1) presents the abnormal returns for all targets. Column (2) and (3) show the abnormal returns for targets dependent on their investor's financial condition. The investors are grouped by the Whited-Wu index and groups are equal to those presented in Table II, with 126 filings disclosed by constrained and 307 disclosed by unconstrained investors. For the abnormal returns in columns (1), (2) and (3), significance levels are shown. The null hypothesis to be tested is that the mean day abnormal return is equal to zero, and thus concerns the average effect of an event on returns to shareholders. If the average abnormal returns are independent, identical distributed, and normal, the test statistic is distributed Student-$t$ under the null hypothesis \citep[p.7]{Brown1985}. As shown in \citet[p.22]{Brown1985} the market model seems to be a sufficient adjustment for cross sectional dependence (clustering) and therefore statistical significance is given by a two-tailed $t$-test.\footnote{include event clustering } The statistical significance of the median is computed by a quantile regression of the abnormal returns with the p-value of the coefficient representing the statistical significance of the median.  Column (4) tests the difference in means [medians] of column (2) and (3). The $t$-statistics represents the standard parametric test for difference in means and $Z$-statistic is the non-parametric Mann-Whitney rank-sum test which tests the null hypothesis that the two independent samples of abnormal returns are from the populations with the same distributions and therefore not different.
+Column (1) presents the abnormal returns for all targets. Column (2) and (3) show the abnormal returns for targets dependent on their investor's financial condition. The investors are grouped by the Whited-Wu index and groups are equal to those presented in Table II, with 126 filings disclosed by constrained and 307 disclosed by unconstrained investors. For the abnormal returns in columns (1), (2) and (3), significance levels are shown. The null hypothesis to be tested is that the mean day abnormal return is equal to zero, and thus concerns the average effect of an event on returns to shareholders. If the average abnormal returns are independent, identical distributed, and normal, the test statistic is distributed Student-$t$ under the null hypothesis \citep[p.7]{Brown1985}. As shown in \citet[p.22]{Brown1985} the market model seems to be a sufficient adjustment for cross sectional dependence (clustering) and therefore statistical significance is given by a two-tailed $t$-test.\footnote{include event clustering } The statistical significance of the median is computed by a quantile regression of the abnormal returns with the p-value of the coefficient representing the statistical significance of the median.  Column (4) tests the difference in means [medians] of column (2) and (3). As in Section 3, the $t$-statistics represents the standard parametric test for difference in means and $Z$-statistic is the non-parametric Mann-Whitney rank-sum test .
 %\citet[p.15]{Brown1985} shows that results are not radically altered where there is clustering in event dates  and hence dependence of the excess return measures. 
 %However, while extraction of the market factor via the market model appears to be a sufficient adjustment for dependence, this result is for randomly selected securities. \citep[p.22]{Brown1985}
 All returns  presented in Table III are winsorized at the 1\% and 99\% level. This extensive presentation of abnormal returns is done for three reasons. Firstly, to check the differences in abnormal returns over varying event windows and thereby accomodate for the time-effect. Secondly, to check whether the estimated abnormal returns are similar for the two methods of measurement and thirdly to test whether the investor's financial condition matters independently of time (across all event windows).
@@ -582,17 +615,87 @@ On the other hand, \citet{Akhigbe2007} examine the characteristics of final acqu
 % difference of the paper 
 \end{comment}
 
-\printbibliography{Bibliography}
+\printbibliography
  
 
 
+\indent
+
+
+
+\section{Appendix A -- Financial Constraints Measures \& Other Variables}
+
+\subsection{Whited--Wu Index}
+Used from \citet[p.543]{Whited2006} following \citet[p.38]{Farre-mensa2013} the Whited-Wu index is:
+	\begin{equation}
+	WW=-0.091X_{1}-0.062X_{2}+0.021X_{3}-0.044X_{4}+0.102X_{5}-0.035X_{6}
+	\end{equation}
+where\\ 
+$X_{1}$ is the ratio of cash flow to assets defined as the sum of income before extraordinary items and depreciation and amortization divided by total assets $\frac{ib+dp}{at}$\\
+$X_{2}$ is an indicator set to one if the firm pays a dividend thus if the sum of common and preferred dividends is positive, zero otherwise $dvp+dvc>0$\\
+$X_{3}$ is the ratio of long-term debt to total assets $\frac{dltt}{at}$\\
+$X_{4}$ is the size of the investor defined as the natural logarithm of total assets $log(at)$\\
+$X_{5}$ is the average industry sales growth, estimated for each three digit SIC industry and each year separately $\frac{SALE_{t}}{SALE_{t-1}}$\\
+$X_{6}$ is the investor's sales growth $\frac{SALE}{SALE_{t-1}}$\\
+
+Following convention, the index is calculated for all firms on Compustat and firms are sorted into terciles based on their index value in the previous year. Firms in the top tercile are coded as constrained and those in the bottom tercile are coded as unconstrained \citep[p.38]{Farre-mensa2013}. 
+
+\subsection{Dividend Payout Ratio}
+Following \citet[p.119]{Khatami2014} and \citet[p.1789]{Almeida2004}, the investor's dividend payout ratio is defined as the two-year average of the dividend payout ratio from the two preceeding annual reports at each point in time. The payout ratio is defined as the sum of dividends ($dvp+dvc$) plus stock repurchases (total expenditure on the purchase of common and preferred stocks $prstkc$) minus any reduction in the value of net number of preferred stocks outstanding (redemption value $pstkrv$) divided by operating income ($\frac{ib}{at}$) as in \citet[p.369]{Jagannathan2000}. Further following \citet[p.119]{Khatami2014} and \citet[p.1923]{hadlock2010} payout ratios are set equal to 1 if they are above 1 and if a firm has negative operating income and positive dividends. After computing the two-year average payout ratio for all firms on Compustat, firms are sorted into terciles based on their annual payout distribution. Firms in the bottom (top) tercile are coded constrained (unconstrained). 
+
+\subsection{HP / SA -- Index}
+Following \citet[p.1929]{hadlock2010} and \citet[p.119]{Khatami2014} the index is calculated as: $HP=-0.737*Size+0.043*Size^{2}-0.040*Age$ where size is the log of inflation adjusted (to 2004) book assets and age is the number of yeats the firm has been on Compustat with a non-missing stock price. In calculating the index, size is replaced with log(\$4.5 billion) and age with 37 years if the actual values exceed these thresholds \citep[p.1929]{hadlock2010}. After computing the HP index for all companies on Compustat, the firms are sorted into terciles based on their index values. Firms in the top tercile are coded as constrained and those in the bottom tercile are conded as unconstrained \citep[p.38]{Farre-mensa2013}.
+\pagebreak
+
+\subsection{Other Variables}
+\begin{enumerate}
+\item Return on assets $\frac{ebitda}{at}$
+\item Cash flow from operations to total assets $\frac{oancf}{at}$
+\item Cash and short-term investments to total assets $\frac{che}{at}$
+\item Cash to total assets $\frac{ch}{at}$
+\item Book Leverage \citep[p.1440]{MacKay2005} $\frac{dltt+dlc}{at}$
+\item Short-term debt to total assets $\frac{dlc}{at}$ 
+\item Long-term debt to total assets $\frac{dltt}{at}$
+\item Market value of equity $prcc_f*csho$
+\item Size of the firm $log(at)$
+\item Tobin's Q \citep[p.120]{Khatami2014} $\frac{at-ceq-txdb+csho*prcc_c}{at}$
+\end{enumerate}
+
+\section{Appendix B -- Categorization of Purpose of Transaction}
+
+\begin{enumerate}
+	
+
+\item Merger Agreement: "the Company entered into the Merger Agreement with \emph{Investor} and Merger Sub, pursuant to which \emph{Investor} will acquire all of the outstanding equity interests of the Company."
+
+\item Tender Offer: "The Reporting Person announced its intention to commence a partial cash tender offer for up to \emph{number of} shares of Common Stock at a price of \emph{\$ price} net per share"
+
+\item Hostile Takeover: "The Shares have been acquired by the Reporting Persons with a view to ultimately acquiring  control of the Company  pursuant to a merger with, or  acquisition of additional  stock  by,  the Reporting Person  or one of its  subsidiaries.  Such  merger  or acquisition would likely result in changes to the present Board of Directors and management  of the  Company,  and  might  result  in  changes  in the  Company's capitalization and dividend policy, business, corporate structure and governing documents. The Reporting Person has contacted the Chairman of the Board of the Company and expressed an interest in acquiring the Company and expects to have further  discussions  with management of the Company."
+
+\item Investment: "The primary purpose of the Reporting Person's acquisition of the Common Stock is for investment. The Reporting Person believes that at this time, the Common Stock represents an attractive investment opportunity. Although it has no current intention to do so, at some time in the future the Reporting Person may decide that it is desirable to seek to acquire the Issuer or seek to control or otherwise influence the management and policies of the Issuer."
+
+\item Alliance Agreement: " The purpose of the transaction is for investment and to establish a long term distribution alliance between the Reporting Person and the Issuer."
+
+\item License Agreement: "As set forth below in Item 6, the Shares were purchased on  in connection with the Development and License Agreement between the Issuer and the Reporting Person."
+
+\item Joint Venture: "The Reporting Person acquired shared voting and investment power over the Contributed Shares in connection with the formation of the joint venture with the Issuer."
+
+\item Proxy Fight: [...] nominating \emph{Person} and \emph{Person} to be elected by holders of the Shares to the Board of Directors of the Issuer (the “Board”) at the annual meeting of stockholders of the Issuer, or any other meeting of stockholders held in lieu thereof, and any adjournments, postponements, reschedulings or continuations thereof (the “Annual Meeting”). The Reporting Persons reserve the right to take all action they deem appropriate to obtain Board representation.
+
+\item Investor becomes Target: "At the effective time of the Merger (the “Effective Time”), the separate existence of Merger Sub will cease and the Reporting Person will continue as the Surviving corporation and as a wholly owned subsidiary of the Issuer. Each holder of outstanding common stock of the Reporting Person, par value \emph{\$ per share} will receive, in exchange for each share of the Reporting Person's Common Stock held by such holder, \emph{amount} of a share of the Issuer Common Stock (the “Exchange Ratio”).
+
+\item Issuer Financing: "The purpose of the purchase of the Stock was to provide the Issuer with immediately available funds to address its urgent liquidity needs in exchange for an equity interest in the Issuer."
+\end{enumerate}
+
+
+
+
+
+
+
+\section{Appendix C -- Hypotheses}
+
 \end{document}
-
-
-
-\section{Appendix}
-
-\subsection{Appendix A -- Categroization of Filings}
 
 \subsection{Appendix B -- Financial Condition Measures}
 
@@ -623,28 +726,8 @@ With $X_{1}- X_{5}$ being \\
 	\indent$X_{4}$ = Market value of equity to book value of total liabilities $\frac{PRCC_F*CSHO}{LT}$\\
 	\indent$X_{5}$ = Sales to total assets $\frac{SALES}{AT}$
 
-\subsubsection{Whited-Wu Index}
-The Whited-Wu index is calculated according to \citet[p.543]{Whited2006} and \citet[p.6]{Farre-mensa2013}. $$I_{WW}=-0.091X_{1}-0.062X_{2}+0.021X_{3}-0.044X_{4}+0.102X_{5}-0.0354X_{6}$$ With $X_{1}- X_{5}$ being \\
-	\indent$X_{1}$ = Cash flow to assets $\frac{IB+DP}{AT}$\\
-	\indent$X_{2}$ = 1 if firm pays a dividend, zero otherwise $DVC+DVP>0$\\
-	\indent$X_{3}$ = Long-term debt to total assets $\frac{DLTT}{AT}$\\
-	\indent$X_{4}$ = size of the firm $log(at)$\\
-	\indent$X_{5}$ = Average industry sales growth, estimated for each three digit SIC industry \indent and each year separately $\frac{SALE_{t}}{SALE_{t-1}}$ \\
-	\indent$X_{6}$ = Sales growth $\frac{SALE}{SALE_{t-1}}$\\
-Following convention, firms are sorted into terciles based on their index value in the previous year. Firms in the top tercile are coded as constrained and those in the bottom tercile are coded as unconstrained \citep[p.38]{Farre-mensa2013}. 
 
-\subsubsection{Control Variables}
-\begin{enumerate}
-	\item Return on assets $$\frac{EBITDA}{AT}$$
-	\item Cash flow from operations to total assets $$\frac{OANCF}{AT}$$
-	\item Cash and short-term investments to total assets $$\frac{CHE}{AT}$$
-	\item Cash to total assets $$\frac{CH}{AT}$$
-	\item Short-term debt to total assets $$\frac{DLC}{AT}$$
-	\item Long-term debt to total assets $$\frac{DLTT}{AT}$$
-	\item Book leverage according to \citep[p.1440]{MacKay2005} $$\frac{DLTT+DLC}{AT}$$
-	\item Size of the firm $$log(at)$$
-	\item Tobin's Q according to \citep[p.120]{Khatami2014} $$\frac{AT-CEQ-TXDB+CSHO*PRCC_C}{AT}$$
-\end{enumerate}
+
 
 \subsection{Appendix C}
 
@@ -675,3 +758,5 @@ In order to compute the abnormal returns $AR_{i,t}$ for security $i$ at time $t$
 			\end{equation}	
 	\end{enumerate}
 \pagebreak
+
+
