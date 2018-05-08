@@ -29,6 +29,8 @@
 	\usepackage{chngpage}
 	\usepackage{pdfpages}
 	\usepackage{adjustbox}
+	\usepackage[toc,page,title]{appendix}
+	\usepackage[super]{nth}
 	\usepackage[all]{nowidow}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
@@ -611,90 +613,119 @@ In the context of this analysis As \citet{Mohr2012} states: the f-score consider
 
 On the other hand, \citet{Akhigbe2007} examine the characteristics of final acquisitions following partial bids. They find that involvements by corporate bidders are more likely to result in a full acquisition. 
 
-% previous studies have examined the content of the filings and therefre indirectly involved the investor in their analysis and when actively involving a party only analysed the target (s. above paragraph).
+% previous studies have examined the content of the filings and therefre indirectly involved the investor in their analysis and when actively invo lving a party only analysed the target (s. above paragraph).
 % difference of the paper 
 \end{comment}
+\pagenumbering{roman}
+\begin{appendices}
+	\renewcommand{\appendixname}{Appendix}
 
-\printbibliography
- 
+	\section{Financial Constraints Measures \& Variables}
 
+	\subsection*{Whited--Wu Index}
+	\noindent Used from \citet[p.543]{Whited2006} and following \citet[p.38]{Farre-mensa2013} the Whited-Wu index is calculated as:
+		\begin{equation*}
+		WW=-0.091X_{1}-0.062X_{2}+0.021X_{3}-0.044X_{4}+0.102X_{5}-0.035X_{6}
+		\end{equation*}
+	where
+	\begin{itemize}
+	\renewcommand\labelitemi{}
+		\item $X_{1}$ is the ratio of cash flow to assets defined as the sum of income before extraordinary items and depreciation and amortization divided by total assets $\frac{ib+dp}{at}$
+		\item $X_{2}$ is an indicator set to one if the firm pays a dividend, likewise if the sum of common and preferred dividends paid is positive, zero otherwise $dvp+dvc>0$
+		\item $X_{3}$ is the ratio of long-term debt to total assets $\frac{dltt}{at}$
+		\item $X_{4}$ is the size of the investor defined as the natural logarithm of total assets $log(at)$
+		\item $X_{5}$ is the average industry sales growth, estimated for each three digit SIC industry and each year separately $\frac{SALE_{t}}{SALE_{t-1}}$
+		\item $X_{6}$ is the investor's sales growth $\frac{SALE}{SALE_{t-1}}$
+	\end{itemize}
 
-\indent
+	\noindent Following convention, the index is calculated for all firms on Compustat and firms are then sorted into terciles based on their index value. Firms in the top tercile are coded as constrained and those in the bottom tercile are coded as unconstrained \citep[p.38]{Farre-mensa2013}. 
 
+	\subsection*{Dividend Payout Ratio}
+	\noindent Following \citet[p.119]{Khatami2014} and \citet[p.1789]{Almeida2004}, the investor's dividend payout ratio is defined as the two-year average of the dividend payout ratio from the two preceeding annual reports at each point in time.\\
+	The yearly dividend payout ratio is defined as the sum of dividends ($dvp+dvc$) plus stock repurchases (total expenditure on the purchase of common and preferred stocks $prstkc$) minus any reduction in the value of net number of preferred stocks outstanding (redemption value $pstkrv$) divided by operating income ($\frac{ib}{at}$) as in \citet[p.369]{Jagannathan2000}. Further, following \citet[p.119]{Khatami2014} and \citet[p.1923]{hadlock2010} dividend payout ratios are set equal to 1 if they are above 1 and if a firm has negative operating income and positive dividends. After computing the two-year average payout ratio for all firms on Compustat, firms are sorted into terciles based on their annual payout distribution. Firms in the bottom (top) tercile are coded constrained (unconstrained). 
 
+	\subsection*{HP / SA -- Index}
+	\noindent Following \citet[p.1929]{hadlock2010} and \citet[p.119]{Khatami2014} the index is calculated as: $HP=-0.737*Size+0.043*Size^{2}-0.040*Age$ where size is the log of inflation adjusted (to 2004) book assets and age is the number of years the firm has been on Compustat with a non-missing stock price. In calculating the index, size is replaced with log(\$4.5 billion) and age with 37 years if the actual values exceed these thresholds \citep[p.1929]{hadlock2010}. After computing the HP index for all companies on Compustat, the firms are sorted into terciles based on their annual index values. Firms in the top tercile are coded as constrained and those in the bottom tercile are conded as unconstrained \citep[p.38]{Farre-mensa2013}.
+	\pagebreak
 
-\section{Appendix A -- Financial Constraints Measures \& Other Variables}
+	\subsection*{Other Variables}
 
-\subsection{Whited--Wu Index}
-Used from \citet[p.543]{Whited2006} following \citet[p.38]{Farre-mensa2013} the Whited-Wu index is:
-	\begin{equation}
-	WW=-0.091X_{1}-0.062X_{2}+0.021X_{3}-0.044X_{4}+0.102X_{5}-0.035X_{6}
-	\end{equation}
-where\\ 
-$X_{1}$ is the ratio of cash flow to assets defined as the sum of income before extraordinary items and depreciation and amortization divided by total assets $\frac{ib+dp}{at}$\\
-$X_{2}$ is an indicator set to one if the firm pays a dividend thus if the sum of common and preferred dividends is positive, zero otherwise $dvp+dvc>0$\\
-$X_{3}$ is the ratio of long-term debt to total assets $\frac{dltt}{at}$\\
-$X_{4}$ is the size of the investor defined as the natural logarithm of total assets $log(at)$\\
-$X_{5}$ is the average industry sales growth, estimated for each three digit SIC industry and each year separately $\frac{SALE_{t}}{SALE_{t-1}}$\\
-$X_{6}$ is the investor's sales growth $\frac{SALE}{SALE_{t-1}}$\\
+	\begin{itemize}
+	\renewcommand\labelitemi{--}
+		\item Return on assets $\frac{ebitda}{at}$
+		\item Cash flow from operations to total assets $\frac{oancf}{at}$
+		\item Cash and short-term investments to total assets $\frac{che}{at}$
+		\item Cash to total assets $\frac{ch}{at}$
+		\item Book Leverage \citep[p.1440]{MacKay2005} $\frac{dltt+dlc}{at}$
+		\item Short-term debt to total assets $\frac{dlc}{at}$ 
+		\item Long-term debt to total assets $\frac{dltt}{at}$
+		\item Market value of equity $prcc_f*csho$
+		\item Size of the firm $log(at)$
+		\item Tobin's Q \citep[p.120]{Khatami2014} $\frac{at-ceq-txdb+csho*prcc_c}{at}$
+	\end{itemize}
 
-Following convention, the index is calculated for all firms on Compustat and firms are sorted into terciles based on their index value in the previous year. Firms in the top tercile are coded as constrained and those in the bottom tercile are coded as unconstrained \citep[p.38]{Farre-mensa2013}. 
+\section{Categorization of Purpose of Transaction}
 
-\subsection{Dividend Payout Ratio}
-Following \citet[p.119]{Khatami2014} and \citet[p.1789]{Almeida2004}, the investor's dividend payout ratio is defined as the two-year average of the dividend payout ratio from the two preceeding annual reports at each point in time. The payout ratio is defined as the sum of dividends ($dvp+dvc$) plus stock repurchases (total expenditure on the purchase of common and preferred stocks $prstkc$) minus any reduction in the value of net number of preferred stocks outstanding (redemption value $pstkrv$) divided by operating income ($\frac{ib}{at}$) as in \citet[p.369]{Jagannathan2000}. Further following \citet[p.119]{Khatami2014} and \citet[p.1923]{hadlock2010} payout ratios are set equal to 1 if they are above 1 and if a firm has negative operating income and positive dividends. After computing the two-year average payout ratio for all firms on Compustat, firms are sorted into terciles based on their annual payout distribution. Firms in the bottom (top) tercile are coded constrained (unconstrained). 
-
-\subsection{HP / SA -- Index}
-Following \citet[p.1929]{hadlock2010} and \citet[p.119]{Khatami2014} the index is calculated as: $HP=-0.737*Size+0.043*Size^{2}-0.040*Age$ where size is the log of inflation adjusted (to 2004) book assets and age is the number of yeats the firm has been on Compustat with a non-missing stock price. In calculating the index, size is replaced with log(\$4.5 billion) and age with 37 years if the actual values exceed these thresholds \citep[p.1929]{hadlock2010}. After computing the HP index for all companies on Compustat, the firms are sorted into terciles based on their index values. Firms in the top tercile are coded as constrained and those in the bottom tercile are conded as unconstrained \citep[p.38]{Farre-mensa2013}.
-\pagebreak
-
-\subsection{Other Variables}
-\begin{enumerate}
-\item Return on assets $\frac{ebitda}{at}$
-\item Cash flow from operations to total assets $\frac{oancf}{at}$
-\item Cash and short-term investments to total assets $\frac{che}{at}$
-\item Cash to total assets $\frac{ch}{at}$
-\item Book Leverage \citep[p.1440]{MacKay2005} $\frac{dltt+dlc}{at}$
-\item Short-term debt to total assets $\frac{dlc}{at}$ 
-\item Long-term debt to total assets $\frac{dltt}{at}$
-\item Market value of equity $prcc_f*csho$
-\item Size of the firm $log(at)$
-\item Tobin's Q \citep[p.120]{Khatami2014} $\frac{at-ceq-txdb+csho*prcc_c}{at}$
-\end{enumerate}
-
-\section{Appendix B -- Categorization of Purpose of Transaction}
-
+\noindent The following definitions are explanatory excerpts of Schedule 13(D) filings from the sample. Based on these descriptions the filing's transaction purpose was identified. Following, the Reporting Person is the investor disclosing the Schedule 13(D) wheras the Issuer is the company subject to the filing. 
 \begin{enumerate}
 	
 
-\item Merger Agreement: "the Company entered into the Merger Agreement with \emph{Investor} and Merger Sub, pursuant to which \emph{Investor} will acquire all of the outstanding equity interests of the Company."
+\item Merger: "the Company entered into the Merger Agreement with the Reporting Person and Merger Sub, pursuant to which the Reporting Person will acquire all of the outstanding equity interests of the Company."
 
 \item Tender Offer: "The Reporting Person announced its intention to commence a partial cash tender offer for up to \emph{number of} shares of Common Stock at a price of \emph{\$ price} net per share"
 
-\item Hostile Takeover: "The Shares have been acquired by the Reporting Persons with a view to ultimately acquiring  control of the Company  pursuant to a merger with, or  acquisition of additional  stock  by,  the Reporting Person  or one of its  subsidiaries.  Such  merger  or acquisition would likely result in changes to the present Board of Directors and management  of the  Company,  and  might  result  in  changes  in the  Company's capitalization and dividend policy, business, corporate structure and governing documents. The Reporting Person has contacted the Chairman of the Board of the Company and expressed an interest in acquiring the Company and expects to have further  discussions  with management of the Company."
+\item Hostile Takeover: "The Shares have been acquired by the Reporting Persons with a view to ultimately acquiring  control of the Issuer  pursuant to a merger with, or  acquisition of additional  stock  by,  the Reporting Person  or one of its  subsidiaries. [...]
+% Such  merger  or acquisition would likely result in changes to the present Board of Directors and management  of the  Company,  and  might  result  in  changes  in the  Company's capitalization and dividend policy, business, corporate structure and governing documents. 
+The Reporting Person has contacted the Chairman of the Board of the Issuer and expressed an interest in acquiring the Company and expects to have further discussions  with management of the Issuer."
 
-\item Investment: "The primary purpose of the Reporting Person's acquisition of the Common Stock is for investment. The Reporting Person believes that at this time, the Common Stock represents an attractive investment opportunity. Although it has no current intention to do so, at some time in the future the Reporting Person may decide that it is desirable to seek to acquire the Issuer or seek to control or otherwise influence the management and policies of the Issuer."
+\item Investment Opportunity while Actively Monitoring the Target: "The primary purpose of the Reporting Person's acquisition of the Common Stock is for investment. The Reporting Person believes that at this time, the Common Stock represents an attractive investment opportunity. Although it has no current intention to do so, at some time in the future the Reporting Person may decide that it is desirable to seek to acquire the Issuer or seek to control or otherwise influence the management and policies of the Issuer."
 
-\item Alliance Agreement: " The purpose of the transaction is for investment and to establish a long term distribution alliance between the Reporting Person and the Issuer."
+\item Alliance Agreement: "The purpose of the transaction is for investment and to establish a long term distribution alliance between the Reporting Person and the Issuer."
 
-\item License Agreement: "As set forth below in Item 6, the Shares were purchased on  in connection with the Development and License Agreement between the Issuer and the Reporting Person."
+\item License Agreement: "As set forth, the Shares were purchased on  in connection with the Development and License Agreement between the Issuer and the Reporting Person."
 
 \item Joint Venture: "The Reporting Person acquired shared voting and investment power over the Contributed Shares in connection with the formation of the joint venture with the Issuer."
 
-\item Proxy Fight: [...] nominating \emph{Person} and \emph{Person} to be elected by holders of the Shares to the Board of Directors of the Issuer (the “Board”) at the annual meeting of stockholders of the Issuer, or any other meeting of stockholders held in lieu thereof, and any adjournments, postponements, reschedulings or continuations thereof (the “Annual Meeting”). The Reporting Persons reserve the right to take all action they deem appropriate to obtain Board representation.
+\item Engaging into a Proxy Fight: [...] nominating \emph{Person} and \emph{Person} to be elected by holders of the Shares to the Board of Directors of the Issuer (the “Board”) at the annual meeting of stockholders of the Issuer, or any other meeting of stockholders held in lieu thereof, and any adjournments, postponements, reschedulings or continuations thereof (the “Annual Meeting”). The Reporting Persons reserve the right to take all action they deem appropriate to obtain Board representation. 
 
-\item Investor becomes Target: "At the effective time of the Merger (the “Effective Time”), the separate existence of Merger Sub will cease and the Reporting Person will continue as the Surviving corporation and as a wholly owned subsidiary of the Issuer. Each holder of outstanding common stock of the Reporting Person, par value \emph{\$ per share} will receive, in exchange for each share of the Reporting Person's Common Stock held by such holder, \emph{amount} of a share of the Issuer Common Stock (the “Exchange Ratio”).
+\item Investor is Subject to Merger: "At the effective time of the Merger (the “Effective Time”), the separate existence of Merger Sub will cease and the Reporting Person will continue as the Surviving corporation and as a wholly owned subsidiary of the Issuer. Each holder of outstanding common stock of the Reporting Person, par value \emph{\$ per share} will receive, in exchange for each share of the Reporting Person's Common Stock held by such holder, \emph{amount} of a share of the Issuer Common Stock (the “Exchange Ratio”).
 
 \item Issuer Financing: "The purpose of the purchase of the Stock was to provide the Issuer with immediately available funds to address its urgent liquidity needs in exchange for an equity interest in the Issuer."
 \end{enumerate}
 
+\section{Event Study}
 
+\noindent In order to compute the abnormal returns $AR_{i,t}$ for security $i$ at time $t$ in \eqref{eq:1} the market model is used. For the expected return it assumes a constant and linear relation between the observed returns $R_{i\tau}$ and the return of a market index $R_{m\tau}$. The parameters are estimated by ordinary least squares regressions based on estimation-window observations \citep[p.210]{Corrado2011}. The value-weighted NYSE/Amex/Nasdaq index from CRSP is used as the market return $R_{M\tau}$.
 
+			\begin{equation*}
+				R_{i,\tau}=\alpha_{i}+\beta_{i}R_{M,\tau}+\epsilon_{i,\tau}
+			\end{equation*}
+			with 
+			\begin{equation*}
+				E[\epsilon_{i,\tau}]=0
+			\end{equation*}
+			and 
+			\begin{equation*}
+				Var[\epsilon_{i,\tau}]=\sigma^2_{i,\tau}
+			\end{equation*}
+			This yields the abnormal return $AR_{i,\tau}$
+			\begin{equation}
+				AR_{i,\tau}=R_{i,\tau}-(\hat{\alpha_{i}}+\hat{\beta_{i}}R_{M,\tau})
+			\end{equation}
 
+\section{Hypotheses}
 
+\begin{itemize}
+\renewcommand\labelitemi{}
+	\item \nth{1} Hypothesis: Financial constraints of corporate activist investors should matter to the market's perception of the actual value improvement for the target.
+	\item \nth{2} Hypothesis: Schedule 13(D) filings disclosed by corporate activist investors are characterized by abnormal share price reactions for the target
+	\item \nth{3}
+\end{itemize}
 
-
-\section{Appendix C -- Hypotheses}
-
+\section{Stata Do-Files}
+\end{appendices}
+\printbibliography
+ 
 \end{document}
 
 \subsection{Appendix B -- Financial Condition Measures}
@@ -720,36 +751,18 @@ The Z-score is computed according to \citet[p.549]{Altman1968} and \citet[p.14]{
 For all remaining industries the Z-Score is $$Z=6.56X_{1}+3.26X_{2}+6.72X_{3}+1.05X_{4}$$	
 where firms with a score smaller than 1.1 are considered as distressed \citep[p.18]{Altman2002} and firms with a score higher than 2.6 as not distressed \citep[p.175]{Sulub2014}.\\
 With $X_{1}- X_{5}$ being \\
-	\indent$X_{1}$ = Working capital to total assets $\frac{WCAP}{AT}$\\
-	\indent$X_{2}$ = Retained earnings to total assets $\frac{RE}{AT}$\\
-	\indent$X_{3}$ = Earnings before interest and taxes to total assets $\frac{EBIT}{AT}$\\
-	\indent$X_{4}$ = Market value of equity to book value of total liabilities $\frac{PRCC_F*CSHO}{LT}$\\
-	\indent$X_{5}$ = Sales to total assets $\frac{SALES}{AT}$
+$X_{1}$ = Working capital to total assets $\frac{WCAP}{AT}$\\
+$X_{2}$ = Retained earnings to total assets $\frac{RE}{AT}$\\
+$X_{3}$ = Earnings before interest and taxes to total assets $\frac{EBIT}{AT}$\\
+$X_{4}$ = Market value of equity to book value of total liabilities $\frac{PRCC_F*CSHO}{LT}$\\
+$X_{5}$ = Sales to total assets $\frac{SALES}{AT}$
 
 
 
 
 \subsection{Appendix C}
 
-In order to compute the abnormal returns $AR_{i,t}$ for security $i$ at time $t$ in \eqref{eq:1} the following models are used: 
-	\begin{enumerate}
-		\item Market Model -- For the expected return it assumes a constant and linear relation between the observed returns $R_{i\tau}$ and the return of a market index $R_{m\tau}$. The parameters are estimated by ordinary least squares regressions based on estimation-window observations. The value-weighted NYSE/Amex/Nasdaq index from CRSP is used as the market return $R_{M\tau}$.
 
-			\begin{equation}
-				R_{i,\tau}=\alpha_{i}+\beta_{i}R_{M,\tau}+\epsilon_{i,\tau}
-			\end{equation}
-			with 
-			\begin{equation}
-				E[\epsilon_{i,\tau}]=0
-			\end{equation}
-			and 
-			\begin{equation}
-				Var[\epsilon_{i,\tau}]=\sigma^2_{i,\tau}
-			\end{equation}
-			This yields the abnormal return $AR_{i,\tau}$
-			\begin{equation}
-				AR_{i,\tau}=R_{i,\tau}-(\hat{\alpha_{i}}+\hat{\beta_{i}}R_{M,\tau})
-			\end{equation}
 			
 		\item Market Return Model -- The model is classified as the restricted market model with $\alpha_{i}=0$ and $\beta_{i}=1$. This means that there is no estimation window required and the abnormal return $AR_{i,\tau}$ is  simply the difference between the observed return $R_{i,\tau}$ and the value-weighted NYSE/Amex/Nasdaq   index return $R_{M\tau}$.
 
