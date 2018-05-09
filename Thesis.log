@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.2.9)  9 MAY 2018 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.2.9)  9 MAY 2018 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1543,19 +1543,18 @@ Package pdftex.def Info: Descriptive.png used on input line 299.
 (pdftex.def)             Requested size: 785.93433pt x 474.77258pt.
 
 [15 <./Descriptive.png>] [16] [17]
-<Summary1.png, id=356, 994.71625pt x 243.91125pt>
+<Summary1.png, id=356, 993.7125pt x 279.0425pt>
 File: Summary1.png Graphic file (type png)
  <use Summary1.png>
 Package pdftex.def Info: Summary1.png used on input line 351.
-(pdftex.def)             Requested size: 994.71382pt x 243.91064pt.
+(pdftex.def)             Requested size: 993.71007pt x 279.04181pt.
  [18]
-<Summary.png, id=370, 1004.75375pt x 624.3325pt>
+<Summary.png, id=370, 991.705pt x 647.41875pt>
 File: Summary.png Graphic file (type png)
  <use Summary.png>
 Package pdftex.def Info: Summary.png used on input line 358.
-(pdftex.def)             Requested size: 1004.75131pt x 624.33098pt.
- [19]
-[20 <./Summary1.png>] [21 <./Summary.png>] [22] [23] [24]
+(pdftex.def)             Requested size: 991.70259pt x 647.41716pt.
+ [19] [20 <./Summary1.png>] [21 <./Summary.png>] [22] [23] [24]
 Overfull \hbox (5.38934pt too wide) in paragraph at lines 404--406
 \T1/cmr/m/n/12 Analogous to the es-tim-a-tion of nor-mal re-turns for equa-tion
  [], the value-weighted NYSE/Amex/
@@ -1657,7 +1656,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 805.
  ) 
 Here is how much of TeX's memory you used:
  20044 strings out of 492995
- 323446 string characters out of 6132705
+ 323444 string characters out of 6132705
  859178 words of memory out of 5000000
  23082 multiletter control sequences out of 15000+600000
  19680 words of font info for 46 fonts, out of 8000000 for 9000
@@ -1689,7 +1688,7 @@ ts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
 e1/public/cm-super/sftt1200.pfb>
-Output written on Thesis.pdf (52 pages, 896058 bytes).
+Output written on Thesis.pdf (52 pages, 897514 bytes).
 PDF statistics:
  821 PDF objects out of 1000 (max. 8388607)
  702 compressed objects within 8 object streams
