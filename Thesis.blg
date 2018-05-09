@@ -1,0 +1,17 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'Thesis.blg'
+[64] biber-darwin:303> INFO - === Wed May  9, 2018, 14:05:11
+[97] Biber.pm:359> INFO - Reading 'Thesis.bcf'
+[303] Biber.pm:835> INFO - Found 32 citekeys in bib section 0
+[345] Biber.pm:3670> INFO - Processing section 0
+[381] Biber.pm:3840> INFO - Looking for bibtex format file 'BA copy.bib' for section 0
+[426] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[470] bibtex.pm:1292> INFO - Found BibTeX data source 'BA copy.bib'
+[587] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/wz/60_g9h8j46bd1p2pm426x9t40000gn/T/0o8YMcopQ2/BA copy.bib_43700.utf8, line 6, warning: 177 characters of junk seen at toplevel
+[698] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[698] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[698] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[698] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-GB'
+[747] bbl.pm:608> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[758] bbl.pm:712> INFO - Output to Thesis.bbl
+[760] Biber.pm:109> INFO - WARNINGS: 1

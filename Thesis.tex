@@ -28,11 +28,13 @@
 	\usepackage{longtable}
 	\usepackage{chngpage}
 	\usepackage{pdfpages}
+	\usepackage{rotating}
 	\usepackage{adjustbox}
 	\usepackage[toc,page,title]{appendix}
 	\usepackage[super]{nth}
 	\usepackage[all]{nowidow}
-	\usepackage{caption}
+	\usepackage{ragged2e}
+	\usepackage[font=scriptsize,labelfont=bf]{caption}
 	\DeclareCaptionLabelFormat{blank}{}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
@@ -167,7 +169,7 @@
 
 \section{Introduction}
 
-If any person acquires beneficial ownership of more than 5\% of an issuer's securities he must file with the Stock Exchange Control (SEC) a Schedule 13(D) within 10 days after the acquisition of that stock. The crux here is that beneficial ownership is not defined as whether the person owns the shares but as whether the particular person can vote the shares and thereby change or influence the control of the company \citep[p.24]{Morrison2015}. Precisely this mindset is what constitutes shareholder activism, independent of the acquirers identity. In fact, a Schedule 13(D) has to be disclosed by most investor types such as individuals, hedge funds or corporations. In the words of \citet[p.187]{Klein2009}, an "entrepreneurial activist is an investor who buys a large stake in a publicly held corporation with the intention to bring about change and thereby realize a profit on the investment".
+If any person acquires beneficial ownership of more than 5\% of an issuer's securities he must file with the Stock Exchange Control (SEC) a Schedule 13(D) within 10 days after the acquisition of that stock. The crux here is that beneficial ownership is not defined as whether the person owns the shares but as whether the particular person can vote the shares and thereby change or influence the control of the company \citep[p.24]{Morrison2015}. Precisely this mindset is what constitutes shareholder activism, independent of the acquirers identity. In fact, a Schedule 13(D) has to be disclosed by most investor types such as individuals, hedge funds or corporations. In the words of \citet[p.187]{Klein2009}, an "entrepreneurial activist is an investor who buys a large stake in a publicly held corporation with the intention to bring about change and thereby realize a profit on the investment". 
 
 Hedge fund activists seek to gain seats on the company's board, oppose an existing merger or liquidation of the firm, pursue strategic alternatives or replace the CEO \citep[p.188]{Klein2009}. Motivation for corporate activist investors to acquire beneficial ownership is to overcome informational and integration barriers and thereby engage in a takeover or strategic cooperation \citep[p.1]{Huang2017}. 
 This action for change is mirrored by a positive market reaction at the announcement of the filing. Hence, when an investor's Schedule 13(D) filing becomes public, the firm that has been partially acquired experiences significant gains on its stock. In recent studies of what happens to the target's stock, \citet[p.1564]{Collin-Dufresne2015} find significant positive abnormal returns around the filing day for filings of all investor types. The evidence is consistent with \citet[p.1756]{Brav2008} and \citet[p.209]{Klein2009} who report 8.4\% and 7.2\% abnormal returns respectively but in response to hedge fund activism.
@@ -242,7 +244,7 @@ In the sense of possibilities that might be reached, corporate ownership, in com
 
 \citet[p.1]{Huang2017} suggest that corporations make strategic minority acquisitions in other companies when they confront informational or integration barriers. 
 Therefore, one reason for corporations to acquire a partial stake is that in the presence of alliances or joint ventures, minority acquisitions help to align the incentives of both firms involved and thereby decrease contracting and monitoring costs \citep[p.2792]{Allen2000}. This especially is of importance, if the strategic cooperation involves relationship specific assets and the investing corporation might be concerned with a holdup problem.\footnote{\citet[p.1023]{Ouimet2013} Defines the holdup problem as a decrease in the investors bargaining power in a renegotiation of the contract because the value of the initial investment is dependent on future cooperation with the target.} \citet[p. 2793]{Allen2000} show that in the years following a strategic investment,  targets increase investment expenditures, exhibit substantive gains in operating cash flow and the partial stake leads to significant benefits for both firms.\\
-The second motive behind corporate minority investments is that if asymmetric information has an adverse effect on cost and availability of external capital for the target, the investment can provide capital directly to the issuing firm or validate its investment opportunities \citep[p. 2792]{Allen2000}. This is supported by \citet[p.1038]{Ouimet2013} who finds that the investment helps to overcome asymmetric information and thereby helps to certify the target for other outside investors. This proposition is verified by \citet[p.78]{Liao2014} who finds that target firms issue new equity (debt) and raise their market capitalization thereby supporting the theory that equity stakes certify the investment opportunities of target firms. Target firms correspondingly increase their operating cash flows, sales and investment expenditures.\\
+The second motive behind corporate minority investments is that if asymmetric information has an adverse effect on cost and availability of external capital for the target, the investment can provide capital directly to the issuing firm or validate its investment opportunities \citep[p. 2792]{Allen2000}. This is supported by \citet[p.1038]{Ouimet2013} who finds that the investment helps to overcome asymmetric information and thereby helps to certify the target for other outside investors. This proposition is verified by \citet[p.78]{Liao2014} who finds that target firms issue new equity (debt) and raise their market capitalization thereby supporting the theory that equity stakes certify the investment opportunities of target firms. Target firms correspondingly increase their operating cash flows, sales and investment expenditures.\\ 
 Thirdly, by acquiring partial stakes, corporations can effectively monitor or influence the target's management. When compared to institutional investors, a corporate investor has superior knowledge and operating expertise \citep[p.2792]{Allen2000} and can thereby further increase the target's operational performance.\\
 But acquiring a minority position also helps to better assess real options, notably that of expanding. The acquisition of a minority stake helps to better assess the target for a potential majority acquisition \citep{Ouimet2013} and according to \citet[p.30]{Huang2017} gather more information before launching a bid for takeover. In this sense, by decreasing informational barriers the investments can help as a stepping stone towards full control \citep[p.3]{Huang2017}.\\
 Because there exist two options two acquire full control of a publicly traded firm in the United States, either through a merger or through a tender offer \citep[p.2]{Offenberg2015}, \citet[p.1]{Betton2008} use the term takeover "for any acquisition of corporate control through the purchase of the voting stock of the target firm, regardless of whether the bid is in the form of a merger agreement or a tender offer".
@@ -291,6 +293,13 @@ Concluding, two index-based measures (WW-Index \& HP-Index) and two univariate m
 
 \includepdf[pages={1},pagecommand={},addtolist={1,table,Descriptive Statistics,descriptive}]{Descriptive_copy.pdf}
 
+\begin{figure}[!htb]
+	\centering
+	\begin{adjustbox}{width=\textwidth}
+		\includegraphics{Descriptive}
+	\end{adjustbox}
+\end{figure}
+
 \subsection{Identifying the Sample's Schedule 13(D) Filings}
 
 Table 1 identifies the sample's Schedule 13(D) filings based on several criteria. Column (1) presents information on all filings. In a first subdivision among investors, Column (2) and (3) give information on the two sub-samples of filings disclosed by investors according to their Whited-Wu Index. Thus column(2) represents filings of constrained and column (3) filings of unconstrained corporations.
@@ -328,8 +337,33 @@ Following, Table 2 introduces financial characteristics of each measure's sub-sa
 For each sample, Table 2 reports the mean [median] of several key financials. For the complete sample, standard deviation and both, lowest and highest value are shown additionally. Column (1) and (2) present financials of the two sub-samples identified by each measure, where constrained investors are in Column (1) and unconstrained in Column (2). Column (3) shows the $t$-statistic and $Z$-statistic for differences between financially constrained and unconstrained investor's means and medians. For all tests, the $t$-statistics are for differences in means, assuming unequal variances between the two samples. The null hypothesis to be tested is that the population means from the sample of constrained and unconstrained investors are equal $H_{0}: \mu_{1}=\mu_{2}$. The two-sided alternative hypothesis reads $H_{a}: \mu_{1}\neq\mu_{2}$, thus both means are unequal and there exists a difference.\footnote{assumptions?} In addition to the parametric $t$-statistic, the non-parametric Wilcoxon Mann-Whitney $Z$-statistics tests similar to \citet[p.201]{Klein2009} whether the samples of constrained and unconstrained investors are from populations with the same distributions. It can also be called a test of differences in the medians, if the two sample distributions have the same shape. The data analysis is conducted by using the statistical program Stata (Version 13.2, StataCorp, College Station, Texas). Specifically, the Mann-Whitney test is conducted by using the command -ranksum- based on \citet[p.59]{Mann1947}. All reported data corresponds to the investor's fiscal year which is closest to the filing date and the reported values are winsorized at the 1\% and 99\% levels so that extreme values are replaced by the respective percentiles. This enables a presentation of more meaningful mean statistics \citep[p.203]{Klein2009}. Moreover, characteristics for the WW-, HP- and Dividend Payout indices have explanatory power beyond the sample, as these investors are identified according to their comparative values across the entire Compustat database. 
 
 
-\includepdf[angle={90},pages={1},pagecommand={},addtolist={1,table,Characteristics of Investors prior to their Schedule 13(D) Filing,Summary}]{Summary_copy.pdf}
-	
+%\includepdf[angle={90},pages={1},pagecommand={},addtolist={1,table,Characteristics of Investors prior to their Schedule 13(D) Filing,Summary}]{Summary_copy.pdf}
+\begin{sidewaystable}[!htbp]
+	\centering
+	\captionsetup{textformat=empty,labelformat=blank}
+	\caption{Characteristics of Investors prior to their Schedule 13(D) Filing}
+	\textbf{Table II}\par\medskip
+	\large\textbf{Characteristics of Investors prior to their Schedule 13(D) Filing\\}\par\medskip
+	\justifying
+	\footnotesize\noindent\setstretch{1.2}This table summarizes characteristics of the investors for the complete sample, and the sub-samples of each measure of investor's financial constraints (column 1 and 2). For the complete sample,  standard deviation and minimum and maximum value of the variables are shown. For each variable, the mean [median] is reported. All data are winsorized at the 1\% and 99\% levels. Column (3) of each measure shows the t-statistic [Z-statistic] testing for differences between financially constrained and unconstrained investors means [medians]. All accounting data are from the end of the fiscal year preceding the Schedule 13(D) filing date reported by the SEC. Panel A presents measures of the investor's profitability, Panel B displays  measures of cash balances and debt and Panel C gives information on the investor's size and Investment. See Appendix A for variable definitions. ***significant at the 0.01 level; **significant at the 0.05 level; * significant at the 0.10 level.\par\medskip
+	\centering													
+	\begin{adjustbox}{width=\textwidth}
+		\includegraphics{Summary1}
+	\end{adjustbox}\par\medskip
+\end{sidewaystable}
+
+\begin{sidewaystable}[!htbp]
+	\centering
+	\begin{adjustbox}{width=\textwidth}
+		\includegraphics{Summary}
+	\end{adjustbox}
+\end{sidewaystable}
+
+\pagebreak
+
+
+
+
 Hence, a loose comparison to samples of other studies is possible. For further simplicity, the notion of "financially constrained" is used independently of the measure initially used to identify them. \\
 % For all following tests, the $t$-statistics are for difference in means, assuming unequal variances between the samples. The $Z$-statistic is a Mann-Whitney rank-sum test for equality of medians on unmatched data and 
 Panel A reports two ratios on profitability -- return on assets (ROA), defined as earnings before interest and taxes (EBITDA) to total assets and the ratio of cash flow from operations to total assets. On average, the sample's corporations have positive returns and a fairly small 0.059 cash flow ratio. Across all measures, financially constrained investors have a ROA which is significantly lower when compared to their counter-samples. Turning to the HP-Index, for financially constrained investors the return from the fiscal year prior to the filing is even negative. Furthermore, investors in this group also have a negative cash flow (same for the Whited-Wu index) and again, the difference between constrained and unconstrained investors is apparent across all measures. This implies that in general, constrained investors seem to be less profitable \citet[p.544]{Whited2006}. \\
@@ -368,21 +402,23 @@ But in contrast to the cumulative abnormal return, the buy-and-hold return mimic
 \begin{equation}
 	BHAR_{i,(\tau_1,\tau_2)}=\prod_{t=\tau_1}^{\tau_2}(1+R_{i,t})-\prod_{t=\tau_1}^{\tau_2}(E(R_{i,t}|X_{t})
 \end{equation}
-Analogous to the estimation of normal returns for equation \eqref{eq:2}, the value-weighted NYSE/Amex/Nasdaq index from CRSP is used to calculate the normal buy-and-hold returns in the respective event windows $(\tau_1,\tau_2)$ \citep[p.25]{Brav2009}.
+Analogous to the estimation of normal returns for equation \eqref{eq:2}, the value-weighted NYSE/Amex/ Nasdaq index from CRSP is used to calculate the normal buy-and-hold returns in the respective event windows $(\tau_1,\tau_2)$ \citep[p.25]{Brav2009}.
 
 \subsection{Time Series of Abnormal Returns}
 
-Graph 1 plots the times series of average cumulative abnormal returns for securities subject to all filings and subject to filings of constrained and unconstrained corporate investors (grouped by the WW-Index). Note that the targets' abnormal returns are grouped by the investors' financial characteristics -- a introductory connection between market reaction and investor. A first glance reveals that independent of the investor's categorization, the abnormal returns evolve almost equally until day -10. At this point, the aggregation of  abnormal returns for target's of constrained investors continues to proceed below the other two. Targets of unconstrained investors experience the largest increase in value to almost 20\%. Parallel, abnormal returns for the complete sample of targets aggregate to roughly 15\% in the 41-day window which is around 5\% more when compared to the 10.2\% abnormal returns for hedge fund targets reported in \citet[p.208]{Klein2009}.
+Graph 1 plots the times series of average cumulative abnormal returns for securities subject to all filings and subject to filings of constrained and unconstrained corporate investors (grouped by the WW-Index). Note that the targets' abnormal returns are grouped by the investors' financial characteristics -- a introductory connection between market reaction and investor. A first glance reveals that independent of the investor's categorization, the abnormal returns evolve almost equally until day -10. At this point, the aggregation of  abnormal returns for target's of constrained investors continues to proceed below the other two. Targets of unconstrained investors experience the largest increase in value to almost 20\%. Parallel, abnormal returns for the complete sample of targets aggregate to roughly 15\% in the 41-day window which is around 5\% more when compared to the 10.2\% abnormal returns for hedge fund targets reported in \citet[p.208]{Klein2009}. 
 For firms subject to filings disclosed by constrained investors however, abnormal returns differ drastically in magnitude and aggregate to only around 7-8\%. The graphical presentation is first evidence that financial constraints of corporate activist investors could matter, when the market assesses a potential value improvement for the target.
 
 
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\captionsetup{textformat=empty,labelformat=blank}
 	\caption{Time Series of Cumulative Abnormal Returns}
-	\begin{adjustbox}{max width=\textwidth}
+	\begin{adjustbox}{width=\textwidth}
 		\includegraphics{WW-TimeS_copy.eps} \label{AR}
 	\end{adjustbox}
+	\justifying
+	\noindent\footnotesize\setstretch{1.2}\textbf{Figure I. Time Series of Cumulative Abnormal Returns.} The solid line plots the time series of average cumulative abnormal returns for all targets where the cumulative abnormal returns is the aggregation of abnormal returns up to each point in time using the market model with the value-weighted NYSE/AMEX/Nasdaq index from CRSP as the market return from 30 days prior to the filing date to 10 days afterwards. Equivalently, the dashed (dashed-dot) line plots the average cumulative abnormal returns for targets of financially unconstrained (constrained) investors. \par\medskip
 \end{figure}
 
 decreasing abnormal returns after filing for constrained
@@ -405,8 +441,9 @@ Turning to panel B, the largest runup happens in the [-10,-6] event window. Abno
 
 \includepdf[pages={1},pagecommand={},addtolist={1,table,Abnormal Stock Returns Surrounding the Initial Schedule 13(D) Filing,windows}]{AR_by_Window_copy.pdf}
 
+
 % was will ich hier eigentlich sagen!! 
-In Panel C, abnormal returns for the event window [-5,3] are shown. Independent of the investor, all targets experience a mean CAR of 6.63\%, significant at the 1\% level. Here too, targets of unconstrained investors outperform those of weak investors with around 5\%, while being statistically significant at the 1\% level. \\
+In Panel C, abnormal returns for the event window [-5,3] are shown. Independent of the investor, all targets experience a mean CAR of 6.63\%, significant at the 1\% level. Here too, targets of unconstrained investors outperform those of weak investors with around 5\%, while being statistically significant at the 1\% level.\\
 Turning to abnormal returns for the smallest event window [-1,3] in Panel D, targets on avberage gain 1.77\% which is significant at the 1\% level. Hence a positive market reaction at the announcement of the filing exists and is not only apparent in the previous days. Striking is that on average, targets of constrained investors now experience negative returns although statistically not different from zero. Furthermore, the difference among the two samples is immensely high with approximately 3\%. Especially when considering the short event window and the already low-level of abnormal returns is the difference apparent.
 
 Concluding, both buy-and-hold and cumulative abnormal returns show similar results with positive and significant market reactions in all event-windows surrounding the Schedule 13(D) filing date. Furthermore, the largest aggregation happens in the [-10,-6] event window but is not exceptionally high when compared to the overall runup. Most importantly however is the difference in abnormal returns for targets of financially constrained and unconstrained investors. The difference is present, both on an economic and statistical level. When testing the differences in means, it is significant across all event windows and thus independent from the time-effect. These findings present further evidence that the financial constraints could matter. 
@@ -417,12 +454,35 @@ For this reason, Table 3 presents the mean [median] cumulative abnormal returns 
 
 Turning to Panel A, it presents the abnormal returns for all samples, without specifying the transaction the purpose. Across all measures, targets of financially constrained investors have significantly lower abnormal returns in the [-10,3] event window. Starting with the samples formed by the Whited-Wu index, the difference for the mean CAR is 10\% and significant at the 1\% level. Targets of unconstrained investors gain 16.81\% and those of constrained only 6\%. Similar conclusions can be drawn when comparing the samples grouped by the investor's dividend payout ratio. Targets of constrained investors encounter abnormal returns of 9.79\% compared to the 15.76\% for unconstrained investors. Again, the difference in means is significant at the 5\% level and comparing the sub-samples of the HP-index yields similar results -- targets of constrained investors experience abnormal returns of 9.18\%, those of financially unconstrained investors 16.2\% and the 7\% difference in means is significant at the 5\% level. On the other hand, the difference in market reactions to filings of investors with and without a credit rating is present but has no statistical significance. An explanation could be a possible upward bias in mean abnormal returns for the sample of constrained investors, as some of the least constrained corporations might lack a credit rating and are therefore mistakenly identified as financially constrained \citep[p.18]{heller2015}.
 Nonetheless, across all measures is a difference in the mean cumulative abnormal returns visible, further indicating that financial constraints might  matter when the market assesses the value improvement for the target. 
+ 
+
+%\includepdf[pages={1},pagecommand={},addtolist={1,table,Abnormal Returns by Measures of Financial Constraints and Purpose of Transaction,measures}]{Ar_by_Measure_copy.pdf}
+\begin{figure}[!htbp]
+	\centering
+	\captionsetup{textformat=empty,labelformat=blank}
+	\caption{Abnormal Returns by Measures of Financial Constraints and Purpose of Transaction}
+	\textbf{Figure IV}\par\medskip
+	\large\textbf{Time Series of Cumulative Abnormal Returns.}\par\medskip
+	\justifying
+	\footnotesize\noindent\setstretch{1.2}This table shows cumulative abnormal returns aggregated over the window [-10,3] for the sub-samples of each measure of financial constraints. Measures of financial constraints are equal to those presented in Section 3. Mean [median] target abnormal returns of each measure are reported for the sample of financially constrained (column 1) and unconstrained investors (column 2). Column (3) presents the t-stat [Z-stat.] for differences in means [medians] of Columns (1) and (2). Panel A shows the cumulative abnormal returns for the complete sample of targets whereas Panel B presents the cumulative abnormal returns for targets based on the purpose of transaction. The purposes are equal to those presented in Section 3. See Appendix A for Measure and Appendix B for Purpose definitions. All data are winsorized at the 1\% and 99\% levels.\par\medskip
+	\centering													
+	\begin{adjustbox}{width=\textwidth}
+		\includegraphics{Measures1}
+	\end{adjustbox}\par\medskip
+\end{figure}
+
+\pagebreak
 
 
-\includepdf[angle=90,pages={1},pagecommand={},addtolist={1,table,Abnormal Returns by Measures of Financial Constraints and Purpose of Transaction,measures}]{Ar_by_Measure_copy.pdf}
+\begin{figure}[!htb]
+	\centering
+	\begin{adjustbox}{width=\textwidth}
+		\includegraphics{Measures}
+	\end{adjustbox}
+\end{figure}
 
 
-Facing Panel B, abnormal returns of targets are now additionally sorted by the filing's purpose of transaction. The purpose of engaging into a takeover generates the strongest market reaction with a mean CAR of 21.45\% for the 271 targets and cross all measures, targets of financially unconstrained investors have a CAR of roughly 25\% for the [-10,3] event window. \citet[p.112]{Khatami2014} have similar results for acquisition announcement returns when the acquirer is financially unconstrained with an 11-day CAR of 25\%. The difference in abnormal returns is the largest for the Whited-Wu index and the smallest for the investor's credit rating which is analogous to Panel A. For all measures, except the HP-index, the difference in mean CAR's is significant at least at the 5\% level. For targets of investors grouped by the HP-Index, the difference is only significant at the 10\% level which might be due to the its low sample size of only 43 filings from constrained investors. Nonetheless, the univariate comparison reveals that investors' financial constraints might be especially important in the context of mergers and acquisitions \citep[p.112]{Khatami2014}. 
+Facing Panel B, abnormal returns of targets are now additionally sorted by the filing's purpose of transaction. The purpose of engaging into a takeover generates the strongest market reaction with a mean CAR of 21.45\% for the 271 targets and cross all measures, targets of financially unconstrained investors have a CAR of roughly 25\% for the [-10,3] event window. \citet[p.112]{Khatami2014} have similar results for acquisition announcement returns when the acquirer is financially unconstrained with an 11-day CAR of 25\%. The difference in abnormal returns is the largest for the Whited-Wu index and the smallest for the investor's credit rating which is analogous to Panel A. For all measures, except the HP-index, the difference in mean CAR's is significant at least at the 5\% level. For targets of investors grouped by the HP-Index, the difference is only significant at the 10\% level which might be due to the its low sample size of only 43 filings from constrained investors. Nonetheless, the univariate comparison reveals that investors' financial constraints might be especially important in the context of mergers and acquisitions \citep[p.112]{Khatami2014}.  
 
 Targets subject to filings with the purpose of strategic investments have a 7.92\% CAR, significant at the 5\% level which is a similar market reaction to the one observed by \citet[p.]{Allen2000} who finds abnormal returns of 6.9\% in response to strategic announcements. For the reason that the sample consists of only 74 filings having the purpose of a strategic investment, performing tests and deriving conclusions on the difference's economic and statistical significance is problematic. The issue becomes even more demanding when further splitting these filings into sub-samples for each measure, as they become smaller and tests loose their meaningfulness. Subsequently, there are only 16, 15 and 18 observations in the three samples of constrained investors from the WW-Index, dividend payout ratio and credit rating and just three for the HP-Index. Samples of the Whited-Wu index and the investor's credit rating present differences in mean CAR's matching with previous findings but when considering the sub-samples of the dividend payout ratio and the HP-Index, results differ. Although for these, targets of constrained investors now have higher abnormal returns, the difference is not significant. Hence the samples small scales do not allow valid inferences between returns for targets of financially constrained and unconstrained investors.
 For the remaining purposes, the sample size is large enough to draw univariate conclusions. As the average cumulative abnormal return during the [-10,3] event window for all remaining purposes is only 1.01\%,  filings disclosed for strategic investments and takeovers lead to the strongest market reactions. When looking at the abnormal returns for sub-samples of the Whited-Wu index, targets of constrained investors earn -0.49\% and those of unconstrained investors 8.31\%. The average CAR for targets of unconstrained investors is significantly different from zero plus the difference in abnormal returns is significant at the 5\% level. Similar conclusions can be drawn for the sub-samples formed according to the HP-index for which targets of constrained investor experience negative abnormal returns of -3.22\% and those of unconstrained investor 7.86\%. The difference average cumulative abnormal returns accross the two groups is significant at the 1\% level. Those are the only two sub-samples in which negative returns occur which implies the market perceives these announcements as a decline in the target's value.
