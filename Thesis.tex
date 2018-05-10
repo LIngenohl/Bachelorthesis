@@ -127,8 +127,9 @@
 \title{Does Financial Constraints of Corporate Activist Investors Matter?}
 \author{Leopold Ingenohl}
 
-
+\newcounter{savepage}
 \begin{document}
+
 \begin{titlepage}
     \begin{center}
        
@@ -157,16 +158,27 @@
 
         \vspace{0.8cm}
 
-        Submitted May xx, 2018
+        Submitted May 22, 2018
 
 	\end{center}
 	
 \end{titlepage}
 
+\cleardoublepage
+\pagenumbering{roman}
+\begin{abstract}
+	asdasd
+\end{abstract}
+
+\pagebreak
+
 \tableofcontents
 \listoftables
 \listoffigures
-\pagebreak
+
+\cleardoublepage
+\setcounter{savepage}{\arabic{page}}
+\pagenumbering{arabic}
 
 \section{Introduction}
 
@@ -270,7 +282,7 @@ Following \citet[p.691]{Almeida2011a} a majority of managers in the U.S. list fi
 \section{Data -- Constructing the Sample}
 
 The data that is used to analyse the relation between the investor's financial condition and the market reaction to Schedule 13(D) filings,  is primarily composed of information contained in the filings from SEC's Edgar database and secondly of data on stock and fundamentals,  accessed through Wharton Research Data Services (WRDS). The sample of Schedule 13(D) filings is constructed as follows. First, using an automated search script, 48'626 filings from the 20 year period starting in January 1996 and ending in December 2016 were identified.  The script identifies all Schedule 13(D) filings that appear on EDGAR and extracts the following information: name of filer and subject, the CUSIP of the underlying security and the filing date. Next, to only have filings submitted by corporations hence to separate corporate investors from institutional investors (i.e. hedge-funds or pension-funds), 10-K reports were cross-referenced with the initial sample of filings.\footnote{10-K reports were used to identify corporations because "managers of publicly traded firms are required to produce public documents that provide a comprehensive review of the firm’s business operations and financial condition and an important financial disclosure document created by managers to communicate with investors and analysts is the annual report filed pursuant to the Securities Exchange Act of 1934 the Form 10-K." \citep[p. 1643]{Loughran2014}} To be considered, the filer had to have a 10-K report submitted at least 12 months prior to the filing which reduced the sample to 3'325 filings. As daily stock returns and prices for the target's securities come from the Center for Research in Security Prices (CRSP) the subject not only had to have SEC's Cusip identifier but also an active link between Cusip and CRSP's Permno identifier. For estimating the market reaction to Schedule 13(D) filings, there had to be sufficient stock data for the remaining 1'467 filings. The data was only available to subject of 1'151 filings. 
-The accounting fundamentals for identifying the investing corporation's financial condition were extracted from the Compustat database. To be included, the filer had to have a valid link between its 10K-CIK and Compustats's Gvkey indentifier. This further reduced the sample to 1'014 filings. In the next step and based on Fama \& French's 48 industry classification, all filers belonging to the trading industry (industry code 47) were excluded. This was done for the reason that the investment behavior of corporations in this industry differs substantially from that of other industries. This left a sample 898 filings for which data on specific financials was only available for 644 investors. From the remaining 644 filings, the purpose of the transaction was manually extracted. During this process, Schedule 13(D/A) filings (amendments to previous filings) that were mistakenly classified as original Schedule 13(D) filings and filings not submitted by corporations were excluded. This reduced the final sample to 494 filings.\footnote{The only exception were filings submitted by the Commerce Group Inc., which provides both insurance and, real estate, brokerage services. These filings were excluded because (1) the largest part of them were amendments, (2) the amount of filings submitted was disproportionately and (3) all purposes of the transaction were general investments in an investment fund.} 
+The accounting fundamentals for identifying the investing corporation's financial condition were extracted from the Compustat database. To be included, the filer had to have a valid link between its 10K-CIK and Compustats's Gvkey indentifier. This further reduced the sample to 1'014 filings. In the next step and based on Fama \& French's 48 industry classification, all filers belonging to the trading industry (industry code 47) were excluded. This was done for the reason that the investment behavior of corporations in this industry differs substantially from that of other industries. This left a sample 898 filings for which data on specific financials was only available for 644 investors. From the remaining 644 filings, the purpose of the transaction was manually extracted. During this process, Schedule 13(D/A) filings (amendments to previous filings) that were mistakenly classified as original Schedule 13(D) filings and filings not submitted by corporations were excluded. This reduced the final sample to 561 filings.\footnote{The only exception were filings submitted by the Commerce Group Inc., which provides both insurance and, real estate, brokerage services. These filings were excluded because (1) the largest part of them were amendments, (2) the amount of filings submitted was disproportionately and (3) all purposes of the transaction were general investments in an investment fund.} 
 
 \subsection{Measures of Financial Constraints}
 
@@ -683,9 +695,11 @@ On the other hand, \citet{Akhigbe2007} examine the characteristics of final acqu
 % previous studies have examined the content of the filings and therefre indirectly involved the investor in their analysis and when actively invo lving a party only analysed the target (s. above paragraph).
 % difference of the paper 
 \end{comment}
+\cleardoublepage
 \pagenumbering{roman}
+\setcounter{page}{\thesavepage}
 \begin{appendices}
-	\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixname}{Appendix}
 
 	\section{Financial Constraints Measures \& Variables}
 
