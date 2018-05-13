@@ -36,6 +36,8 @@
 	\usepackage{ragged2e}
 	\usepackage[font=scriptsize,labelfont=bf]{caption}
 	\usepackage{tocbibind}
+	\usepackage{glossaries}
+	\usepackage{acro}
 	\DeclareCaptionLabelFormat{blank}{}
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
@@ -124,7 +126,16 @@
 			{}%
 			{\printnames{shortauthor}%
                     \addspace\textendash\space}}
-                    
+
+%List of Abbreviations
+\makeatletter
+\newcommand{\tocfill}{\cleaders\hbox{$\m@th \mkern\@dotsep mu . \mkern\@dotsep mu$}\hfill}
+\makeatother
+
+\newcommand{\abbrlabel}[1]{\makebox[5cm][l]{#1\ \dotfill}}
+\newenvironment{abbreviations}{\begin{list}{}{\renewcommand{\makelabel}{\abbrlabel}\setlength{\labelwidth}{5cm}\setlength{\leftmargin}{\labelwidth+\labelsep}%
+\setlength{\itemsep}{0pt}}}{\end{list}}
+
 \title{Does Financial Constraints of Corporate Activist Investors Matter?}
 \author{Leopold Ingenohl}
 
@@ -179,6 +190,46 @@
 \tableofcontents
 \listoftables
 \listoffigures
+\section*{List of Abbreviations}
+\addcontentsline{toc}{section}{List of Abbreviations}
+
+\begin{abbreviations}
+	\item[AT] Total Assets
+	\item[AMEX] American Stock Exchange
+	\item[AR] Abnormal Returns
+	\item[BHAR] Buy-and-hold Abnormal Return
+	\item[CAR] Cumulative Abnormal Return
+	\item[CEO] Chief Executive Officer
+	\item[CIK] Central Index Key
+	\item[CRSP] Center for Research in Security Prices
+	\item[CUSIP] Committee on Uniform Security Identification Procedures
+	\item[Dif.] Difference
+	\item[EBITDA] Earnings Before Interest and Taxes
+	\item[EDGAR] Electronic Data Gathering, Analysis, and Retrieval system
+	\item[FC] Financially Constrained
+	\item[GVKEY] Global Company Key -- Unique Six-Digit Number Key Assigned to Each Company in the Compustat Database
+	\item[HP-Index] Handlock-Pierce Index
+	\item[$H_{A}$] Alternative Hypothesis 
+	\item[$H_{0}$] Null Hypothesis 
+	\item[KZ-Index] Kaplan-Zingales Index
+	\item[Max.] Maximum
+	\item[Med.] Median
+	\item[Min.] Minimum
+	\item[N] Number of Observations
+	\item[NASDAQ] National Association of Securities Dealers Automated Quotations
+	\item[NYSE] The New York Stock Exchange
+	\item[p.] Page
+	\item[PERMNO] Unique Permanent Security Identification Number assigned by CRSP to each Security
+	\item[ROA] Return on Assets
+	\item[SA-Index] Size-Age Index
+	\item[SEC] Stock Exchange Control 
+	\item[SIC] Standard Industry Classification
+	\item[S\&P] Standard \& Poor's
+	\item[Std. Dev.] Standard Deviation
+	\item[US] United States
+	\item[WRDS] Wharton Research Data Services
+	\item[WW-Index] Whited-Wu Index
+\end{abbreviations}
 
 \cleardoublepage
 \setcounter{savepage}{\arabic{page}}
@@ -200,35 +251,6 @@ This thesis finds evidence that it does. The univariate tests show that targets 
 
 The paper proceeds as follows. Section 2 reviews relevant literature on Schedule 13(D) filings, their effect on the market, corporate equity ownership and financial constraints. Section 3 introduces the measures of financial constraints, outlines the composition of the sample and identifies the sample's corporate activist investors. Section 4 investigates the market's reaction to Schedule 13(D) filings and analyses the univariate relation between target's abnormal returns and investor's financial constraints. Following the univariate analysis, Section 5 evaluates the cross-sectional effect of financial constraints on the target's gains.
 
-% Characteristics | Motivation | Reasoning - Why do they make minority acquisitions? 
-
-% Topics: Acquisitions | Friendly Takeovers | Hostile Takeovers | Joint-Venture | Activism | Comparison | Comparison HF - Why do they behave activist? 
-% In a more direct approach however, these strategic investments can also help as a stepping stone towards full control \citep{Huang2017}. 
-% This approach is supported by \citet{Goldman2005} who find that mergers and takeovers are often preceded by the acquisition of a minority stake in the target. Whereas hedge funds use their stakes to change characteristics of the target (e.g. the board of directors or the strategic orientation) \citep{Klein2009} corporate filers are mainly focused on synergies in the form of strategic alliances or takeovers between them and the target. \citet{Akhigbe2007} observe that partial acquisitions, if carried out by corporate investors, are more likely to result in a full acquisition when compared to all other activist investors. This means that within the mass of Schedule 13D filings, institutional investors are unlikely to pursue a complete takeover whereas corporations are potential full acquirers \citep{Brigida2012}. The possibility of a takeover could be one explanation for the strong impact corporate filings have on the market, because the abnormal returns could be a reflection of investors' expectations of the target firms stock being acquired at a premium to the current price \citep{Goldman2005} especially with strong corporate bidders being likely to overpay in the event of a full takeover \citep{Akhigbe2007}.
-% These findings motivate the second hypotheses which assumes the highest abnormal returns occur in the event of a purpose of transaction statement involving a merger or a takeover of the subject.
-%Objective: highlight the importance of the financial condition -- Background
-
-% payment method in takeovers! 
-
-% Topics: Abnormal Returns | Financial Condition | Activism | Hypothesis | Conclusion
- 
-
-
-
-\begin{comment}
-	\section{Hypotheses}
-
-\begin{enumerate}
-	\item There are significant positive abnormal returns after the Schedule 13(D) filing of a corporation
-	\item The purpose of the transaction has an effect on the market reaction 
-	\item The financial condition of the investor can explain the market reaction
-	\item The financial condition is most important, when the puspose of transaction invovles a future merger or takeover
-	\item The financial condition looses its importance when the target is a poorly performing company and gains importance when the target is performing well 
-	\item 
-\end{enumerate}
-\end{comment}
-
-
 \section{Literature Review}
 
 \subsection{Schedule 13(D) Filings \& Market Reaction}
@@ -244,14 +266,8 @@ So far, there exist many studies that examine the effect the disclosure of such 
 Dealing with investor activism, especially filings disclosed by hedge funds, \citet[p.1730]{Brav2008} find positive average abnormal returns in the range of 7\% to 8\% in the (-20,+20) event window. \citet[p.188]{Klein2009} have similar findings and observe 10.2\% average abnormal stock returns on the target's stock. In a more recent study on investor activism by \citet[p.410]{Denes2017}, the average valuation effect is evaluated to be around 5\%. A somewhat different approach is found in a study of \citet[p.363]{Greenwood2009} who observe abnormal announcement returns of 2.36\% for a sample of activist portfolio investors but document that the ability to force the target into a takeover is the driving force behind the abnormal market reaction. Nevertheless, all studies observe positive abnormal returns around the filing date and results primarily differ in magnitude.\footnote{Comparing the average abnormal returns across studies can be misleading as the authors use different models and event windows for estimating and aggregating the abnormal returns. \citet{Greenwood2009} use the market return model with matching portfolios and aggregate in [-10.5]; \citet{Brav2008} calculates the aggregated abnormal returns by subtracting the value-weighted market index from the buy-and-hold return and aggregates over a [-20,20] window; \citet{Klein2009} use a similar approach with the buy-and-hold returns but make several adjustments and aggregate over a [-30,5] window.}
 
 While all of these studies identify hedge fund activism, its motivation and the effect it has on the market, most of them leave filings submitted by corporations aside. \citet[p.29]{Brigida2012} however, note that if the acquirer is a non financial corporation abnormal returns in the (-10,-1) window are around 14\%. The reaction implies the market perceives such corporate investments as value generating for the target. \citet[p.2803]{Allen2000} find abnormal returns of around 7\% in the (-10,10) period on corporate purchase announcements which are significantly larger if the announcement is accompanied by strategic investments. Their sample however is based on purchase announcements and therefore differs from studies on the effect of Schedule 13(D) filings.\footnote{In \citet[p.2801]{Allen2000} sample, the mean fraction of equity acquired in the sample is 14\%, and  only includes acquisitions of at least 5\% of voting shares, therefore showing similarities to the sample of this thesis.} In addition \citet{Collin-Dufresne2015} find a positive significant market reaction upon a more general sample of Schedule 13(D) filings, including corporate investors but not explicitly addressing them.\\
+\textbf{Hypothesis I}
 But what is the rationale of corporations to engage in active equity ownership, thereby disclosing a Schedule 13(D), and why are these investments anticipated to be value generating for the target?
-
-% What is constrained, distressed? 
-% Because financial distress possibly resulting in bankruptcy represents a state in which the firm cannot meet or has difficulty paying off its financial obligations to its creditors the reference to HNA Group made above is exemplary here as the group has problems in refinancing the enormously high debt burden. 
-
-
-
-% Although the filing of a Schedule 13(D) can be seen as the trigger for the market reaction, the reason of why the abnormal returns occur is still largely unknown. However, \citet{Brav2008} find that if hedge funds engage actively, they have a high succession rate in achieving their main objectives. In a more recent paper conducted by \citet[p.12]{Brav2009} they list these objectives based on the sample of filings. The vast majority of these objectives focuses on general characteristics of the target and possible increase in shareholder value. They can be separated into five, not mutually exclusive, categories. The first objective is the believe of the hedge fund that he can help the manager maximize the shareholder value because they believe that the company is undervalued. The second includes activism that is based on the targeting firm's payout policy and capital structure. for the third objective, the hedge funds target issues related to business strategy, such as operational efficiency, mergers and acquisitions or growth strategies. The fourth objective is aimed at the sale of the target company with the majority to force a sale of the target company to a third party. The last objective includes activism targeting corporate governance. These motives are congruent with the \citet{Klein2009} definition of an entrepreneurial activist "who buys a large stake in a publicly held corporation with the intention to bring about change and thereby realize a profit on the investment". A more cautious definition is presented by \citet{Greenwood2009} who define an activist investor as someone who tries to change the status quo through voice, without a change in control of the firm. 
 
 \subsection{Motives of Corporate Equity Ownership, Value Creation \& Financial Constraints}
 % 13(D) = Minority Acquisition - Proxy 
@@ -273,20 +289,13 @@ But beyond the motives of corporations to actively engage in another firm and th
 Thus if the investing company proxies for the target's value improvement, its financing capabilities should have an impact on the market's anticipation of present and future value of the target. At large, do financial constraints of corporate activist investors matter when the market reacts to Schedule 13(D) filings?\\
 Under the assumption of perfect capital markets, the financial structure of the investor should be irrelevant to investment and the market, because "external funds provide a perfect substitute for internal capital" \citep[p. 141]{Fazzari1988}. This however, is not the case for financially constrained firms because they face an inelastic supply of external capital \citep[p.1]{Farre-mensa2013}. Hence, financial constraints refer to the degree of access to external financing. Consequently, firms who are able to raise substantial amounts of external capital without much of an increase in the cost of capital are considered as unconstrained \citep[p.1]{Farre-mensa2013}. This results in \citet[p.531]{Whited2006} measure of financial constraints, in which financial constraints affect the intertemporal substitution of investment today for investment tomorrow via the shadow price of scarce external funds -- their investment policy is dependent on the cost of capital. Because constrained firms have less access to external financing, \citet[p. 142]{Fazzari1988} argue that a constrained company's investment behavior is dependent on fluctuations in the companies cash flow and can therefore be unstable. As difficulties of external financing could also imply that the company is subject to information asymmetry, the quality of the investor's investment opportunities has not yet been evaluated comprehensively by providers of external finance \citep[p.142]{Fazzari1988}. Furthermore, constrained firms appear to invest at a low rate, despite good investment opportunities \citep[p.533]{Whited2006}.\\
 Concluding, financial constraints arise from frictions such as information asymmetries that make external funds more costly than internal funds and lead to a different investment behavior compared to healthy firms. 
-Following \citet[p.691]{Almeida2011a} a majority of managers in the U.S. list financial flexibility as the most important goal of their firm's financial policies which is consistent with the idea of ensuring funding for future investment undertakings. This said, financial constraints of corporate activist investors should matter when the market evaluates the value improvement for the target.
-
-
+Following \citet[p.691]{Almeida2011} a majority of managers in the U.S. list financial flexibility as the most important goal of their firm's financial policies which is consistent with the idea of ensuring funding for future investment undertakings. This said, financial constraints of corporate activist investors should matter when the market evaluates the value improvement for the target.
 % \citet[p.450]{Bhagat2005} investigate whether the same can be assumed about the investment policy of distressed firms and find it does. They also show that firms in distress invest less and "behave differently from financially constrained firms" \citep[p.461]{Bhagat2005}. 
 % In addition, the size of the investing corporation could also play an important role in the market's investment valuation of the investment in the target. Large firms may enjoy easier access to capital markets, receive higher credit ratings for their debt issues and pay lower interest rates on borrowed funds \citep{Saquido2003}
 
-% Considering the takeover process mentioned above, the necessity to file a Schedule 13(D) and thereby confirm the beneficial ownership of at least 5\% of the outstanding stock, prior or while negotiating the takeover bid, is more difficult to comprehend. Nevertheless the success of a potential takeover seems to be especially dependent on the bidders condition to be faster and stronger than potential competitors, the initial bidder has to ensure assertiveness. In order to appear strong (the market perceives the acquirer as a winner) the acquiring company must have sufficient financial strength. In the first place to make the takeover process credible to outside investors and secondly to signal the ability to pay the takeover premium. In any case, the target's outstanding shares have to be acquired at a premium to the price prevailing at the filing date either trough cash, stock or a mix of both. Besides that, a strong acquirer could have more bargaining power in persuading the target's shareholders to approve the merger and successfully carry out the takeover. 
-% To faciliatate thhareholders of the target might sign a voting agreement in favor of the acquirer in which they agree to vote the shares in a way expressed by the acquirer - corporations might have to sign a Schedule 13(D) although they did not buy the shares but have their voting power.
-% Whereas a merger agreement is the result of negotiations between the investor and the target's management, in a tender offer the acquirer makes a direct bid to target shareholders to purchase the target shares.
-% By negotiating with the target's management a merger agreement might appear as the safer option. However, it does not lock up the target from potential competition because the director fiduciary duties require the target board to evaluate competing offers until the agreement is approved by the shareholders \citep{Mitchell2011}.  To prohibit the acquirer of purchasing target shares in the market during negotiations, parties often sign a standstill agreement \citep{Mitchell2011}.  
-% Another possibility is the purchase of ownership in the target prior to the start of the takeover bid - a toehold. Neither management nor target's shareholders know of the acquirers takeover intention. Following \citet[p.158]{Eckbo2009} acquiring a toehold, before initiating the takeover bid, is compelling. It reduces the number of shares that must be bought at the full takeover premium and it can be sold at a profit if a rival bidder winds the target but it can also create hostility with the target's management \citep{Goldman2005}. This is the reason why toeholds are much more common in hostile bids \citep{Mitchell2011}. On the other hand \citet[p. 216]{Povel2014} suggest that toeholds are not much different to the general minority acquisitions. Because the toeholder might negotiate the right to nominate one or more directors in the target's board, they open the door to a more intensive cooperation. According to \citep{Mitchell2011} bidders initiating a takeover bid in the U.S. over the period 1980-2005 offered all cash as payment in 26\% of the cases, all stock in 37\%, and a mix of both in 37\%.
 \section{Data -- Constructing the Sample}
 
-The data that is used to analyse the relation between the investor's financial condition and the market reaction to Schedule 13(D) filings,  is primarily composed of information contained in the filings from SEC's Edgar database and secondly of data on stock and fundamentals,  accessed through Wharton Research Data Services (WRDS). The sample of Schedule 13(D) filings is constructed as follows. First, using an automated search script, 48'626 filings from the 20 year period starting in January 1996 and ending in December 2016 were identified.  The script identifies all Schedule 13(D) filings that appear on EDGAR and extracts the following information: name of filer and subject, the CUSIP of the underlying security and the filing date. Next, to only have filings submitted by corporations hence to separate corporate investors from institutional investors (i.e. hedge-funds or pension-funds), 10-K reports were cross-referenced with the initial sample of filings.\footnote{10-K reports were used to identify corporations because "managers of publicly traded firms are required to produce public documents that provide a comprehensive review of the firm’s business operations and financial condition and an important financial disclosure document created by managers to communicate with investors and analysts is the annual report filed pursuant to the Securities Exchange Act of 1934 the Form 10-K." \citep[p. 1643]{Loughran2014}} To be considered, the filer had to have a 10-K report submitted at least 12 months prior to the filing which reduced the sample to 3'325 filings. As daily stock returns and prices for the target's securities come from the Center for Research in Security Prices (CRSP) the subject not only had to have SEC's Cusip identifier but also an active link between Cusip and CRSP's Permno identifier. For estimating the market reaction to Schedule 13(D) filings, there had to be sufficient stock data for the remaining 1'467 filings. The data was only available to subjects of 1'151 filings. 
+The data that is used to analyse the relation between the investor's financial condition and the market reaction to Schedule 13(D) filings,  is primarily composed of information contained in the filings from SEC's Edgar database and secondly of data on stock and fundamentals,  accessed through Wharton Research Data Services (WRDS). The sample of Schedule 13(D) filings is constructed as follows. First, using an automated search script, 48'626 filings from the 20 year period starting in January 1996 and ending in December 2016 were identified.  The script identifies all Schedule 13(D) filings that appear on Edgar and extracts the following information: name of filer and subject, the CUSIP of the underlying security and the filing date. Next, to only have filings submitted by corporations hence to separate corporate investors from institutional investors (i.e. hedge-funds or pension-funds), 10-K reports were cross-referenced with the initial sample of filings.\footnote{10-K reports were used to identify corporations because "managers of publicly traded firms are required to produce public documents that provide a comprehensive review of the firm’s business operations and financial condition and an important financial disclosure document created by managers to communicate with investors and analysts is the annual report filed pursuant to the Securities Exchange Act of 1934 the Form 10-K." \citep[p. 1643]{Loughran2014}} To be considered, the filer had to have a 10-K report submitted at least 12 months prior to the filing which reduced the sample to 3'325 filings. As daily stock returns and prices for the target's securities come from the Center for Research in Security Prices (CRSP) the subject not only had to have SEC's Cusip identifier but also an active link between Cusip and CRSP's Permno identifier. For estimating the market reaction to Schedule 13(D) filings, there had to be sufficient stock data for the remaining 1'467 filings. The data was only available to subjects of 1'151 filings. 
 The accounting fundamentals for identifying the investing corporation's financial condition were extracted from the Compustat database. To be included, the filer had to have a valid link between its 10K-CIK and Compustats's Gvkey indentifier. This further reduced the sample to 1'014 filings. In the next step and based on Fama \& French's 48 industry classification, all filers belonging to the trading industry (industry code 47) were excluded. This was done for the reason that the investment behavior of corporations in this industry differs substantially from that of other industries. This left a sample 898 filings for which data on specific financials was only available for 644 investors. From the remaining 644 filings, the purpose of the transaction was manually extracted. During this process, Schedule 13(D/A) filings (amendments to previous filings) that were mistakenly classified as original Schedule 13(D) filings and filings not submitted by corporations were excluded. This reduced the final sample to 561 filings.\footnote{The only exception were filings submitted by the Commerce Group Inc., which provides both insurance and, real estate, brokerage services. These filings were excluded because (1) the largest part of them were amendments, (2) the amount of filings submitted was disproportionately and (3) all purposes of the transaction were general investments in an investment fund.} 
 
 \subsection{Measures of Financial Constraints}
@@ -302,19 +311,18 @@ The first index-based measure of financial constraints to be included is the Whi
 The Kaplanz-Zingales also identifies financially constrained firms, but \citet[p.29]{Farre-mensa2013} note that it appears to be an outlier and \citet{Whited2006} criticise, that it lacks parameter stability both across firms and over time. In addition, \citet[p.111]{Khatami2014} and \citet[p.1779]{Almeida2004} note that it yields groups of constrained and unconstrained firms that have different characteristics compared to those of other measures. Similar to \citet[p.546]{Whited2006}, in a more recent study \citet[p.1909]{hadlock2010} cast serious doubt on the validity of the KZ-index as a measure of financial constraints and suggest that researchers consider alternative measures of financial constraints \citep[p.1938]{hadlock2010}.\\
 Furthermore, \citet[p.15]{heller2015} reports that firm size can proxy as a measure of financial constraints as larger firms are better known and can mitigate problems, which may arise from information asymmetries. But following \citet[p.1790]{Almeida2004} and \citet[p.215]{Moeller2004} who rank firm's based on their asset size and assign to the financially constrained (unconstrained) group those in the bottom (top) three deciles of the annual size distribution, leads to only 27 matches with the initial sample. This suggest that when compared to all firms listed on Compustat, corporation filing a Schedule 13(D) are generally not small in size. 
 Based on these suggestion, investors are further grouped according to their HP-Index (SA-Index) as in \citet[p.1929]{hadlock2010}. It consists of the two quantities size and age and is therefore equally called the size-age (SA) index. It is used as an alternative measure for the KZ-Index and helps to mitigate the excluded size measure of financial constraints. Again, the intuition is that small firms are typically young, less well known, and thus more vulnerable to capital market imperfection \citep[p.1790]{Almeida2004}. As with the previous indices, the HP-Index is computed for all companies on Compustat and dependent on the firm's index value, firms are grouped into terciles with the top (bottom) tercile representing constrained (unconstrained) firms \citep[p.29]{Farre-mensa2013}. A matching with the initial sample results in 78 constrained and 355 unconstrained corporate activist investors. 
-
 % To further enrich the analysis, \citeauthor{Altman1968}'s (\citeyear{Altman1968}) Z-score identifies corporations in financial distress. Although distressed firms "behave differently from financially constrained firms" \citep[p.461]{Bhagat2005}, the mentioned KZ-Index can allegedly also be used to identify distressed rather than constrained firms \citep[p.47]{Kim2015}. In addition the revised Z-score of \citet[p.19]{Altman2002} is in accordance with conventional credit ratings and therefore shows similarities with potential constraint measures. Furthermore, the Z-score allows to nearly use the full sample size and compared to the Whited-Wu index is not dependent on the scores of all firms on Compustat. In this case and under given limitations, the Z-score's can be appplicable. This thesis uses the original score \citep[p.607]{Altman1968}, which is applied to investors in the manufacturing industries (SIC industries 2000-3999) and the revised Z-score \citep[p.17]{Altman2002} for the reamaining investors (non-manufacutrers). The four variables included in both models all have a positive loading and the the score consists of working capital to total assets, retained earnings to total assets, earnings before interest and taxes (EBITA) to total assets and market value of equity to book value of total liabilites. the original model includes a fifth variable which is sales to total assets. Firms in the manufacturing industry below the threshold 1.81 are considered as distressed and those above 2.99 as not-distressed \citep[p.14]{Altman2002}. For the remaining firms, a Z-score below 1.1 implies a state of distress and above 2.6 as not distressed \citep[p.175]{Sulub2014}\\
-
-
-Concluding, two index-based measures (WW-Index \& HP-Index) and two univariate measures (dividend payout ratio \& credit rating) are used to group the complete sample of corporate activist investors in several sub-samples of financially constrained and unconstrained investors.
 % \citeauthor{Piotroski2000}'s (\citeyear{Piotroski2000}) F-Score is used to proxy for investors general strength. This is done for the reason that it is a "... composite measure of firm strength" \citep[p. 496]{Fama2006} and secondly considers in what directions the fundamentals of a company are trending and whether general health conditions are met \citep[p.5]{Mohr2012}.\footnote{In order to legitimize the explanatory power of the F-score in separating strong from weak firms Piotroski formed portfolios consisting of value firms. In doing so, he showed that an investment strategy of shorting expected losers (weak firms) and buying expected winners (strong firms) would "generate a 23\% average annual return" \citep[p. 4]{Piotroski2000}. This is matching with \citet{Hyde2014} results, who observe significant return premiums for stocks with a high F-score over stocks with a low F-score.} Although \citet[p.6]{Piotroski2000} established it to separate strong from weak value firms \citet[p.16]{Mohr2012} shows that its application on growth stocks yields similar results.\footnote{This is in line with \citet{Piotroski2000} and confirms earlier research conducted by him.} The score consists of nine binary signals from fundamental analysis that result in a final score ranging from zero to nine, with nine being the best outcome. As its broad application on stocks is possible and because it is based on fundamental analysis, using it to separate the sample into strong and weak investors seems promising.  
 % Although corporations might have a score in the lower region, this per so does not say the corporation is weak. For simplicity however, firms within the range of (0-3) points are labeled as weak and those with a score ranging between (7-9) as strong. This marking is different to \citeauthor{Piotroski2000}'s (\citeyear{Piotroski2000}) original application but it yields two larger sub-samples which at the same time are more independent from rare outliers \citep[p.12]{Mohr2012}.
+
+Concluding, two index-based measures (WW-Index \& HP-Index) and two univariate measures (dividend payout ratio \& credit rating) are used to group the complete sample of corporate activist investors in several sub-samples of financially constrained and unconstrained investors.
+
 \subsection{Identifying the Sample's Schedule 13(D) Filings}
 
 Table 1 identifies the sample's Schedule 13(D) filings based on several criteria. Column (1) presents information on all filings. In a first subdivision among investors, Column (2) and (3) give information on the two sub-samples of filings disclosed by investors according to their Whited-Wu index. Thus Column (2) represents filings of financially constrained and Column (3) filings of unconstrained corporations.\\
 Turning to Panel A, the total sample consists of 561 filings, with 126 submitted by constrained and 307 by unconstrained investors. This imbalance in flings is due to the unequal distribution of the Whited-Wu index, its allocation process across investors and the final merge with the sample of this thesis. Further it could be an indicator that generally speaking, corporate activist investors are financially unconstrained. The filings had 507 individual targets but were disclosed by only 426 individual investors. This exemplifies that occasionally either one firm was investing in multiple targets (e.g. 6 filings submitted by AT\&T) or a target was subject to more than one filing (e.g. four filings for investments in Clearwire Inc.). Yet multiple occurrences are not common throughout the sample.\\ 
 With just 91 filings, the smallest amount was disclosed in the years from 1997 to 2001. In the following ten years however, more than 60\% of the sample's filings were submitted. The largest amount in the 5-year span prior to the financial crisis and with 176 filings only slightly more than in the following five years surrounding the financial crisis from 2007 to 2011. Interestingly, the amount of filings decreased in the most recent period from 2012-2016 and the merger wave of 2007 \citep[p.19]{Huang2017} could be an explanation for the temporal irregularities. Remarkable is the fact that more than 60\% of filings in the 2007-2011 period were disclosed by unconstrained investors and only 17\% by constrained, thus implying that financially constrained firms are more sensitive to macroeconomic movements \citep[p.1197]{Campello2006}.\\
-Panel B lists the extracted "Purpose of Transaction", which represents item 4 in Schedule 13(D) filings. The purpose is only explicitly stated if it occurrs in at least five filings. Furthermore, the two purposes \emph{Engaging into a Takeover} and \emph{Strategic Investment} group several purposes by common characteristics. According to \citet[p.1]{Betton2008}, filings disclosed with the purpose of a merger agreement, tender offer or hostile bid are grouped under the purpose \emph{Engaging into a Takeover} and filings disclosed due to alliance agreements, license agreements, strategic acquisitions and joint ventures are grouped under the purpose \emph{Strategic Investment}. A detailed description on how the filings were categorized can be found in Appendix B. 
+Panel B lists the extracted "Purpose of Transaction", which represents item 4 in Schedule 13(D) filings. The purpose is only explicitly stated if it occurs in at least five filings. Furthermore, the two purposes \emph{Engaging into a Takeover} and \emph{Strategic Investment} group several purposes by common characteristics. According to \citet[p.1]{Betton2008}, filings disclosed with the purpose of a merger agreement, tender offer or hostile bid are grouped under the purpose \emph{Engaging into a Takeover} and filings disclosed due to alliance agreements, license agreements, strategic acquisitions and joint ventures are grouped under the purpose \emph{Strategic Investment}. A detailed description on how the filings were categorized can be found in Appendix B. 
 Close to half of the investments were made while engaging into a takeover process and only 53 of these 271 filings were disclosed by constrained investors. On the other hand, more than 50\% of the filings in which the investor was subject to a merger were disclosed by constrained investors -- the securities underlying the Schedule 13(D) were acquired to distribute them to own shareholders at the execution of the merger. In this scenario, the investor-target relationship is switched.
 \includepdf[pages={1},pagecommand={},addtolist={1,table,Descriptive Statistics,descriptive}]{Descriptive_copy.pdf}
 
@@ -327,21 +335,6 @@ Close to half of the investments were made while engaging into a takeover proces
 \noindent With 99 filings, the second most reported purpose was essentially to invest in the target. The target is considered to be a good investment opportunity, frequently undervalued and the investing corporation aims actively monitor and interact with it. The main idea is these filings do not directly imply future collaboration but give room for speculations.\\
 Following actively held investments, strategic investments are the third most common purposes due to which filings were disclosed. Different to the former, they are based on the premise of future collaboration between investor and target and thus denote a likely value improvement for the target. Potentially of high interest, they represent around one quarter of filings. Although only 5 filings explicitly note direct financing as the purpose of transaction, 49 disclose the filing because they were compensated with issuer stock. Compensation can be a form of payment for cash-poor corporations and hence could also be classified as financing of the issuer. This is in line with the findings of \citet[p.2792]{Allen2000} and \citet[p.78]{Liao2014} who suggest one driver of minority acquisitions is the target's financing. Lastly, there are only 7 filings in which the investor announced a proxy fight with the target's management. In general, these presented transaction purposes are in line with the research findings on why corporation would actively hold equity ownership, namely in the process of takeover discussions, while building strategic alliances, for direct issuer financing or overcoming informational barriers.\\
 Turning to Panel C, the major industries in which the investors operate according to their Fama \& French's 48 industry classification code are presented.\footnote{For simplicity, the SIC-Industry codes are not shown next to the Fama \& French industry classifications as these industries are compiled by several 3-digit SIC industries.} Shown are only industries, which are represented by at least 15 corporate investors. For the complete sample, 42 out of the maximum 48 industries are represented. As mentioned previously, the sample is reduced by excluding the trading industry due its irregular investment behavior. The highest industry representation is in business services with 98 filings, followed by the industries of pharmaceutical products, petroleum and natural gas and electronic equipment. For the business industry, equally 28 are investors constrained and unconstrained. Looking at pharmaceutical products, there are more constrained than unconstrained investors and this proportion is also present in the computer industry. This could mean that especially in industries in which property rights become blurry and contracting is complicated hence information asymmetry is large, financially constrained firms have a higher representation \citep[p.4]{Liao2014}.
-\begin{comment}
-	\subsection{Examples of Corporate Activism}
-	In this subsection, two cases of corporate investments into other firms are being described. The first example is takeover the second is strategic investment. 
-
-	\subsubsection{Pfizer Inc. and Icagen Inc. }
-	On June 24, 2011 Pfizer filed a Schedule 13(D) in which it declared an ownership of 14.2\% in Icagen Inc.. Pfizer was initially engaging with Icagen in accordance to a "collaboration agreement" dated August 13, 2007. In the purpose statement of June 24, 2011 Pfizer wrote: 
-	\begin{center}
-		"Pfizer is evaluating the possibility of entering into a strategic transaction with Icagen, which could have the effect of influencing or changing the control of Icagen by means of stock or asset acquisition or merger"
-	\end{center}
-	Consequently, the filing can be considered as firms strategic investment and the purpose statement can be classified as indicating that Pfizer wants to further strategically invest in Icagen.
-	The ownership of 14.2\% in Icagen was acquired between 2007 and 2008. The collaboration agreement on August 13, 2007 involved the "discovery, development, manufacture \& commercialization of pharmaceutical compounds and products that modulate three specific sodium ion channels as potential new treatments for pain and related disorders". The investment resulted in Pfizer appointing the treasurer and president of Icagen as their proxies. 
-	In order to extend the collaboration agreement, on September 17 2009 Pfizer and Icagen entered into the first amendment to the agreement. 
-	On September 21, 2010, one year later, they entered into a second amendment to the collaboration agreement which would extend it until December 31, 2011. In the course of a further collaboration between Pfizer and Icagen after the expiration of the collaboration agreement , Pfizer filed this Schedule as stated in the purpose statement above.
-	\pagebreak	
-\end{comment}
 
 \subsection{Identifying the Investors prior to their Schedule 13(D) Filing}
 
@@ -372,7 +365,6 @@ For each sample, Table 2 reports the mean [median] of several key financials. Fo
 \noindent Moreover, characteristics for the WW-, HP- and Dividend Payout indices have explanatory power beyond the sample, as these investors are identified according to their comparative values across the entire Compustat database. 
 %\includepdf[angle={90},pages={1},pagecommand={},addtolist={1,table,Characteristics of Investors prior to their Schedule 13(D) Filing,Summary}]{Summary_copy.pdf}
 Hence, a loose comparison to samples of other studies is possible. For further simplicity, the notion of "financially constrained" is used independently of the measure initially used for identification. \\
-% For all following tests, the $t$-statistics are for difference in means, assuming unequal variances between the samples. The $Z$-statistic is a Mann-Whitney rank-sum test for equality of medians on unmatched data and 
 Panel A reports two ratios on profitability -- return on assets (ROA), defined as earnings before interest and taxes (EBITDA) to total assets and the ratio of cash flow from operations to total assets. On average, the sample's corporations have positive returns and a 0.059 cash flow ratio. Across all measures, financially constrained investors have a ROA which is significantly lower when compared to their counter-samples. Turning to the HP-Index, financially constrained investors even have a negative ROA in the fiscal year prior to the Schedule 13(D) filing. Furthermore, investors in this group also have a negative cash flow (same for the Whited-Wu index) and again, the difference between constrained and unconstrained investors is apparent and significant at the 1\% level across all measures. This implies that in general, constrained investors are less profitable \citep[p.544]{Whited2006}.\\
 Panel B reports ratios on cash balances and debt. Constrained firms have considerably larger amounts of cash reserves (both cash and short-term investments) reflecting their dependency on internal funds when it comes to investments \citep[p.142]{Fazzari1988}. The difference in means is significant at the 1\% level across all measures and the largest for firms grouped by the HP-index. Unsurprisingly, book leverage, defined as long-term debt plus current debt to total assets \citep[p.1440]{MacKay2005} is higher for firms considered to be financially unconstrained, as financially constrained firms face the issue of restricted access to external finance. Significance in differences is given for all measures, except for the dividend payout ratio where the leverage levels are close to equal. Similar, the differences in the ratio of short-term debt to total assets are small but significant for firms grouped by their dividend payout ratio and credit rating. The sub-samples characteristics are similar to those presented in \citet[p.544]{Whited2006} and \citet[p.1917]{hadlock2010}, thereby suggesting a successful implementation of the measures on the sample of Schedule 13(D) filings.
 
@@ -383,6 +375,7 @@ To conclude, firms identified to be constrained in the sample of corporate activ
 \section{Market Reactions to 13(D) Filings -- Abnormal Stock Returns}
 % Intention
 In analyzing whether the financial condition of the activist corporate investor matters, abnormal share price reactions around the filing date identify the effect the 13(D) filing has on the target's stock, likewise the market's perception of value improvement, after accounting for general market movements.
+\textbf{Hypothesis I}
 The set up of the event study performed for this purpose is as follows: The time line consists successively of the estimation window, in which parameter estimates are obtained, the event window for which the abnormal returns are computed and the post event window. 
 The filing date, as reported by the SEC and reported on EDGAR is set as the event day. For simplicity, the event window [x,y] is determined relative to the event day 0 with x days before and y days after the filing date. Abnormal returns are computed for various event windows. For that reason, the estimation window is set 120 days prior to the largest event window. With the largest event window starting 30 days before the event day, the estimation window begins 150 days prior to the actual event day.\\
 The abnormal return $AR_{i,t}$ for the target's security $i$ at day $t$ is defined as the difference between the actual (observed) return $R_{i,t}$ and the expected return $E(R_{i,t}|X{t})$ given the absence of the event \citep[p.15]{MacKinlay1997}:
@@ -431,9 +424,6 @@ These possibilities are in line with general characteristics of Schedule 13(D) f
 As it is the investor's own actions that potentially increase the value of the target firm, a potential increase in their trading activity could also explain the early upsurge. This approach is adopted from  \citet[p.1561]{Collin-Dufresne2015} who analyze the trading strategy of informed Schedule 13(D) filers. Firstly, they find that trading activity increases in the [-12,-9] period in which the reported event dates are clustered (date on which the 5\% threshold is passed). Secondly, they show that close to 1\% of outstanding shares are purchased on the event date, compared to only 0.10\% and 0.15\% on the days before and after the event date \citep[p.1561]{Collin-Dufresne2015}. Thirdly they note that the prices move up when Schedule 13(D) filers trade. By combining these three findings, an explanation could be that by their own trading at the event day, corporations drive up prices. This argument however is limited, as constrained firms experience small negative abnormal returns in this period. Summarizing these explanations, \citet[p.207]{Klein2009} start their event window at day -30 to allow for the 10-day 13(D) filing window, possible prior leakage of information and prefiling price pressure.\\
 That is to say, these researchers have expanded their event-windows to overcome the difficulty of identifying the precise date on which the information reaches the market. This adjustment might create problems as the number of confounding events increases \citep[p.352]{mcwilliams1999}. For that reason, the sample of Schedule 13(D) filings was cross-referenced with a sample of activism filings provided by SharkRepellent. This however lead to only 40 matched campaigns occurring in the respective month of the target's Schedule 13(D) filing. For these 40 matches, the reported announcement date by SharkRepellent was either equal to or later than the reported filing date of the Schedule 13(D) and thereby revealing no additional information on the filings.
 
-% So in the window [-10,0] other public announcements corresponding with the investment can be made. If for example a takeover announcement is made public during the ten days in which the firm is not obligated to file, the abnormal returns might be due to the takeover announcement. This means, the filing itself has little impact and is just a necessary accompaniment.  With regards to the remaining purposes of transaction, there is no reason to believe they follow a similar pattern. 
-% A scenario in which a different announcement triggers the abnormal share price reaction is conceivable. So when assessing the true impact of the filing, all abnormal returns in the event-window [-10,0] should be neglected and only those occurring after the announcement, including the event day, should be utilized. This however is a limited approach, as the announcement still affects the abnormal returns in the event window of the filing and a strict separation over time would not mitigate all the announcement effects.\\
-% In an attempt to isolate possible effects of takeover announcements on abnormal returns around day -7, a second graph excluding takeover filings was plotted. The graph showed that abnormal returns primarily decrease in magnitude and that the early impact on the target's stock remained at around day -7. This means that even when controlling for the largest sub-sample which simultaneously is the only one for which an earlier announcement is plausible, the early impact is still existing. The reduction in abnormal returns however implies, that large chunks are driven by filings with the purpose of a takeover. 
 \subsection{Event Windows and Financial Constraints}
 
 For the aforementioned reason, Table III present the mean [median] cumulative and buy-and-hold abnormal returns for the following four event windows: Event window 1 is [-10,3], to allow for the 10-day filing window, information leakage and accommodate subsequent press coverage. The second event window is [-10,-6] to detach the possible effect of information leakages and event-date trading. Analogous, the third event window [-5,3] aims to control for these two. This seems to be reasonable, as the aggregation of abnormal returns in Graph 1 slows down at around day -5, implying that information has been processed. The fourth event window is [-1,3] to accommodate for just the filing date and press coverage.
@@ -455,6 +445,7 @@ Turning to abnormal returns for the smallest event window [-1,3] in Panel D, tar
 Concluding, both buy-and-hold and cumulative abnormal returns show similar results with positive and significant market reactions in all event-windows surrounding the Schedule 13(D) filing date. Furthermore, the largest aggregation happens in the [-10,-6] event window but is not exceptionally high when compared to the overall runup. Most importantly however is the difference in average abnormal returns for targets of financially constrained and unconstrained investors. The difference is present, both on an economic and statistical level. When testing the differences in means, the difference is significant across all event windows, thus presenting further evidence that financial constraints matter, independent of the event-windows of aggregation.
 
 \subsection{Financial Constraints and Purpose of Transaction}
+This paper follows various studies when using thel onger event window
 So far it has been shown that independent from the event window, targets of financially unconstrained corporate investors gain on average significantly more, when compared to those of financially constrained investors. Attached thereto and applying the Whited-Wu Index for identification, this section aims to analyse whether this difference is existent both, across filings' different transaction purposes and across different measures of financial constraints.\\
 For this reason, Table 3 presents the mean [median] cumulative abnormal returns from the [-10,+3] event window for each each measure and further for different transaction purposes. The measures of financial constraints and among which the sample separation takes place are the Whited-Wu Index, the investor's dividend payout ratio, the HP-Index and lastly the investor's S\&P's long-term issuer credit rating. For comparison, Panel A shows the abnormal returns for the complete sample of targets whereas Panel B presents the abnormal returns dependent on the filings purpose. Hence \emph{Engaging into a Takeover} involves merger agreements, tender offers and hostile bids and \emph{Strategic Investments} represents alliance agreements, license agreements, strategic acquisitions and joint ventures. \emph{Remaining Purposes} groups the abnormal returns for the remaining transaction purposes. This structuring is applied to enable a better comparison to relevant studies. For each measure, Column (1) and (2) present mean [median] cumulative abnormal returns for the two sub-samples. Column (3) tests the difference between column (1) and (2) and displays the  $t$-statistic [$Z$-Statistics].
 
@@ -493,7 +484,6 @@ Concerning the dividend payout ratio, the difference in mean CAR's is visible bu
 
 The univariate analysis shows that both, across measures and transaction purposes, the difference in abnormal returns for targets of constrained investors is generally present and significant. Hence Table III gives further evidence on whether financial constraints of corporate activists matter. Irregularities are only evident for filings with the purpose of a strategic investment, but here too does the Whited-Wu index show differences in abnormal returns. 
 Table III also shows that abnormal returns are the highest for filings with the purpose of engaging into a takeover, followed by filings disclosed due to a strategic investment. Except for these filings, statistical tests on differences are valid and show that the average CAR significantly differs across groups. Concluding, measures for identifying financially constrained investors separate the sample in a meaningful way and have categorical power when analyzing the sample's cumulative abnormal returns. This in turn supports the hypothesis that financial constraints of corporate activist investors matter. 
-
 % The difference is the greatest among targets of constrained and unconstrained investors and of those missing a credit rating and those having one. For both measure, the difference is statistically significant at the 1\% level. Strikingly, targets of investor identified to be in financial distress have a mean CAR of 25.65\%, 4\% higher when compared to undistressed firms. An explanation might be that the distressed companies equity claimants are up for a "gamble of ressurection" \citep[p.451]{Bhagat2005} in which they hope conditions may improve and the market interprets this behavior as promising for the target. For all measures, excluding the $Z$-score, is the difference in abnormal returns between the two sub-samples statistically significant at the 1\% level and targets of investor in the favorable state gain more
 
 \section{Cross Sectional Variation of Abnormal Returns}
@@ -685,77 +675,8 @@ Concluding, the cross sectional regression supports previous findings, namely th
 
 Schedule 13(D) filings enjoy wide spread attention, particularly when initiated by institutional investors. Recent literature has addressed their interests and motives, the value added and highlighted differences across investor types. Yet a detailed investigation of corporate activist investors has not been conducted. This thesis supports the evidence on why corporations would actively hold equity ownership, namely in the process of takeovers, strategic investments and issuer financing. Furthermore, targets of corporate activist investors experience significant gains around the filing date of a Schedule 13(D). The complete sample of targets experiences average abnormal returns of 13\% which is in line with existing evidence that activism -- in any form -- is perceived as an actual value improvement for the target. 
 Furthermore, using a sample of Schedule 13(D) filings disclosed by corporations from the period 1996-2016, the effect of investor's financial constraints on target's gains is analyzed. The thesis provides evidence that financial constraints of activist investors matter, as in the manifestation of significantly lower abnormal returns for targets of financially constrained investors. Across all purposes and independent of the financial constraints measure, targets of financially constrained investors have much smaller abnormal returns. The evidence is further supported by the cross sectional analysis of stock returns, showing that the financial constraints of corporate activists matter. Other things equal and when identyfing investors with the Whited-Wu index, targets of constrained investors have abnormal returns 10\% lower when compared to those of unconstrained investors.
-Concluding, both univariate and multivariate analysis show, that financial constraints of corporate activist investors matter. 
-% As this thesis seeks to explore the relation between the filing of a Schedule 13(D) and the investor's financial condition, the event window (-1,3) is used for all following analysis. This is done for two reasons. During the window [-10,3] the targets' abnormal returns experience two jumps, one at day minus 7 and the second at the filing day. This proves that the filing has an impact on the market and precisely this effect is subject of analysis. The second reason for choosing the event window (-1,3) is that regardless from Graph 1, the actual filing happens on day 0 and not on day -7 and therefore the abnormal returns close to day 0 should be importance. One disadvantage of this approach is, that leakage of information prior to the filing is left outside and aggregated returns have a downward bias.
-
+Concluding, both univariate and multivariate analysis show, that financial constraints of corporate activist investors matter.
 \pagebreak
-
-\begin{comment}
-	
-\section{Indentifying the Financial Condition of the Investor}
-% Objective -- What is the financial condition? 
-% Topics: Composition | Elements | Procedure
- 
-
-\subsection{Piotroskis F-Score -- A Measurement of Financial Strength}
-%Objective -- How do we characterized strong firms? 
-%Topics: Descrription | Why | Outlook 
-
-In a study of 2010, \emph{BCG} noted many of that year's acquisitions would involve a financially strong acquirer. However, the attribute of being financially strong is not ambivalent. Piotroski's F-Score adresses this issue as it is a "... composite measure of firm strength" \citep[p. 496]{Fama2006}. It consists of nine binary signals which consider in what directions the fundamentals of a company are trending and whether general health conditions are met \citep{Mohr2012}. \citet{Piotroski2000} established it to seperate strong from weak value firms
-	\footnote{In order to legitimize the explanatory power of the F-score in separating strong from weak firms Piotroski formed portfolios consisting of value firms. In doing so, he showed that an investment strategy of shorting expected losers (weak firms) and buying expected winners (strong firms) would "generate a 23\% average annual return" \citep[p. 4]{Piotroski2000}. This is matching with \citet{Hyde2014} results, who observe significant return premiums for stocks with a high F-score over stocks with a low F-score.}
-. 
-Although the F-score was established to distinguish among value firms, \citet{Mohr2012} shows that its application on growth stocks yields similar results.
-	\footnote{This is in line with \citet{Piotroski2000} and confirms earlier research conducted by him.}. 
-With regards to the above, the F-Score is used to divide the complete sample of investors into strong and weak ones.
-
-\subsection{The Whited-Wu Index -- A Measurement of Financial Constraints}
-A firm is financially constrained if it faces an inelastic supply of external capital \citep{Farre-mensa2013} and those who are able to raise substential amounts of external capital without much of an increase in the cost of capital are unconstrained. Although \citet{Khatami2014} notes that more recent literature has questioned the reliability of constraint measures, the Whited-Wu Index as in \citet{Liao2010} is used as an indicator. 
-
-
-\subsection{Altman's Z-Score -- A Measurement of Financial Distress}
-Financial distress describes a state in which a company cannot meet or has difficulty paying off, its financial obligatiosn to its creditors. In this sense, HNA Group could be in a state of financial distress as they have problems refinancing the debt burden, and recently planned to sell their stake in Hilton Worldwide Holdings Inc. to pay down a large pile of debt. Altman's Z-score is a widely accepted measure of financial distress. The fundamental indicator shows statistically significant results in predicting the bankruptcy of a company \citep{Campbell2008} and is still applied as a general practical tool for assessing the financial well-being of firms \citep{Kleinert2014}. 
-	\footnote{The model consists of five financial ratios that are coefficients by discriminate analysis method where the financial ratios are independent variables of it. The five financial ratios of the Z-score are (1) working capital to total assets, (2) retained earning to total assets, (3) earnings before interest and taxes to total assets, (4) market value of equity to book value total debt and (5) sales to total assets. This yields
-		\begin{equation}
-			Z=1.2(X_{1})+1.4(X_{2})+3.3(X_{3})+0.6(X_{4})+0.999(X_{5})
-		\end{equation}
-	The cut-off point is at Z=2.675 where a lower score implies bankruptcy of a firm and a higher score non-bankruptcy.}
-.
-
-\subsection{Other Measurements}
-
-\subsection{Tobin's Q}
-Tobin's Q is included because it proxies for a firm's investment opportunity which assesses the 
-\footnote{In accordance with \citet{Brigida2012}, Tobin's Q is defined as 
-\begin{equation}
-	Tobin's Q= \frac{MVE + PSE + Debt}{AT}
-\end{equation}, where $MVE$ is the market capitalization, $PSE$ is the lquidating value of preferred stock, $Debt$.. } 
-\citep{DUCHIN2010}. According to \citet{Khatami2014} constrained firms have higher tobin's Q compared to unconstrained firms, which may be due to their unexploted investment opportunities \citep{Khatami2014}.
-
-\subsection{Company Size}
-Company size 
-
-
-
-\pagebreak
-
-It was established by Altman in his 1968 paper 
-
-
-In conducting the analysis, the F-score will be used to separate  the sample of 13D filings among strong and weak corporate investors. Since is is able to separate firms in portfolios into strong and weak performing ones, an application to this analysis seems reasonable. 
-%insert negative aspects here - accruals 
-However, components of the f-score include changes in leverage and The score itself can be divided into the three dimensions profitability, balance sheet health and operating efficiency. 
-In the context of this analysis As \citet{Mohr2012} states: the f-score considers in what direction the fundamentals of a company are trending and whether financial health conditions are met.  Because high F-scores imply higher returns hence stronger firms should have higher returns, investors must see a high F-score as a representation of financial strength. In the context of this paper those practices would have only been applied to the target and not the investor. An application of the F-score on the investor with the aim of distinguishing between strong and weak firms 
-
-
-\citet{Choi2012} formulate it from a target perspective - "does financial strength predict subsequent institutional demand"? 
-
-%In general, analyzed characteristics across the sample of filings but not the characteristics of the parties in general.
-
-On the other hand, \citet{Akhigbe2007} examine the characteristics of final acquisitions following partial bids. They find that involvements by corporate bidders are more likely to result in a full acquisition. 
-
-% previous studies have examined the content of the filings and therefre indirectly involved the investor in their analysis and when actively invo lving a party only analysed the target (s. above paragraph).
-% difference of the paper 
-\end{comment}
 \cleardoublepage
 \pagenumbering{roman}
 \setcounter{page}{\thesavepage}
@@ -790,6 +711,7 @@ On the other hand, \citet{Akhigbe2007} examine the characteristics of final acqu
 	\noindent Following \citet[p.1929]{hadlock2010} and \citet[p.119]{Khatami2014} the index is calculated as: $HP=-0.737*Size+0.043*Size^{2}-0.040*Age$ where size is the log of inflation adjusted (to 2004) book assets and age is the number of years the firm has been on Compustat with a non-missing stock price. In calculating the index, size is replaced with log(\$4.5 billion) and age with 37 years if the actual values exceed these thresholds \citep[p.1929]{hadlock2010}. After computing the HP index for all companies on Compustat, the firms are sorted into terciles based on their annual index values. Firms in the top tercile are coded as constrained and those in the bottom tercile are conded as unconstrained \citep[p.38]{Farre-mensa2013}.
 	\pagebreak
 
+	\subsection{Rating-Indicator}
 	\subsection*{Other Variables}
 
 	\begin{itemize}
@@ -805,6 +727,7 @@ On the other hand, \citet{Akhigbe2007} examine the characteristics of final acqu
 		\item Size of the firm $log(at)$
 		\item Tobin's Q \citep[p.120]{Khatami2014} $\frac{at-ceq-txdb+csho*prcc_c}{at}$
 	\end{itemize}
+
 
 \section{Categorization of Purpose of Transaction}
 
@@ -874,6 +797,7 @@ The Reporting Person has contacted the Chairman of the Board of the Issuer and e
 
 
 \section{Stata Do-Files}
+
 \end{appendices}
 
 \begin{comment}
