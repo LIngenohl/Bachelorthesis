@@ -1,0 +1,1460 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nyt/global/}
+    \entry{Allen2000}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=c35714b04983490331008b8a3f5aa1d7}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Jeffrey\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{uniquename=0,hash=d4bb973093dc9420636ac65478a340fc}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Gordon\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0a5ed5a4bde40eb0c4368240efb91bc}
+      \strng{fullhash}{c0a5ed5a4bde40eb0c4368240efb91bc}
+      \strng{authornamehash}{c0a5ed5a4bde40eb0c4368240efb91bc}
+      \strng{authorfullhash}{c0a5ed5a4bde40eb0c4368240efb91bc}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{{Corporate Equity Ownership, Strategic Alliances, and Product Market Relationships}}
+      \field{volume}{55}
+      \field{year}{2000}
+      \field{pages}{2791\bibrangedash 2815}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1111/0022-1082.00307
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/Allen_et_al-2000-The_Journal_of_Finance.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Almeida2004}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=8c39edb33d6e6541e88fed29b3650231}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Heitor},
+           giveni={H\bibinitperiod}}}%
+        {{uniquename=0,hash=100abb6c72368a2b900af9eb888a174b}{%
+           family={Campello},
+           familyi={C\bibinitperiod},
+           given={Murillo},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=15534f526f6049ce5df54f72646ace44}{%
+           family={Weisbach},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{72ce1a5f4a5e522dfc40e8f74c803203}
+      \strng{fullhash}{a1cd2a429919a89825d947df00b7dac8}
+      \strng{authornamehash}{72ce1a5f4a5e522dfc40e8f74c803203}
+      \strng{authorfullhash}{a1cd2a429919a89825d947df00b7dac8}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship. For more information about JSTOR, please contact support@jstor.org. ABSTRACT We model a firm's demand for liquidity to develop a new test of the effect of fin}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{{The Cash Flow Sensitivity of Cash}}
+      \field{volume}{59}
+      \field{year}{2004}
+      \field{pages}{1777\bibrangedash 1804}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.2004.00679.x
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/Almeida_et_al-2004-The_Journal_of_Finance.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Almeida2011}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=b17d91903897dbf5c7149723cdc4e274}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Htor},
+           giveni={H\bibinitperiod}}}%
+        {{uniquename=0,hash=100abb6c72368a2b900af9eb888a174b}{%
+           family={Campello},
+           familyi={C\bibinitperiod},
+           given={Murillo},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=15534f526f6049ce5df54f72646ace44}{%
+           family={Weisbach},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{107e5436955a8149d854032bfc6f1103}
+      \strng{fullhash}{3269444342c7dc94de867a51e100678f}
+      \strng{authornamehash}{107e5436955a8149d854032bfc6f1103}
+      \strng{authorfullhash}{3269444342c7dc94de867a51e100678f}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study a model in which future financing constraints lead firms to have a preference for investments with shorter payback periods, investments with less risk, and investments that utilize more pledgeable assets. The model also shows how investment distortions towards more liquid, safer assets vary with the marginal cost of external financing and with firm internal cash flows. Our theory helps reconcile and interpret a number of patterns reported in the empirical literature, in areas such as risk-taking behavior, capital structure choices, hedging strategies, and cash management policies. For example, contrary to Jensen and Meckling [Jensen, M., Meckling, W., 1976. Theory of the Firm: managerial behavior, agency costs, and ownership structure. Journal of Financial Economics 305-360], we show that firms may reduce rather than increase risk when leverage increases exogenously. Furthermore, firms in economies with less developed financial markets will not only take different quantities of investment, but will also take different kinds of investment (safer, short-term projects that are potentially less profitable). We also point out to several predictions that have not been empirically examined. For example, our model predicts that investment safety and liquidity are complementary: constrained firms are specially likely to decrease the risk of their most liquid investments. {©} 2009 Elsevier B.V.}
+      \field{journaltitle}{Journal of Corporate Finance}
+      \field{number}{3}
+      \field{title}{{Corporate financial and investment policies when future financing is not frictionless}}
+      \field{volume}{17}
+      \field{year}{2011}
+      \field{pages}{675\bibrangedash 693}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.jcorpfin.2009.04.001
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-S0929119909000376-main.pdf:pdf
+      \endverb
+      \keyw{Capital structure,Financing constraints,Hedging,Liquidity,Risk shifting}
+    \endentry
+    \entry{Betton2008}{unpublished}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=65e2c92c814f22d757a69f0ae00ef0be}{%
+           family={Betton},
+           familyi={B\bibinitperiod},
+           given={Sandra},
+           giveni={S\bibinitperiod}}}%
+        {{uniquename=0,hash=d8dc48f2c7397a90c3605faaa884e645}{%
+           family={Eckbo},
+           familyi={E\bibinitperiod},
+           given={B.\bibnamedelimi Espen},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{uniquename=0,hash=c71b86971684c8874701b823648d1bd5}{%
+           family={Thorburn},
+           familyi={T\bibinitperiod},
+           given={Katrin\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Tuck School of Business}%
+      }
+      \strng{namehash}{a24520ae985d2696ea7cd02d38794c7d}
+      \strng{fullhash}{0c59d58a6d8c8c76f3984dcb874c3616}
+      \strng{authornamehash}{a24520ae985d2696ea7cd02d38794c7d}
+      \strng{authorfullhash}{0c59d58a6d8c8c76f3984dcb874c3616}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A letter to the editor is presented in response to the article "Takeovers: Folklore and Science," by Michael Jensen from the November-December 1984 issue.}
+      \field{booktitle}{Corporate Takeover Modern Empirical Developments}
+      \field{title}{{Corporate Takeovers}}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 167}
+      \range{pages}{167}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/Corporate takeovers handbook.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb https://ssrn.com/abstract=1131033
+      \endverb
+    \endentry
+    \entry{Brav2009}{article}{}
+      \name{author}{3}{uniquelist=3}{%
+        {{uniquename=0,hash=5b1aa028b1fd809606ed862528043059}{%
+           family={Brav},
+           familyi={B\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=e3dafe978a62db8ea9fec63a537b07dc}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{uniquename=0,hash=2e1e1cfcd1651d21def9b6823fcaeb8f}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyunseob},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a0e43c7c0571ed9673747fec616b607}
+      \strng{fullhash}{0a0e43c7c0571ed9673747fec616b607}
+      \strng{authornamehash}{0a0e43c7c0571ed9673747fec616b607}
+      \strng{authorfullhash}{0a0e43c7c0571ed9673747fec616b607}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article reviews shareholder activism by hedge funds. We first describe the nature and characteristics of hedge fund activism, including the objectives, tactics, and choices of target companies. We then analyze possible value creation brought about by activist hedge funds, both for shareholders in the target companies and for investors in the hedge funds. The evidence generally supports the view that hedge fund activism creates value for shareholders by effectively influencing the governance, capital structure decisions, and operating performance of target firms. Keywords}
+      \field{journaltitle}{Foundations and Trends{®} in Finance}
+      \field{number}{3}
+      \field{title}{{Hedge Fund Activism: A Review}}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{185\bibrangedash 246}
+      \range{pages}{62}
+      \verb{doi}
+      \verb 10.1561/0500000026
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/SSRN-id1551953.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Brav2008}{article}{}
+      \name{author}{4}{uniquelist=3}{%
+        {{uniquename=0,hash=5b1aa028b1fd809606ed862528043059}{%
+           family={Brav},
+           familyi={B\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=e3dafe978a62db8ea9fec63a537b07dc}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{uniquename=0,hash=2a851c06739511872772b0765212ca10}{%
+           family={Partnoy},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{uniquename=0,hash=465f610f98854299765b09983492b33c}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Randall},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0c86056b067b8706c0c3b90657ea9a8}
+      \strng{fullhash}{058a71a7a8dc3fb2f0047a0c324d2ec5}
+      \strng{authornamehash}{d0c86056b067b8706c0c3b90657ea9a8}
+      \strng{authorfullhash}{058a71a7a8dc3fb2f0047a0c324d2ec5}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using a large hand-collected data set from 2001 to 2006, we find that activist hedge funds in the United States propose strategic, operational, and financial remedies and attain success or partial success in two-thirds of the cases. Hedge funds seldom seek control and in most cases are nonconfrontational. The abnormal return around the announcement of activism is approximately 7\%, with no reversal during the subsequent year. Target firms experience increases in payout, operating performance, and higher CEO turnover after activism. Our analysis provides important new evidence on the mechanisms and effects of informed shareholder monitoring.}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{{Hedge Fund Activism, Corporate Governance, and Firm Performance}}
+      \field{volume}{63}
+      \field{year}{2008}
+      \field{pages}{1729\bibrangedash 1775}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.2008.01373.x
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/BRAV_et_al-2008-The_Journal_of_Finance.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Brigida2012}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=0f9911cf79c1da8f2437a6a3b3fbaf2f}{%
+           family={Brigida},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=766393abf7dbcec9c5297beac7c5097b}{%
+           family={Madura},
+           familyi={M\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{47b25e156ae5dab226953d07adb25857}
+      \strng{fullhash}{47b25e156ae5dab226953d07adb25857}
+      \strng{authornamehash}{47b25e156ae5dab226953d07adb25857}
+      \strng{authorfullhash}{47b25e156ae5dab226953d07adb25857}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial and Economic Practice}
+      \field{number}{2}
+      \field{title}{{Information Leakages Prior to 13D Filings}}
+      \field{volume}{12}
+      \field{year}{2012}
+      \field{pages}{23\bibrangedash 38}
+      \range{pages}{16}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/Information_Leakages_Prior_to_.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb https://search.proquest.com/docview/1555333103?pq-origsite=gscholar
+      \endverb
+      \keyw{information leakage,informed trading,partial acquisition,toeholds}
+    \endentry
+    \entry{Brown1985}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f93cc9f1a0c49f0158cf64576a7ebeb2}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=d9b6d665a543ca439d47c79c809f38fc}{%
+           family={Warner},
+           familyi={W\bibinitperiod},
+           given={Jerold\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5c8d03156ed4fb4cb6dc4033416ce5c}
+      \strng{fullhash}{e5c8d03156ed4fb4cb6dc4033416ce5c}
+      \strng{authornamehash}{e5c8d03156ed4fb4cb6dc4033416ce5c}
+      \strng{authorfullhash}{e5c8d03156ed4fb4cb6dc4033416ce5c}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines properties of daily stock returns and how the particular characteristics of these data affect event study methodologies. Daily data generally present few difficulties for event studies. Standard procedures are typically well-specified even when special daily data characteristics are ignored. However, recognition of autocorrelation in daily excess returns and changes in their variance conditional on an event can sometimes be advantageous. In addition, tests ignoring cross-sectional dependence can be well-specified and have higher power than tests which account for potential dependence.}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{{Using daily stock returns}}
+      \field{volume}{14}
+      \field{year}{1985}
+      \field{pages}{3\bibrangedash 31}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/0304-405X(85)90042-X
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-0304405X8590042X-main.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Campello2006}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=100abb6c72368a2b900af9eb888a174b}{%
+           family={Campello},
+           familyi={C\bibinitperiod},
+           given={Murillo},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=2b01d303567b99056235e81bd74fd50e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c00748026a6e84a685be5d317b56a9bf}
+      \strng{fullhash}{c00748026a6e84a685be5d317b56a9bf}
+      \strng{authornamehash}{c00748026a6e84a685be5d317b56a9bf}
+      \strng{authorfullhash}{c00748026a6e84a685be5d317b56a9bf}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Money, Credit and Banking}
+      \field{number}{6}
+      \field{title}{{Are Financial Constraints Priced ? Evidence from Firm Fundamentals and Stock Returns}}
+      \field{volume}{42}
+      \field{year}{2010}
+      \field{pages}{1185\bibrangedash 1198}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1111/j.1538-4616.2010.00326.x
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/CAMPELLO_et_al-2010-Journal_of_Money%2C_Credit_and_Banking.pdf:pdf
+      \endverb
+      \keyw{financial constraints,macroeconomic shocks,systematic risk}
+    \endentry
+    \entry{Collin-Dufresne2015}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=9572d38db00c2951b7e0e1a3a2c2e6e6}{%
+           family={Collin-Dufresne},
+           familyi={C\bibinithyphendelim D\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{uniquename=0,hash=f7c77f58b78f1dfd22815ef77341a859}{%
+           family={Fos},
+           familyi={F\bibinitperiod},
+           given={Vyacheslav},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{60626407f46dbed187a72c7fa13edb9f}
+      \strng{fullhash}{60626407f46dbed187a72c7fa13edb9f}
+      \strng{authornamehash}{60626407f46dbed187a72c7fa13edb9f}
+      \strng{authorfullhash}{60626407f46dbed187a72c7fa13edb9f}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using a comprehensive sample of trades from Schedule 13D filings by activist investors, we study how measures of adverse selection respond to informed trading. We find that on days when activists accumulate shares, measures of adverse selection and of stock illiquidity are lower, even though prices are positively impacted. Two channels help explain this phenomenon: (1) activists select times of higher liquidity when they trade, and (2) activists use limit orders. We conclude that, when informed traders can select when and how to trade, standard measures of adverse selection may fail to capture the presence of informed trading.}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{{Do Prices Reveal the Presence of Informed Trading?}}
+      \field{volume}{70}
+      \field{year}{2015}
+      \field{pages}{1555\bibrangedash 1582}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1111/jofi.12260
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/COLLIN-DUFRESNE_et_al-2015-The_Journal_of_Finance.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Denes2017}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=cf57ca1d6342aa64a09b8227dad0cedc}{%
+           family={Denes},
+           familyi={D\bibinitperiod},
+           given={Matthew\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{uniquename=0,hash=e30a608db65eb13dc0d5eb7a1edcd07c}{%
+           family={Karpoff},
+           familyi={K\bibinitperiod},
+           given={Jonathan\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=5cbf87c8f8ddaf79d79c0c80d77249d3}{%
+           family={McWilliams},
+           familyi={M\bibinitperiod},
+           given={Victoria\bibnamedelima B.},
+           giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{9856166f6d449aca1209ceb68b5e17ce}
+      \strng{fullhash}{d339844a5ac5ae3a4763d0a40f582a48}
+      \strng{authornamehash}{9856166f6d449aca1209ceb68b5e17ce}
+      \strng{authorfullhash}{d339844a5ac5ae3a4763d0a40f582a48}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We summarize and synthesize the results from 73 studies that examine the consequences of shareholder activism for targeted firms, and draw two primary conclusions. First, activism that adopts some characteristics of corporate takeovers, especially significant stockholdings, is associated with improvements in share values and firm operations. Activism that is not associated with the formation of ownership blocks is associated with insignificant or very small changes in target firm value. Second, shareholder activism has become more value increasing over time. Research based on shareholder activism from the 1980s and 1990s generally finds few consequential effects, while activism in more recent years is more frequently associated with increased share values and operating performance. These results are consistent with Alchian and Demsetz' (1972) argument that managerial agency problems are controlled in part by dynamic changes in ownership, and with Alchian's (1950) observation that business practices adapt over time to mimic successful strategies.}
+      \field{journaltitle}{Journal of Corporate Finance}
+      \field{title}{{Thirty years of shareholder activism: A survey of empirical research}}
+      \field{volume}{44}
+      \field{year}{2017}
+      \field{pages}{405\bibrangedash 424}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/j.jcorpfin.2016.03.005
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-S0929119916300293-main.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Eckbo2009}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d8dc48f2c7397a90c3605faaa884e645}{%
+           family={Eckbo},
+           familyi={E\bibinitperiod},
+           given={B.\bibnamedelimi Espen},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{d8dc48f2c7397a90c3605faaa884e645}
+      \strng{fullhash}{d8dc48f2c7397a90c3605faaa884e645}
+      \strng{authornamehash}{d8dc48f2c7397a90c3605faaa884e645}
+      \strng{authorfullhash}{d8dc48f2c7397a90c3605faaa884e645}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I review recent empirical research documenting offer premiums and bidding strategies in corporate takeovers. The discussion ranges from optimal auction bidding to the choice of deal payment form and premium effects of poison pills. The evidence describes the takeover process at a detailed level, from initial premiums to bid jumps, entry of rival bidders, and toehold strategies. Cross-sectional tests illuminate whether bidders properly adjust for winner's curse, whether target stock price runups force offer price markups, and whether auctions of bankrupt firms result in fire-sale discounts. The evidence is suggestive of rational strategic bidding behavior in specific contexts. {©} 2008 Elsevier B.V. All rights reserved.}
+      \field{journaltitle}{Journal of Corporate Finance}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{{Bidding strategies and takeover premiums: A review}}
+      \field{volume}{15}
+      \field{year}{2009}
+      \field{pages}{149\bibrangedash 178}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1016/j.jcorpfin.2008.09.016
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-S0929119908000953-main.pdf:pdf
+      \endverb
+      \keyw{Auction,Bankruptcy,Bidder gains,Fire-sale discounts,Hostility,Markups,Merger,Method of payment,Offer premium,Overbidding,Takeover,Tender offer,Toeholds}
+    \endentry
+    \entry{Farre-Mensa2016}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=8011a3ed48d775987385c4f7e7a33cff}{%
+           family={Farre-Mensa},
+           familyi={F\bibinithyphendelim M\bibinitperiod},
+           given={Joan},
+           giveni={J\bibinitperiod}}}%
+        {{uniquename=0,hash=81ea9898e8e571add7e4b186afd3f58f}{%
+           family={Ljungqvist},
+           familyi={L\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{eaff81e84b8adc292d61bef70a9a4e09}
+      \strng{fullhash}{eaff81e84b8adc292d61bef70a9a4e09}
+      \strng{authornamehash}{eaff81e84b8adc292d61bef70a9a4e09}
+      \strng{authorfullhash}{eaff81e84b8adc292d61bef70a9a4e09}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Financial constraints are fundamental to empirical research in finance and economics. We propose two tests to evaluate how well measures of financial constraints actually capture constraints. We find that firms typically classified as constrained do not actually behave as if they were constrained: they have no trouble raising debt when their demand for debt increases exogenously and use the proceeds of equity issues to increase payouts to shareholders. Our evidence suggests that extant findings that have been attributed to constraints may instead reflect differences in the growth and financing policies of firms at different stages of their life cycles.Received December 9, 2014; accepted August 18, 2015 by Editor David Denis.}
+      \field{journaltitle}{Review of Financial Studies}
+      \field{number}{2}
+      \field{title}{{Do measures of financial constraints measure financial constraints?}}
+      \field{volume}{29}
+      \field{year}{2016}
+      \field{pages}{271\bibrangedash 308}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1093/rfs/hhv052
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/hhv052.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Fazzari1988}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=87b8693404d16ab6e9b17e7f5ebf165e}{%
+           family={Fazzari},
+           familyi={F\bibinitperiod},
+           given={Steven\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=40fe45416c60c37462b41cea7217b801}{%
+           family={Hubbard},
+           familyi={H\bibinitperiod},
+           given={R\bibnamedelima Glenn},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{uniquename=0,hash=11436deee2950537810e7dd2f95fec99}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Bruce\bibnamedelima C},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{uniquename=0,hash=7d1e8f6e4649ab54435ed235666c9fa1}{%
+           family={Blinder},
+           familyi={B\bibinitperiod},
+           given={Alan\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{uniquename=0,hash=f97510702a57ebaaa1f55079904335a5}{%
+           family={Poterba},
+           familyi={P\bibinitperiod},
+           given={James\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d98881c5c86c65ce2b76a7b16177ba74}
+      \strng{fullhash}{9b6a80f85ba4833d40b1d7e1258a8976}
+      \strng{authornamehash}{d98881c5c86c65ce2b76a7b16177ba74}
+      \strng{authorfullhash}{9b6a80f85ba4833d40b1d7e1258a8976}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Brookings Paper on Economic Activity}
+      \field{number}{1}
+      \field{title}{{Financing Constraints and Corporate Investment}}
+      \field{volume}{1988}
+      \field{year}{1988}
+      \field{pages}{141\bibrangedash 206}
+      \range{pages}{66}
+      \verb{doi}
+      \verb 10.2307/2534426
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/2534426.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Giglia2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=3b86ee3700a0f84e97145909c536d280}{%
+           family={Giglia},
+           familyi={G\bibinitperiod},
+           given={Kristin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b86ee3700a0f84e97145909c536d280}
+      \strng{fullhash}{3b86ee3700a0f84e97145909c536d280}
+      \strng{authornamehash}{3b86ee3700a0f84e97145909c536d280}
+      \strng{authorfullhash}{3b86ee3700a0f84e97145909c536d280}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Columbia Law Review}
+      \field{number}{1}
+      \field{title}{{A Little Letter, A Big Difference: An Empirical Inquiry Into Possible Misuse Of Schedule 13G/13D Filings}}
+      \field{volume}{116}
+      \field{year}{2016}
+      \field{pages}{105\bibrangedash 145}
+      \range{pages}{41}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Application Support/Mendeley Desktop/Downloaded/Unknown - 2018 - A Little Letter, A Big Difference An Empirical Inquiry Into Possible Misuse Of Schedule 13G13D Filings.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/43681849
+      \endverb
+    \endentry
+    \entry{Greenwood2009}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f5a264ded5eb43714160ed5c2ff253d3}{%
+           family={Greenwood},
+           familyi={G\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod}}}%
+        {{uniquename=0,hash=5ede2226a0c6722ead05e3a76847a4da}{%
+           family={Schor},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{08d7fc65e2f71644ff307bedb4eca3bb}
+      \strng{fullhash}{08d7fc65e2f71644ff307bedb4eca3bb}
+      \strng{authornamehash}{08d7fc65e2f71644ff307bedb4eca3bb}
+      \strng{authorfullhash}{08d7fc65e2f71644ff307bedb4eca3bb}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent work documents large positive abnormal returns when a hedge fund announces activist intentions regarding a publicly listed firm. We show that these returns are largely explained by the ability of activists to force target firms into a takeover. For a comprehensive sample of 13D filings by portfolio investors between 1993 and 2006, announcement returns and long-term abnormal returns are high for targets that are ultimately acquired, but not detectably different from zero for firms that remain independent. Firms targeted by activists are more likely than control firms to get acquired. Finally, activist investors' portfolios perform poorly during a period in which market wide takeover interest declined. {©} 2009 Elsevier B.V. All rights reserved.}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{3}
+      \field{title}{{Investor activism and takeovers}}
+      \field{volume}{92}
+      \field{year}{2009}
+      \field{pages}{362\bibrangedash 375}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2008.05.005
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-S0304405X09000397-main.pdf:pdf
+      \endverb
+      \keyw{Corporate control,Event studies,Hedge funds,Investor activism}
+    \endentry
+    \entry{hadlock2010}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=3c34979d93acb8bee220da481850cdc8}{%
+           family={Hadlock},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=4f7c1bf13d7b232caa240d43fdda54f7}{%
+           family={Pierce},
+           familyi={P\bibinitperiod},
+           given={Joshua\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c3642d6301ca8876901145c5f20ff9c9}
+      \strng{fullhash}{c3642d6301ca8876901145c5f20ff9c9}
+      \strng{authornamehash}{c3642d6301ca8876901145c5f20ff9c9}
+      \strng{authorfullhash}{c3642d6301ca8876901145c5f20ff9c9}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We collect detailed qualitative information from financial filings to categorize financial constraints for a random sample of firms from 1995 to 2004. Using this categorization, we estimate ordered logit models predicting constraints as a function of different quantita- tive factors. Our findings cast serious doubt on the validity of the KZ index as a measure of financial constraints, while offering mixed evidence on the validity of other common measures of constraints.We find that firm size and age are particularly useful predictors of financial constraint levels, and we propose a measure of financial constraints that is based solely on these firm characteristics. (JEL G31, G32, D92) A}
+      \field{journaltitle}{Review of Financial Studies}
+      \field{number}{5}
+      \field{title}{{New Evidence on Measuring Financial Constraints: Moving Beyond the KZ Index}}
+      \field{volume}{23}
+      \field{year}{2010}
+      \field{pages}{1909\bibrangedash 1940}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1093/rfs/hhq009
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/hhq009.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Morrison2015}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=3b72b007f5068d69a2b6b8032c2f191c}{%
+           family={Harmetz},
+           familyi={H\bibinitperiod},
+           given={Lloys\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Morrison \& Foerster LLp}%
+      }
+      \strng{namehash}{3b72b007f5068d69a2b6b8032c2f191c}
+      \strng{fullhash}{3b72b007f5068d69a2b6b8032c2f191c}
+      \strng{authornamehash}{3b72b007f5068d69a2b6b8032c2f191c}
+      \strng{authorfullhash}{3b72b007f5068d69a2b6b8032c2f191c}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{FAQ about Section 13D \& Section 13G of the Securities Exchange Act of 1934}}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Application Support/Mendeley Desktop/Downloaded/Unknown - Unknown - Morrison &amp Foerster LLP 2.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb https://media2.mofo.com/documents/faqs-schedule-13d-g.pdf
+      \endverb
+    \endentry
+    \entry{heller2015}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=64c1480f9da27b8d603dc0d975ac9990}{%
+           family={Heller},
+           familyi={H\bibinitperiod},
+           given={Sascha},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Hamburg}%
+      }
+      \strng{namehash}{64c1480f9da27b8d603dc0d975ac9990}
+      \strng{fullhash}{64c1480f9da27b8d603dc0d975ac9990}
+      \strng{authornamehash}{64c1480f9da27b8d603dc0d975ac9990}
+      \strng{authorfullhash}{64c1480f9da27b8d603dc0d975ac9990}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Financial Constraints and Corporate Credit Ratings – Essays in Corporate Finance and Risk Management}}
+      \field{type}{Dissertation}
+      \field{year}{2015}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/Dissertation.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb https://d-nb.info/107397037X/34
+      \endverb
+    \endentry
+    \entry{Huang2017}{unpublished}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=16a1b156e5b597ff5f1fe282d02ad5bd}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{uniquename=0,hash=91a47e2ee3e0a89e31d4ca54e7e4102d}{%
+           family={Humphery-jenner},
+           familyi={H\bibinithyphendelim j\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=6057abf496c089a79556c59c254b34c1}{%
+           family={Powell},
+           familyi={P\bibinitperiod},
+           given={Ronan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{42b5d424704c5ddba7d7050f3b69010d}
+      \strng{fullhash}{be806d478f15ab1edfb574833c4550e2}
+      \strng{authornamehash}{42b5d424704c5ddba7d7050f3b69010d}
+      \strng{authorfullhash}{be806d478f15ab1edfb574833c4550e2}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{June}
+      \field{title}{{Minority acquisitions and information risk : International and cross - border evidence}}
+      \field{year}{2017}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/89416-Minority-acquisitions-and-information-risk-International-and-cross-border-evidence-Auckland-Finance-Meeting.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb https://acfr.aut.ac.nz/__data/assets/pdf_file/0020/105473/89416-Minority-acquisitions-and-information-risk-International-and-cross-border-evidence-Auckland-Finance-Meeting.pdf
+      \endverb
+      \keyw{and,cross-border,cross-country,g34,henley business school,icma centre,institute of technology,jel classification,majority acquisitions,mergers,minority acquisitions,participants at cufe,reading university,school,stevens,university of essex business,university of sydney,unsw business school,we thank the seminar}
+    \endentry
+    \entry{Jagannathan2000}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=5816a1bd67af880971022a76f6333c72}{%
+           family={Jagannathan},
+           familyi={J\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=fcdeffec94e1167c606983c73346ff81}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={Clifford\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=15534f526f6049ce5df54f72646ace44}{%
+           family={Weisbach},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7381033393a71bb71c13642fe9de0127}
+      \strng{fullhash}{27fa2f0fceb2cd2ab2299fded205fdd9}
+      \strng{authornamehash}{7381033393a71bb71c13642fe9de0127}
+      \strng{authorfullhash}{27fa2f0fceb2cd2ab2299fded205fdd9}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper measures the growth in open market stock repurchases and the manner in which stock repurchases and dividends are used by U.S. corporations. Stock repurchases and dividends are used at different times from one another, by different kinds of firms. Stock repurchases are very pro-cyclical, while dividends increase steadily over time. Dividends are paid by firms with higher “permanent” operating cash flows, while repurchases are used by firms with higher “temporary”, non-operating cash flows. Repurchasing firms also have much more volatile cash flows and distributions. Finally, firms repurchase stock following poor stock market performance and increase dividends following good performance. These results are consistent with the view that the flexibility inherent in repurchase programs is one reason why they are sometimes used instead of dividends.}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{3}
+      \field{title}{{Financial flexibility and the choice between dividends and stock repurchases}}
+      \field{volume}{57}
+      \field{year}{2000}
+      \field{pages}{355\bibrangedash 384}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1016/S0304-405X(00)00061-1
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-S0304405X00000611-main.pdf:pdf
+      \endverb
+      \keyw{as well as seminar,david ikenberry,dividends,ed kane,harford,harold mulherin,harry deangelo,jarrad,kevin hallock,laurie krigman,neil pearson and bill,oaxaca,participants at arizona,payout policy,ron,ron howren,schwert,stock repurchases,stuart gillan,thank jim brickley,the editor,we would like to}
+    \endentry
+    \entry{Khatami2014}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=affe2271cf4ed979b0ecac99b60bafff}{%
+           family={Khatami},
+           familyi={K\bibinitperiod},
+           given={Seyed\bibnamedelima Hossein},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{uniquename=0,hash=8dc644d5fc25a3d1108afbc5cebfff1f}{%
+           family={Marchica},
+           familyi={M\bibinitperiod},
+           given={Maria\bibnamedelima Teresa},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{uniquename=0,hash=690eb21e214262bf94e88121f586580b}{%
+           family={Mura},
+           familyi={M\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Inc.}%
+      }
+      \strng{namehash}{e6f4487ed2c35a8413603aea10c864ed}
+      \strng{fullhash}{3877f73f0e5c06a672fd5ac9f6e9cb0c}
+      \strng{authornamehash}{e6f4487ed2c35a8413603aea10c864ed}
+      \strng{authorfullhash}{3877f73f0e5c06a672fd5ac9f6e9cb0c}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using a large sample of US acquisitions made between 1985 and 2013, we study the effect of financial constraints on acquisition gains and acquisition likelihood. Our findings show that financial constraints of target companies significantly increase acquisition premiums and abnormal returns for both parties. Our results further show that the presence of financial constraints in the target is one of the most important determinants of a takeover bid. This supports the idea that acquisitions may improve the ability of financially constrained companies to access capital through a better reallocation of resources within segments of the same company (e.g., internal capital market) or through better access to external markets. This would eventually benefit bidders too, as new capital would be invested in valuable growth opportunities that otherwise would expire unexercised.}
+      \field{journaltitle}{International Review of Financial Analysis}
+      \field{title}{{Corporate acquisitions and financial constraints}}
+      \field{volume}{40}
+      \field{year}{2015}
+      \field{pages}{107\bibrangedash 121}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.irfa.2015.05.007
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-S1057521915000897-main.pdf:pdf
+      \endverb
+      \keyw{Acquisition likelihood,Financial constraints,M&A}
+    \endentry
+    \entry{Klein2009}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=55bfd42dceac3d97dd6c47e0e504d122}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={April},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=4d8b8e32d04fb6dfdd6be219d0a18037}{%
+           family={Zur},
+           familyi={Z\bibinitperiod},
+           given={Emanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{985a8a0d38367b5e71f646c4e1004c95}
+      \strng{fullhash}{985a8a0d38367b5e71f646c4e1004c95}
+      \strng{authornamehash}{985a8a0d38367b5e71f646c4e1004c95}
+      \strng{authorfullhash}{985a8a0d38367b5e71f646c4e1004c95}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine recent confrontational activism campaigns by hedge funds and other private investors. The main parallels between the groups are a significantly positive market reaction for the target firm around the initial Schedule 13D filing date, significantly positive returns over the subsequent year, and the activist's high success rate in achieving its original objective. Further, both activists frequently gain board representation through real or threatened proxy solicitations. Two major differences are that hedge funds target more profitable firms than other activists, and hedge funds address cash flow agency costs whereas other private investors change the target's investment strategies.}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{1}
+      \field{title}{{Entrepreneurial Shareholder Activism: Hedge Funds and Other Private Investors}}
+      \field{volume}{64}
+      \field{year}{2009}
+      \field{pages}{187\bibrangedash 229}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.2008.01432.x
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/KLEIN_et_al-2009-The_Journal_of_Finance.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Liao2014}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=53d9e036bece845be663a277fa7fe75e}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Rose\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{53d9e036bece845be663a277fa7fe75e}
+      \strng{fullhash}{53d9e036bece845be663a277fa7fe75e}
+      \strng{authornamehash}{53d9e036bece845be663a277fa7fe75e}
+      \strng{authorfullhash}{53d9e036bece845be663a277fa7fe75e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, I examine minority block acquisitions from 1990 to 2009, as well as possible theories for the presence of equity stake purchases. I find that target firms are financially constrained. Acquisitions significantly increase their stock prices at announcement, along with their investment expenditures afterwards. In the two years following the acquisition, 27\% (9\%) issue new equity (debt) and raise 27\% (24\%) of their market capitalization. These findings support the theory that equity stakes certify the investment opportunities of target firms. I also find some support for the contracting motive, mostly in countries with good investor protection and a well-performing banking sector. {©} 2014.}
+      \field{journaltitle}{Journal of Corporate Finance}
+      \field{title}{{What drives corporate minority acquisitions around the world? The case for financial constraints}}
+      \field{volume}{26}
+      \field{year}{2014}
+      \field{pages}{78\bibrangedash 95}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.jcorpfin.2014.02.007
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/1-s2.0-S0929119914000182-main.pdf:pdf
+      \endverb
+      \keyw{Corporate governance,Financial constraints,Minority acquisitions,Product market relations}
+    \endentry
+    \entry{Lockett2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2546c39f41fecdd1d913dad499c61188}{%
+           family={Lockett},
+           familyi={L\bibinitperiod},
+           given={Hudson},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2546c39f41fecdd1d913dad499c61188}
+      \strng{fullhash}{2546c39f41fecdd1d913dad499c61188}
+      \strng{authornamehash}{2546c39f41fecdd1d913dad499c61188}
+      \strng{authorfullhash}{2546c39f41fecdd1d913dad499c61188}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{journaltitle}{Financial Times}
+      \field{month}{2}
+      \field{title}{{HNA stake in Deutsche Bank cut to 8.8\%}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Application Support/Mendeley Desktop/Downloaded/133bfe5f5fd503e5a91d5dca356ce6d5ef9c2898.html:html
+      \endverb
+      \verb{url}
+      \verb https://www.ft.com/content/69adbd96-12b1-11e8-8cb6-b9ccc4c4dbbb
+      \endverb
+    \endentry
+    \entry{Loughran2014}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=e29b48c3b17cf53e834d55eac5dbef23}{%
+           family={Loughran},
+           familyi={L\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{uniquename=0,hash=3f24325e6e9481dfdd897ce770672400}{%
+           family={Mcdonald},
+           familyi={M\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{fullhash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{authornamehash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{authorfullhash}{da4e322916adb6c43af3bbfeba43449b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Defining and measuring readability in the context of financial disclosures becomes important with the increasing use of textual analysis and the Securities and Exchange Commission's plain English initiative. We propose defining readability as the effective communication of valuation-relevant information. The Fog Index—the most commonly applied readability measure—is shown to be poorly specified in financial applications. Of Fog's two components, one is misspecified and the other is difficult to measure. We report that 10-K document file size provides a simple readability proxy that outperforms the Fog Index, does not require document parsing, facilitates replication, and is correlated with alternative readability constructs.}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{{Measuring readability in financial disclosures}}
+      \field{volume}{69}
+      \field{year}{2014}
+      \field{pages}{1643\bibrangedash 1671}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1111/jofi.12162
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/LOUGHRAN_et_al-2014-The_Journal_of_Finance.pdf:pdf
+      \endverb
+    \endentry
+    \entry{MacKay2005}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=812eca6b2b578cf719f4abb5488190ad}{%
+           family={MacKay},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{uniquename=0,hash=d4bb973093dc9420636ac65478a340fc}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Gordon\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b5c21a373e892b2dbe683603260bd0a}
+      \strng{fullhash}{8b5c21a373e892b2dbe683603260bd0a}
+      \strng{authornamehash}{8b5c21a373e892b2dbe683603260bd0a}
+      \strng{authorfullhash}{8b5c21a373e892b2dbe683603260bd0a}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine the importance of industry to firm-level financial and real decisions. We find that in addition to standard industry fixed effects, financial structure also depends on a firm`s position within its industry. In competitive industries, a firm`s financial leverage depends on its natural hedge (its proximity to the median industry capital-labor ratio), the actions of other firms in the industry, and its status as entrant, incumbent, or exiting firm. Financial leverage is higher and less dispersed in concentrated industries, where strategic debt interactions are also stronger, but a firm`s natural hedge is not significant. Our results show that financial structure, technology, and risk are jointly determined within industries. These findings are consistent with recent industry equilibrium models of financial structure.}
+      \field{journaltitle}{Review of Financial Studies}
+      \field{number}{4}
+      \field{title}{{How does industry affect firm financial structure?}}
+      \field{volume}{18}
+      \field{year}{2005}
+      \field{pages}{1433\bibrangedash 1466}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1093/rfs/hhi032
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/hhi032.pdf:pdf
+      \endverb
+      \keyw{Brain metastases,HRQoL,Stereotactic radiosurgery}
+    \endentry
+    \entry{MacKinlay1997}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=159d160a5298df000be75e589ae48f32}{%
+           family={MacKinlay},
+           familyi={M\bibinitperiod},
+           given={Craig\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{159d160a5298df000be75e589ae48f32}
+      \strng{fullhash}{159d160a5298df000be75e589ae48f32}
+      \strng{authornamehash}{159d160a5298df000be75e589ae48f32}
+      \strng{authorfullhash}{159d160a5298df000be75e589ae48f32}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The seminal paper on how to conduct event studies.}
+      \field{journaltitle}{Journal of Economic Literature}
+      \field{number}{1}
+      \field{title}{{Event Studies in Economics and Finance}}
+      \field{volume}{35}
+      \field{year}{1997}
+      \field{pages}{13\bibrangedash 39}
+      \range{pages}{27}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/2729691.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2729691
+      \endverb
+    \endentry
+    \entry{Mann1947}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f7af0c3d2c7082faa2108df80e32e329}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={H.\bibnamedelimi B.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{uniquename=0,hash=9da97389021d41b9c6c1bb0c72e3a636}{%
+           family={Whitney},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2df167b7246ea6633fbcee17780d39a}
+      \strng{fullhash}{e2df167b7246ea6633fbcee17780d39a}
+      \strng{authornamehash}{e2df167b7246ea6633fbcee17780d39a}
+      \strng{authorfullhash}{e2df167b7246ea6633fbcee17780d39a}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The object of this note is to point out and discuss a simple transformation of an absolutely continuous k-variate distribution in the uniform distribution on the k-dimensional hypercube.}
+      \field{journaltitle}{The Annals of Mathematical Statistics}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{{On a Test of Whether one of Two Random Variables is Stochastically Larger than the Other}}
+      \field{volume}{18}
+      \field{year}{1947}
+      \field{pages}{50\bibrangedash 60}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1214/aoms/1177730491
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/euclid.aoms.1177730491.pdf:pdf
+      \endverb
+    \endentry
+    \entry{mcwilliams1999}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=7811284185d883c9694f0a64ae47e41b}{%
+           family={Mcwilliams},
+           familyi={M\bibinitperiod},
+           given={Abagail},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=397208bcf4d1387f7f8601e05f5b9396}{%
+           family={Siegel},
+           familyi={S\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+        {{uniquename=0,hash=3543647faba7b317811d92ec48587bc9}{%
+           family={Teoh},
+           familyi={T\bibinitperiod},
+           given={Siew\bibnamedelima Hong},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d12f1bf7809d4cd3f9f45e9504f558}
+      \strng{fullhash}{ff99edbb33032cbd6e53f0bc0c35cf47}
+      \strng{authornamehash}{c8d12f1bf7809d4cd3f9f45e9504f558}
+      \strng{authorfullhash}{ff99edbb33032cbd6e53f0bc0c35cf47}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Organizational Research Methods}
+      \field{number}{4}
+      \field{title}{{Issues in the Use of the Event Study Methodology: A Critical Analysis of Corporate Social Responsibility Studies}}
+      \field{volume}{2}
+      \field{year}{1999}
+      \field{pages}{340\bibrangedash 465}
+      \range{pages}{126}
+      \verb{doi}
+      \verb 10.1177/109442819924002
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Desktop/Event-Study Methodology.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Moeller2004}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=200d94569abdfea1459a64b23c79ef15}{%
+           family={Moeller},
+           familyi={M\bibinitperiod},
+           given={Sara\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{uniquename=0,hash=72966c7ef5b15ae8ecc904cae6154d93}{%
+           family={Schlingemann},
+           familyi={S\bibinitperiod},
+           given={Frederik\bibnamedelima P.},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=650e12f3bee5fc5c8bd0651f732ba0e4}{%
+           family={Stulz},
+           familyi={S\bibinitperiod},
+           given={René\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{781b768333755cabe1be09ec655ecbb3}
+      \strng{fullhash}{f51f70e7dd09c5cd29638d1ffe49222a}
+      \strng{authornamehash}{781b768333755cabe1be09ec655ecbb3}
+      \strng{authorfullhash}{f51f70e7dd09c5cd29638d1ffe49222a}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine a sample of 12,023 acquisitions by public firms from 1980 to 2001. The equally weighted abnormal announcement return is 1.1\%, but acquiring-firm shareholders lose 25.2 million on average upon announcement. This disparity suggests the existence of a size effect in acquisition announcement returns. The announcement return for acquiring-firm shareholders is roughly two percentage points higher for small acquirers irrespective of the form of financing and whether the acquired firm is public or private. The size effect is robust to firm and deal characteristics, and it is not reversed over time. {©} 2004 Elsevier B.V. All rights reserved.}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{{Firm size and the gains from acquisitions}}
+      \field{volume}{73}
+      \field{year}{2004}
+      \field{pages}{201\bibrangedash 228}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2003.07.002
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/firm-size-acquisitions.pdf:pdf
+      \endverb
+      \keyw{Acquisitions,Bidder,Organizational form,Size effect}
+    \endentry
+    \entry{Wang2014}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=b9fb03d6ef74c79d38f6ebe7ac6c0644}{%
+           family={Nain},
+           familyi={N\bibinitperiod},
+           given={Amrita},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=5c786d9afb3cf178271120f1fd926d21}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a7c83cd00538d8ca93b6874a5575ac5}
+      \strng{fullhash}{7a7c83cd00538d8ca93b6874a5575ac5}
+      \strng{authornamehash}{7a7c83cd00538d8ca93b6874a5575ac5}
+      \strng{authorfullhash}{7a7c83cd00538d8ca93b6874a5575ac5}
+      \field{sortinit}{N}
+      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{number}{2}
+      \field{title}{{The Product Market Impact of Minority Stake Acquisitions}}
+      \field{volume}{64}
+      \field{year}{2018}
+      \field{pages}{825\bibrangedash 844}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1287/mnsc.2016.2575
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/mnsc.2016.2575.pdf:pdf
+      \endverb
+      \keyw{corporate finance,economics,finance,firm objectives,industrial organization,input output analysis,organization and behavior}
+    \endentry
+    \entry{Offenberg2015}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=a8cf9900b9a0cff2e96b48f64698ba45}{%
+           family={Offenberg},
+           familyi={O\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{uniquename=0,hash=19a3ae9dfe3fdf07fab470e1a520c150}{%
+           family={Pirinsky},
+           familyi={P\bibinitperiod},
+           given={Christo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{828f7d1e219723f2f871b838e7082111}
+      \strng{fullhash}{828f7d1e219723f2f871b838e7082111}
+      \strng{authornamehash}{828f7d1e219723f2f871b838e7082111}
+      \strng{authorfullhash}{828f7d1e219723f2f871b838e7082111}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Tender offers provide the advantage of substantially faster completion times than mergers. However, a tender offer signals to the target higher demand for its shares and raises its reservation price. In equilibrium, bidders tradeoff speed and cost. Consistent with this theory, we show that deals in more competitive environments and deals with fewer external impediments on execution are more likely to be structured as tender offers. Tender offers also require higher premiums than mergers. Finally, the rivals of the bidding firm realize significantly lower announcement returns and subsequent operating performance in tender offers than in mergers.}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{{How do acquirers choose between mergers and tender offers?}}
+      \field{volume}{116}
+      \field{year}{2015}
+      \field{pages}{331\bibrangedash 348}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2015.02.006
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/How do Acquirers Choose between Mergers and Tender Offers?.pdf:pdf
+      \endverb
+      \keyw{Arbitrage spreads,Mergers and acquisitions,Takeover premiums,Tender offers,Termination fees}
+    \endentry
+    \entry{Ouimet2013}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5f2d30f69535d5c30eaa63a112ea217d}{%
+           family={Ouimet},
+           familyi={O\bibinitperiod},
+           given={Paige\bibnamedelima Parker},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f2d30f69535d5c30eaa63a112ea217d}
+      \strng{fullhash}{5f2d30f69535d5c30eaa63a112ea217d}
+      \strng{authornamehash}{5f2d30f69535d5c30eaa63a112ea217d}
+      \strng{authorfullhash}{5f2d30f69535d5c30eaa63a112ea217d}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Minority acquisitions, involving less than 50\% of the target, represent a distinct organizational choice. Minority acquisition can mitigate some of the incentive problems that arise in contractual relationships. Less is known, however, about the trade-off between minority acquisitions and complete integration. We find that minority acquisitions are more common when keeping target managerial incentives intact is important and when the target is financially constrained or can benefit from certification. Minority acquisitions are also more likely when the target's valuation is especially uncertain; integrating internal capital markets will be costly; and consolidating earning will lower earnings per share (EPS).}
+      \field{journaltitle}{Review of Financial Studies}
+      \field{number}{4}
+      \field{title}{{What motivates minority acquisitions? the trade-offs between a partial equity stake and complete integration}}
+      \field{volume}{26}
+      \field{year}{2013}
+      \field{pages}{1021\bibrangedash 1047}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1093/rfs/hhs125
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/hhs125.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Schuetze2018}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=809f4cf7d1bc145e6785edfb1cdfa089}{%
+           family={Schuetze},
+           familyi={S\bibinitperiod},
+           given={Arno},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=3a1c97b4011bf5d94b3ab60c80a30486}{%
+           family={Ruwitch},
+           familyi={R\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{dcec34ce25fc8ce3bd5cbf6ce445a54c}
+      \strng{fullhash}{dcec34ce25fc8ce3bd5cbf6ce445a54c}
+      \strng{authornamehash}{dcec34ce25fc8ce3bd5cbf6ce445a54c}
+      \strng{authorfullhash}{dcec34ce25fc8ce3bd5cbf6ce445a54c}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{journaltitle}{Reuters}
+      \field{month}{2}
+      \field{title}{{China's HNA pares back big stake in Deutsche Bank}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Application Support/Mendeley Desktop/Downloaded/02ec56c56ea84f75d11d9476313976f6803c73d7.html:html
+      \endverb
+      \verb{url}
+      \verb https://www.reuters.com/article/us-hna-group-deutsche-bank/chinas-hna-pares-back-big-stake-in-deutsche-bank-idUSKCN1G00A9
+      \endverb
+    \endentry
+    \entry{Smith2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a0b47a66c48bc7434c754ae9cb5c8e6e}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0b47a66c48bc7434c754ae9cb5c8e6e}
+      \strng{fullhash}{a0b47a66c48bc7434c754ae9cb5c8e6e}
+      \strng{authornamehash}{a0b47a66c48bc7434c754ae9cb5c8e6e}
+      \strng{authorfullhash}{a0b47a66c48bc7434c754ae9cb5c8e6e}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{journaltitle}{Financial Times}
+      \field{month}{2}
+      \field{title}{{HNA via GAR? The mystery of Deutsche Bank's largest shareholder}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Application Support/Mendeley Desktop/Downloaded/5204ff7f90e3e0b6cdf448aac11ecfb4596d8c13.html:html
+      \endverb
+      \verb{url}
+      \verb https://ftalphaville.ft.com/2018/02/23/1519404195000/HNA-via-GAR--The-mystery-of-Deutsche-Bank-s-largest-shareholder/
+      \endverb
+    \endentry
+    \entry{Ucla}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=052fb47a38a8607c03ce017d98591ceb}{%
+           family={UCLA},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{052fb47a38a8607c03ce017d98591ceb}
+      \strng{fullhash}{052fb47a38a8607c03ce017d98591ceb}
+      \strng{authornamehash}{052fb47a38a8607c03ce017d98591ceb}
+      \strng{authorfullhash}{052fb47a38a8607c03ce017d98591ceb}
+      \field{sortinit}{U}
+      \field{sortinithash}{1554584e7f69d2b4fe0a645e73d50194}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{UCLA: Statistical Consulting Group}
+      \field{title}{{How do I interpret Quantile Regression Coefficients}}
+      \field{year}{2018}
+      \verb{url}
+      \verb https://stats.idre.ucla.edu/stata/faq/how-do-i-interpret-quantile-regression-coefficients/
+      \endverb
+    \endentry
+    \entry{Whited2006}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=48ac4b677813d548846efdcd5e8040fb}{%
+           family={Whited},
+           familyi={W\bibinitperiod},
+           given={Toni\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=1a091e104391dc5bf67bb262471e2fae}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Guojun},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{34336f1b53f6ed52e847dbe1082e22cc}
+      \strng{fullhash}{34336f1b53f6ed52e847dbe1082e22cc}
+      \strng{authornamehash}{34336f1b53f6ed52e847dbe1082e22cc}
+      \strng{authorfullhash}{34336f1b53f6ed52e847dbe1082e22cc}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We construct an index of firms' external finance constraints via generalized method of moments (GMM) estimation of an investment Euler equation. Unlike the commonly used KZ index, ours is consistent with firm characteristics associated with external finance constraints. Constrained firms' returns move together, suggesting the existence of a financial constraints factor. This factor earns a positive but insignificant average return. Much of the variation in this factor cannot be explained by the Fama-French and momentum factors. Cross-sectional regressions of returns on our index and other firm characteristics show that constrained firms earn higher returns and that the financial-constraints effect dominates the size effect.}
+      \field{journaltitle}{Review of Financial Studies}
+      \field{number}{2}
+      \field{title}{{Financial Constraints Risk}}
+      \field{volume}{19}
+      \field{year}{2006}
+      \field{pages}{531\bibrangedash 559}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1093/rfs/hhj012
+      \endverb
+      \verb{file}
+      \verb :Users/leopoldingenohl/Library/Mobile Documents/com$\sim$apple$\sim$CloudDocs/Bachelorarbeit/Paper/hhj012.pdf:pdf
+      \endverb
+      \keyw{Whited2006}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

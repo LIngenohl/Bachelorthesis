@@ -41,9 +41,10 @@
 	% package hyperref
     \usepackage[hidelinks]{hyperref}
   
-
+	\urlstyle{same}
+   
 	% biblatex
-	\usepackage[style=authoryear,natbib=true,maxcitenames=2,maxbibnames=11,backend=biber,pagetracker=page,hyperref=true,doi=true]{biblatex} 
+	\usepackage[style=authoryear,natbib=true,maxcitenames=2,maxbibnames=11,backend=biber,pagetracker=page,hyperref=true,doi=true, mergedate=compact, firstinits=true]{biblatex} 
 	\usepackage{csquotes}
 	\renewcommand*{\bibsetup}{%
 		\interlinepenalty=10000\relax % default is 5000
@@ -52,7 +53,7 @@
 		\raggedbottom
 		\frenchspacing
         \biburlsetup}
-        
+          
 	% fixes the page number of the first page of each chapter
 	\fancypagestyle{plain}{
 			\fancyhead{}
@@ -67,6 +68,7 @@
 	\fancyfoot[OC]{\begin{flushright}\thepage\end{flushright}}
 	\renewcommand{\headrulewidth}{0.4pt}
 	\setlength{\headheight}{14pt}
+
 
 	% add bibliography database
 	\addbibresource{BA copy.bib}
@@ -104,7 +106,7 @@
 			{\mkbibordedition{#1}\addthinspace{}ed.}%
 			{#1\isdot}).}
 	
-	% publisher and location p osition
+	% publisher and location position
 	\renewbibmacro*{publisher+location+date}{%
 			\printlist{publisher}%
 			\setunit*{\addcomma\space}%
@@ -125,6 +127,18 @@
 			{}%
 			{\printnames{shortauthor}%
                     \addspace\textendash\space}}
+
+\AtBeginBibliography{%
+  \renewcommand*{\finalnamedelim}{%
+    \ifnumgreater{\value{liststop}}{2}{\finalandcomma}{}%
+    \addspace\&\space}%
+}
+\DeclareNameAlias{sortname}{last-first}
+
+\DefineBibliographyStrings{english}{%
+    url = {Retrieved from}
+}
+\DeclareFieldFormat{url}{\bibstring{url}\space\url{#1}}
 
 %List of Abbreviations
 \makeatletter
@@ -178,7 +192,7 @@
 \cleardoublepage
 \pagenumbering{roman}
 \begin{abstract}
-\noindent To analyze whether financial constraints of corporate activist investors matter, this thesis investigates the relationship between financial constraints of corporations disclosing a Schedule 13(D) filing and abnormal returns to targets, in response to the filing. By using a sample of 561 Schedule 13(D) filings disclosed by corporations in the years from 1996-2016 in the United States, abnormal share price reactions surrounding the filing date identify the effect the Schedule 13(D) filing has on the target's stock. In fact, estimating abnormal returns via the market model results in average cumulative abnormal returns of 13.3\% for all targets in the event-window [-10,3]. The positive market response is consistent with the evidence on the market’s perception that activism results in actual value improvement for the target. Further, using a variety of financial constraints measures, the investing corporations are classified to be either financially constrained or unconstrained. The univariate analysis shows that targets of financially constrained investors experience significantly lower abnormal returns in response to Schedule 13(D) filings, with average cumulative abnormal returns around 10\% lower in the [-10,3] event window. Both, across different transaction purposes and measures of financial constraints is the difference apparent. The multivariate analysis confirms that, other things equal, targets of financially constrained investors experience lower abnormal returns when compared to targets of unconstrained investors. This proves a negative relationship between targets' abnormal returns and investors' financial constraints. The evidence allows to draw the conclusion, that financial constraints of corporate activist investors matter. 
+\noindent To analyze whether financial constraints of corporate activist investors matter, this thesis investigates the relationship between financial constraints of corporations disclosing a Schedule 13(D) filing, and the resulting abnormal returns to the targets. By using a sample of 561 Schedule 13(D) filings disclosed by corporations in the years from 1996-2016 in the United States and conducting an event study, abnormal share price reactions surrounding the filing date identify the effect the Schedule 13(D) filing has on the target's stock. In fact, estimating abnormal returns via the market model results in average cumulative abnormal returns of 13.3\% for all targets in the event-window [-10,3]. The positive market response is consistent with the evidence on the market’s perception that activism results in actual value improvement for the target. Further, using a variety of financial constraints measures, the investing corporations are classified into groups of financially constrained and unconstrained investors. The univariate analysis shows that targets of financially constrained investors experience significantly lower abnormal returns in response to Schedule 13(D) filings, with average cumulative abnormal returns around 10\% lower in a [-10,3] event window. Both, across different transaction purposes and measures of financial constraints is the difference apparent. The multivariate analysis confirms that, other things equal, targets of financially constrained investors experience lower abnormal returns when compared to targets of unconstrained investors. This proves a negative relationship between targets' abnormal returns and investors' financial constraints. The evidence allows to draw the conclusion, that financial constraints of corporate activist investors matter.
 \end{abstract}
 
 \pagebreak
@@ -259,7 +273,7 @@ So far, there exist many studies that examine the effect the disclosure of such 
 Dealing with investor activism, especially filings disclosed by hedge funds, \citet[p.1730]{Brav2008} find positive average abnormal returns in the range of 7\% to 8\% in the (-20,+20) event window. \citet[p.188]{Klein2009} have similar findings and observe 10.2\% average abnormal stock returns on the target's stock. In a more recent study on investor activism by \citet[p.410]{Denes2017}, the average valuation effect is evaluated to be around 5\%. 
 A somewhat different approach is found in a study of \citet[p.363]{Greenwood2009} who observe abnormal announcement returns of 2.36\% for a sample of activist portfolio investors but document that the ability to force the target into a takeover is the driving force behind the abnormal market response. Nevertheless, all studies observe positive abnormal returns around the filing date and results primarily differ in magnitude.\footnote{Comparing the average abnormal returns across studies can be misleading as the authors use different models and event windows for estimating and aggregating the abnormal returns. \citet{Greenwood2009} use the market return model with matching portfolios and aggregate over [-10,5]; \citet{Brav2008} calculate the aggregated abnormal returns by subtracting the value-weighted market index from the buy-and-hold return and aggregate over a [-20,20] window; \citet{Klein2009} use a similar approach with the buy-and-hold returns but make several adjustments and aggregate over a [-30,5] window.}\par
 While all of these studies identify hedge fund activism, its motivation and the effect it has on the market, most of them leave filings submitted by corporations aside. \citet[p.29]{Brigida2012} however, note that if the acquirer is a non financial corporation abnormal returns in the (-10,-1) window are around 14\%. The reaction implies the market perceives such corporate investments as value generating for the target. \citet[p.2803]{Allen2000} find abnormal returns of around 7\% in the (-10,10) period on corporate purchase announcements which are significantly larger if the announcement is accompanied by strategic investments. Their sample however is based on purchase announcements and therefore differs from studies on the effect of Schedule 13(D) filings.\footnote{In \citet[p.2801]{Allen2000} sample, the mean fraction of equity acquired in the sample is 14\%, and  only includes acquisitions of at least 5\% of voting shares, therefore showing similarities to the sample of this thesis.} In addition \citet{Collin-Dufresne2015} find a positive significant market reaction upon a more general sample of Schedule 13(D) filings, including corporate investors but not explicitly addressing them.\par
-But what is the rationale of corporations to engage in active equity ownership, thereby disclosing a Schedule 13(D), and why are these investments perceived to be value generating for the target?
+But what is the rationale of corporations to engage in active equity ownership, thereby disclosing a Schedule 13(D), and why are these investments perceived to be value generating for the target?   
 
 \subsection{Motives of Corporate Equity Ownership, Value Creation \& Financial Constraints}
 % 13(D) = Minority Acquisition - Proxy 
@@ -348,13 +362,13 @@ For each sample, Table II reports the mean [median] of several key financials. F
 	\footnotesize\noindent\setstretch{1.2}This table summarizes characteristics of the investors for the complete sample, and the sub-samples of each measure of investor's financial constraints (Columns 1 and 2). For the complete sample, standard deviation and minimum and maximum value of the variables are shown. For each variable, the mean [median] is reported. All data are winsorized at the 1\% and 99\% levels. Column (3) of each measure shows the t-statistic [Z-statistic] testing for differences between financially constrained and unconstrained investors means [medians]. All accounting data are from the end of the fiscal year closest to the reported Schedule 13(D) filing date. Panel A presents measures of the investor's profitability, Panel B displays  measures of cash balances and debt and Panel C gives information on the investor's size and Investment. See Appendix A for variable definitions. ***significant at the 0.01\% level; **significant at the 0.05\% level; * significant at the 0.10\% level.\par\medskip
 	\centering													
 	\begin{adjustbox}{width=\textwidth}
-		\includegraphics{summary1final}
+		\includegraphics{Summary1_montag_copy}
 	\end{adjustbox}\par\medskip
 \end{table}
-\begin{table}[!htbp]
+\begin{table}[!htb]
 	\centering
 	\begin{adjustbox}{width=\textwidth}
-		\includegraphics{summary2final}
+		\includegraphics{Summary2_montag_copy}
 	\end{adjustbox}
 \end{table}
 Moreover, characteristics for the WW-, HP- and Dividend Payout indices have explanatory power beyond the sample, as these investors are identified according to their comparative values across the entire Compustat database. Hence, a loose comparison to samples of other studies is possible. For further simplicity, the notion of "financially constrained" is used independently of the measure initially used for identification.\par
@@ -420,12 +434,12 @@ That is to say, these researchers have expanded their event-windows to overcome 
 	\textbf{Table III}\par\medskip
 	\large\textbf{Abnormal Stock Returns Surrounding the Schedule 13(D) Filing}\par\medskip
 	\justifying
-	\footnotesize\noindent\setstretch{1.2}This table presents cumulative abnormal returns (CAR) and buy-and-hold abnormal returns (BHAR) for the target where the CAR is the aggregated abnormal return for each event window estimated with the market model and the BHAR is the difference between the target's buy–and–hold return and the value–weighted NYSE/AMEX/Nasdaq index from CRSP. Mean [median] abnormal returns  are reported for the total sample of targets (column 1) and  for targets of investors identified by the WW–Index (column 2 and 3). Panel A--D present abnormal returns for several event windows. All data are winsorized at the 1\% and 99\% levels. *, ** and *** indicate statistical significance at the 10\%, 5\% and 1\% levels.\par\medskip
-	\centering													
+	\footnotesize\noindent\setstretch{1.2}This table presents the cumulative and buy-and-hold abnormal returns of the targets. The CAR is the aggregated abnormal return from the market model and the BHAR is the difference between the target's buy–and–hold return and the value–weighted NYSE/AMEX/Nasdaq index from CRSP. Mean [median] abnormal returns  are reported for the total sample of targets (Column 1) and  for targets of investors identified by the WW–Index (Column 2 and 3). Panel A--D present abnormal returns for several event windows. All data are winsorized at the 1\% and 99\% levels. *, ** and *** indicate statistical significance at the 10\%, 5\% and 1\% levels.\par\medskip
+	\centering				
 	\begin{adjustbox}{width=\textwidth}
-		\includegraphics{ar_window_final}
+		\includegraphics{Ar_window_montag_copy}
 	\end{adjustbox}\par\medskip
-\end{table}
+\end{table} 
 Column (1) presents the abnormal returns for all targets. Column (2) and (3) show the abnormal returns for targets dependent on their investor's financial condition. The investors are grouped by the Whited-Wu index and groups are equal to those presented in Table II, with 126 filings disclosed by constrained and 307 disclosed by unconstrained investors.\par
 For the abnormal returns in columns (1), (2) and (3), significance levels are shown. The null hypothesis to be tested is that the mean day abnormal return is equal to zero, and thus concerns the average effect of an event on returns to shareholders. If the average abnormal returns are independent, identical distributed, and normal, the test statistic is distributed Student-$t$ under the null hypothesis \citep[p.7]{Brown1985}. As shown in \citet[p.11]{Brown1985}, the $t$-Statistic can be applied even under the assumption of non-normality and a sufficient adjustment for cross sectional dependence is the application of the market model for estimating abnormal returns \citep[p.22]{Brown1985}. Therefore, the statistical significance of the cumulative abnormal returns is given by a two-tailed $t$-test for which the alternative hypothesis is defined as: cumulative abnormal returns are different from zero. The statistical significance of the median is computed by a quantile regression of the abnormal returns where the p-value of the coefficient represents the statistical significance of the median \citep{Ucla}. Column (4) tests the difference in means [medians] of column (2) and (3). As in Section 3, the $t$-statistic represents the standard parametric test for difference in means and the $Z$-statistic is the non-parametric Mann-Whitney rank-sum test. All returns  presented in Table III are winsorized at the 1\% and 99\% level.\par
 This extensive presentation of aggregated abnormal returns is done for three reasons. Firstly, to test the differences in abnormal returns over varying event windows and thereby accomodate for the time-effect. Secondly, to test whether the estimated abnormal returns are similar for the two methods of measurement and thirdly to test whether the investor's financial condition matters independently of time (across all event windows).\par
@@ -450,18 +464,18 @@ Facing Panel B, abnormal returns of targets are now additionally sorted by the f
 	\textbf{Table IV}\par\medskip
 	\large\textbf{Abnormal Returns by Measures of Financial Constraints and Purpose of Transaction}\par\medskip
 	\justifying
-	\footnotesize\noindent\setstretch{1.2}This table shows cumulative abnormal returns aggregated over the window [-10,3] for the sub-samples of each measure of financial constraints. Mean [median] target abnormal returns of each measure are reported for the sample of financially constrained (Column 1) and unconstrained investors (Column 2). Column (3) presents the t-statistics [Z-statistics] for differences in means [medians] of Columns (1) and (2). Panel A shows the cumulative abnormal returns for the complete sample of targets whereas Panel B presents the cumulative abnormal returns for targets based on the purpose of transaction. The purposes are equal to those presented in Section 3. See Appendix A for Measure and Appendix B for Purpose definitions. All data are winsorized at the 1\% and 99\% levels. *, ** and *** indicate statistical significance at the 10\%, 5\% and 1\% levels.  \par\medskip
-	\centering													
+	\footnotesize\noindent\setstretch{1.2}This table shows cumulative abnormal returns aggregated over the window [-10,3] for the sub-samples of each measure of financial constraints. Mean [median] target abnormal returns of each measure are reported for the sample of financially constrained (Column 1) and unconstrained investors (Column 2). Column (3) presents the t-statistics [Z-statistics] for differences in means [medians] of Columns (1) and (2). Panel A shows the cumulative abnormal returns for the complete sample of targets whereas Panel B presents the cumulative abnormal returns for targets based on the purpose of transaction. The purposes are equal to those presented in Section 3. See Appendix A for Measure and Appendix B for Purpose definitions. All data are winsorized at the 1\% and 99\% levels. *, ** and *** indicate statistical significance at the 10\%, 5\% and 1\% levels.\par\medskip
+	\centering				
 	\begin{adjustbox}{width=\textwidth}
-		\includegraphics{ar_measure1_final}
+		\includegraphics{Ar_measure1_montag_copy}
 	\end{adjustbox}\par\medskip
 \end{table}
 \begin{table}[!htb]
 	\centering
 	\begin{adjustbox}{width=\textwidth}
-		\includegraphics{ar_measure2_final}
+		\includegraphics{Ar_measure2_montag_copy}
 	\end{adjustbox}
-\end{table}
+\end{table}  
 Targets subject to filings with the purpose of strategic investments have a 7.92\% CAR, significant at the 5\% level which is a similar market reaction to the one observed by \citet[p.]{Allen2000} who find abnormal returns of 6.9\% in response to strategic announcements. For the reason that the sample consists of only 74 filings with the transaction purpose of a strategic investment, performing tests and deriving conclusions on the economic and statistical significance in differences is problematic. The issue becomes even more demanding when  further splitting filings into the sub-samples of each measure, as they become smaller and tests start to loose their power. Subsequently, there are only 16, 15, 18 and 13 observations in the four samples of constrained investors from the WW-Index, dividend payout ratio, the credit rating and the composite measure and just three for the HP-Index. Samples of the Whited-Wu index and the investor's credit rating present differences in mean CAR's matching with previous findings. Targets of financially constrained investors have average abnormal returns below those of financially unconstrained investors, yet the difference is not significant. These findings are supported by the composite measure but when considering average abnormal returns from the sub-samples of the investor's dividend payout ratio and the HP-Index, results differ. With regards to both measures, targets of financially constrained investors now have higher abnormal returns when compared to those of financially unconstrained investors. Concluding, strategic filings do not allow for valid inferences among constrained and unconstrained investors. The evidence is twofold, as three measures support the proposition that financial constraints matter for strategic filings, whereas the other two measures disprove it.\par
 With regards to the remaining purposes of transaction, the average cumulative abnormal return is 5.07\% for the [-10,3] event window. This means that filings disclosed in the process of strategic investments, and engaging into a takeover, lead to the strongest market reactions. This is conceivable, as the potential value improvement for the target should be the largest in the presence of takeover premiums and strategic synergies. When looking at abnormal returns for sub-samples of the Whited-Wu index, targets of financially constrained investors lose -0.49\% whereas targets of unconstrained investors gain 8.31\% in value. The difference is significant from zero at the 5\% level and similar conclusions can be drawn from the sub-samples formed by the HP-index. Targets of constrained investor lose -3.22\% whereas targets of constrained investors gain 7.86\% in value. While the difference in average cumulative abnormal returns is now significant at the 1\% level it further supports the proposition that financial constraints of the investor matter, independent of the transaction purpose\par
 Concluding, Table IV provides further answers to the investigation on whether financial constraints of corporate activist investors matter. The univariate analysis shows that both, across different measures of financial constraints and transaction purposes, the difference in abnormal returns is existent and significant. Irregularities are only evident for strategic filings, but here too does the Whited-Wu index show differences in abnormal returns. The different measures of financial constraints yield matching results and have categorical power when analyzing the targets' cumulative abnormal returns. This in turn supports the hypothesis that financial constraints of corporate activist investors matter. 
@@ -919,7 +933,7 @@ The Reporting Person has contacted the Chairman of the Board of the Issuer and e
 	\item that I have written thist hesis without any help fromothers and without the use of documents and aids other than those stated above;
 	\item that I have mentioned all the sources used and that I have cited them correctly	according to established academic citation rules;
 	\item that I have acquired any immaterial rights to materials I may have used such as images or graphs, or that I have produced such materials myself;
-	\item that the topic or parts of it are not already the object of any work or examination of another course unless this has been explicitly agreed on with the faculty member in advance and is referred to in the thesis;
+	\item that the topic or parts of it are not already the object of any work or examination of another course unless this has been explicitly agreed on with the faculty member in advance and is referred to in the thesis; 
 	\item that I will not pass on copies of this work to third parties or publish them without the University’s written consent if a direct connection can be established with the University of St.Gallen or its faculty members;
 	\item that I am aware that my work can be electronically checked for plagiarism and that I hereby grant the University of St.Gallen copyright in accordance with the Examination Regulations in so far as this is required for administrative action
 	\item that I am aware that the University will prosecute any infringement of this declaration of authorship and, in particular, the employment of a ghostwriter, and that any such infringement may result in disciplinary and criminal consequences which may result in my expulsion from the University or my being stripped of my degree.”

@@ -1,0 +1,21 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'Thesis.blg'
+[71] biber-darwin:303> INFO - === Mon May 21, 2018, 20:21:07
+[115] Biber.pm:359> INFO - Reading 'Thesis.bcf'
+[251] Biber.pm:835> INFO - Found 38 citekeys in bib section 0
+[271] Biber.pm:3670> INFO - Processing section 0
+[306] Biber.pm:3840> INFO - Looking for bibtex format file 'BA copy.bib' for section 0
+[325] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[365] bibtex.pm:1292> INFO - Found BibTeX data source 'BA copy.bib'
+[403] Utils.pm:164> WARN - month field 'dec' in entry 'Allen2000' is not an integer - this will probably not sort properly.
+[428] Utils.pm:164> WARN - month field 'feb' in entry 'Eckbo2009' is not an integer - this will probably not sort properly.
+[452] Utils.pm:164> WARN - month field 'mar' in entry 'Mann1947' is not an integer - this will probably not sort properly.
+[468] Utils.pm:164> WARN - month field 'mar' in entry 'Brown1985' is not an integer - this will probably not sort properly.
+[474] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/wz/60_g9h8j46bd1p2pm426x9t40000gn/T/BUnyZC5dtW/BA copy.bib_11257.utf8, line 6, warning: 174 characters of junk seen at toplevel
+[587] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[588] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[588] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-GB'
+[588] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-GB'
+[644] bbl.pm:608> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[656] bbl.pm:712> INFO - Output to Thesis.bbl
+[656] Biber.pm:109> INFO - WARNINGS: 5
